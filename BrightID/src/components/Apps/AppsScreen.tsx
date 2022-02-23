@@ -83,7 +83,7 @@ export const AppsScreen = () => {
     const appId = route.params?.context;
     const appInfo = find(propEq('id', appId))(apps) as AppInfo;
     if (api && appInfo && appInfo.usingBlindSig) {
-      handleBlindSigApp(route.params, setSponsoringApp, api);
+      handleBlindSigApp(route.params, setSponsoringApp, api, null);
     } else {
       Alert.alert(
         t('apps.alert.title.invalidApp'),

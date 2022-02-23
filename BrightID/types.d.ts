@@ -12,8 +12,8 @@ import { pendingConnection_states } from '@/components/PendingConnections/pendin
 import {
   SocialMediaType,
   SocialMediaShareActionType,
-  ShareType,
-  ShareTypeDisplay,
+  SocialMediaShareType,
+  SocialMediaShareTypeDisplay,
 } from '@/components/EditProfile/socialMediaVariations';
 import { RecoveryErrorType } from '@/components/Onboarding/RecoveryFlow/RecoveryError';
 
@@ -192,7 +192,7 @@ declare global {
   // shared in old or new versions of app
   interface SocialMediaVariationShared {
     name: string;
-    shareType: ShareType;
+    shareType: SocialMediaShareType;
   }
 
   type SocialMediaId = string;
@@ -200,22 +200,34 @@ declare global {
   type SocialMediaVariation = SocialMediaVariationShared & {
     id: SocialMediaId;
     type: SocialMediaType;
-    shareTypeDisplay: ShareTypeDisplay;
+    shareTypeDisplay: SocialMediaShareTypeDisplay;
     shareActionType: SocialMediaShareActionType;
     shareActionDataFormat: string;
     icon: any;
+    brightIdAppName: string;
   };
 
   type SocialMediaVariationState = EntityState<SocialMediaVariation>;
 
   type SocialMediaVariations = SocialMediaVariation[];
 
-  type SocialMedia = {
+  type SocialMediaShared = {
     id: SocialMediaId;
     company: SocialMediaVariationShared;
     order: number;
     profile: string;
     profileDisplayWidth?: number | string;
+  };
+
+  type BrightIdSocialAppData = {
+    linked: boolean;
+    contextId: string;
+    token: string;
+    synced: boolean;
+  };
+
+  type SocialMedia = SocialMediaShared & {
+    brightIdSocialAppData?: BrightIdSocialAppData;
   };
 
   type PhoneNumberObject = {

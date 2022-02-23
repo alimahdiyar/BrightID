@@ -7,6 +7,7 @@ import { setApps, addSig, selectAllSigs } from '@/reducer/appsSlice';
 import { strToUint8Array, uInt8ArrayToB64 } from '@/utils/encoding';
 import { NodeApi } from '@/api/brightId';
 import { isVerified } from '@/utils/verifications';
+import { BrightIdNetwork } from '@/components/Apps/model';
 
 const WISchnorrClient = require('@/utils/WISchnorrClient');
 
@@ -42,12 +43,16 @@ export const updateBlindSigs =
               console.log(
                 `user is not verified for ${app.name} (${verification})`,
               );
+              console.log(app.name);
+              console.log(app.id);
               // eslint-disable-next-line no-continue
               continue;
             }
 
             try {
-              const network = __DEV__ ? 'test' : 'node';
+              const network = __DEV__
+                ? BrightIdNetwork.TEST
+                : BrightIdNetwork.NODE;
               // noinspection HttpUrlsUsage
               // TODO: Don't fallback to node.brightid.org. 'app.nodeUrl' should be mandatory.
               const url = app.nodeUrl || `http://${network}.brightid.org`;
