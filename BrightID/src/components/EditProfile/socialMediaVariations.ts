@@ -51,7 +51,7 @@ export enum SocialMediaVariationIds {
   EMAIL = 'c01bee17-6f89-477f-8cd4-fe5505691a9a',
 }
 
-export const socialMediaVariations: SocialMediaVariations = [
+export const initialSocialMediaVariations: SocialMediaVariations = [
   {
     id: SocialMediaVariationIds.DISCORD,
     name: 'Discord',
@@ -186,4 +186,4 @@ export const socialMediaVariations: SocialMediaVariations = [
   },
 ];
 
-export default Object.freeze(socialMediaVariations);
+export default Object.freeze(initialSocialMediaVariations);

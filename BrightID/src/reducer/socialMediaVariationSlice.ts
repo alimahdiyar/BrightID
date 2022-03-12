@@ -2,25 +2,42 @@ import {
   createSlice,
   createEntityAdapter,
   createSelector,
+  PayloadAction,
+  Update,
 } from '@reduxjs/toolkit';
 
 import {
   SocialMediaType,
-  socialMediaVariations,
+  initialSocialMediaVariations,
 } from '@/components/EditProfile/socialMediaVariations';
 
 const socialMediaVariationAdapter = createEntityAdapter<SocialMediaVariation>();
 const emptyInitialState = socialMediaVariationAdapter.getInitialState();
-const initialState = socialMediaVariationAdapter.upsertMany(
-  emptyInitialState,
-  socialMediaVariations,
-);
+const socialMediaVariationsInitialState =
+  socialMediaVariationAdapter.upsertMany(
+    emptyInitialState,
+    initialSocialMediaVariations,
+  );
+
+const initialState = {
+  socialMediaVariations: socialMediaVariationsInitialState,
+  lastUpdateTimestamp: null,
+};
 
 const socialMediaVariationSlice = createSlice({
   name: 'socialMediaVariation',
   initialState,
   reducers: {
-    upsertSocialMediaVariations: socialMediaVariationAdapter.upsertMany,
+    upsertSocialMediaVariations(
+      state,
+      action: PayloadAction<SocialMediaVariation[]>,
+    ) {
+      state.lastUpdateTimestamp = Date;
+      state.socialMediaVariations = socialMediaVariationAdapter.upsertMany(
+        state.socialMediaVariations,
+        action.payload,
+      );
+    },
   },
 });
 
@@ -31,7 +48,7 @@ export const {
   selectById: selectSocialMediaVariationById,
   selectAll: selectAllSocialMediaVariations,
 } = socialMediaVariationAdapter.getSelectors(
-  (state: State) => state.socialMediaVariations,
+  (state: State) => state.socialMediaVariations.socialMediaVariations,
 );
 
 export const selectAllSocialMediaVariationsByType = () =>
