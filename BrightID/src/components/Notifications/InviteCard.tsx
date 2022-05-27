@@ -4,33 +4,33 @@ import { SvgXml } from 'react-native-svg';
 import { useTranslation } from 'react-i18next';
 import { useNavigation } from '@react-navigation/native';
 import { useContext } from 'react';
-import { useDispatch, useSelector } from '@/store';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
+import { useDispatch, useSelector } from 'src/store';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
 import {
   DARK_ORANGE,
   GREEN,
   DARKER_GREY,
   LIGHT_GREY,
   WHITE,
-} from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
-import { getGroupName } from '@/utils/groups';
+} from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
+import { getGroupName } from 'src/utils/groups';
 import {
   acceptInvite,
   rejectInvite,
   joinGroup,
   selectConnectionById,
   addOperation,
-} from '@/actions';
-import { GroupPhoto } from '@/components/Groups/GroupPhoto';
+} from 'src/actions';
+import { GroupPhoto } from 'src/components/Groups/GroupPhoto';
 import {
   backupUser,
   backupPhoto,
-} from '@/components/Onboarding/RecoveryFlow/thunks/backupThunks';
-import Check from '@/components/Icons/Check';
-import xGrey from '@/static/x_grey.svg';
-import BrightidError from '@/api/brightidError';
-import { NodeApiContext } from '@/components/NodeApiGate';
+} from 'src/components/Onboarding/RecoveryFlow/thunks/backupThunks';
+import Check from 'src/components/Icons/Check';
+import xGrey from 'src/static/x_grey.svg';
+import BrightidError from 'src/api/brightidError';
+import { NodeApiContext } from 'src/components/NodeApiGate';
 
 const InviteCard = (props) => {
   const { invite } = props;

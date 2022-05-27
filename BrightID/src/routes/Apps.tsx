@@ -3,8 +3,8 @@ import {
   createStackNavigator,
   StackNavigationOptions,
 } from '@react-navigation/stack';
-import AppsScreen from '@/components/Apps/AppsScreen';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
+import AppsScreen from 'src/components/Apps/AppsScreen';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
 import { headerOptions, NavHome } from './helpers';
 
 const Stack = createStackNavigator();

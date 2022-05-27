@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import { InteractionManager, StyleSheet, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { useDispatch, useSelector } from '@/store';
-import { WHITE } from '@/theme/colors';
-import { NodeApiContext } from '@/components/NodeApiGate';
+import { useDispatch, useSelector } from 'src/store';
+import { WHITE } from 'src/theme/colors';
+import { NodeApiContext } from 'src/components/NodeApiGate';
 import { confirmPendingConnectionThunk } from './actions/pendingConnectionThunks';
 import {
   pendingConnection_states,
@@ -12,7 +12,7 @@ import {
 } from './pendingConnectionSlice';
 import { ReconnectView } from './ReconnectView';
 import { PreviewConnectionView } from './PreviewConnectionView';
-import { connection_levels, report_sources } from '@/utils/constants';
+import { connection_levels, report_sources } from 'src/utils/constants';
 
 type PreviewConnectionProps = {
   pendingConnectionId: string;

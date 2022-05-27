@@ -6,14 +6,14 @@ import {
   TouchableWithoutFeedback,
   View,
 } from 'react-native';
-import { BlurView } from '@react-native-community/blur';
+import BlurWidget from 'src/components/BlurWidget/BlurWidget.web';
 import { useNavigation } from '@react-navigation/native';
 import { useTranslation } from 'react-i18next';
 import { isEqual } from 'lodash';
-import { LIGHT_BLACK, ORANGE, WHITE, BLACK } from '@/theme/colors';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { fontSize } from '@/theme/fonts';
-import { useDispatch, useSelector } from '@/store';
+import { LIGHT_BLACK, ORANGE, WHITE, BLACK } from 'src/theme/colors';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { fontSize } from 'src/theme/fonts';
+import { useDispatch, useSelector } from 'src/store';
 import {
   clearBaseUrl,
   removeCurrentNodeUrl,
@@ -21,8 +21,8 @@ import {
   selectAllNodeUrls,
   selectBaseUrl,
   selectDefaultNodeUrls,
-} from '@/reducer/settingsSlice';
-import { leaveAllChannels } from '@/components/PendingConnections/actions/channelThunks';
+} from 'src/reducer/settingsSlice';
+import { leaveAllChannels } from 'src/components/PendingConnections/actions/channelThunks';
 
 const NodeModal = () => {
   const navigation = useNavigation();
@@ -68,7 +68,7 @@ const NodeModal = () => {
 
   return (
     <View style={styles.container}>
-      <BlurView
+      <BlurWidget
         style={styles.blurView}
         blurType="dark"
         blurAmount={5}

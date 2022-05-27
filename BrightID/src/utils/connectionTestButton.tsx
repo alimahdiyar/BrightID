@@ -2,16 +2,16 @@ import React, { useContext } from 'react';
 import { TouchableOpacity } from 'react-native';
 import Material from 'react-native-vector-icons/MaterialCommunityIcons';
 import { useActionSheet } from '@expo/react-native-action-sheet';
-import { useDispatch } from '@/store';
-import { BLUE, WHITE } from '@/theme/colors';
-import { NodeApiContext } from '@/components/NodeApiGate';
+import { useDispatch } from 'src/store';
+import { BLUE, WHITE } from 'src/theme/colors';
+import { NodeApiContext } from 'src/components/NodeApiGate';
 import {
   connectWithOtherFakeConnections,
   joinAllGroups,
   reconnectFakeConnection,
 } from '../actions/fakeContact';
-import { connection_levels } from '@/utils/constants';
-import { connectionLevelStrings } from '@/utils/connectionLevelStrings';
+import { connection_levels } from 'src/utils/constants';
+import { connectionLevelStrings } from 'src/utils/connectionLevelStrings';
 
 /*
 Return a button that opens actionsheet with test methods

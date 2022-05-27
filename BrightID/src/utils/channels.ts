@@ -1,5 +1,5 @@
 import i18next from 'i18next';
-import { b64ToUrlSafeB64, hash, urlSafeRandomKey } from '@/utils/encoding';
+import { b64ToUrlSafeB64, hash, urlSafeRandomKey } from 'src/utils/encoding';
 import {
   CHANNEL_TTL,
   CHANNEL_INFO_NAME,
@@ -7,14 +7,14 @@ import {
   CHANNEL_INFO_VERSION_1,
   CHANNEL_INFO_VERSION_2,
   MAX_CHANNEL_INFO_VERSION,
-} from '@/utils/constants';
+} from 'src/utils/constants';
 import {
   channel_states,
   channel_types,
-} from '@/components/PendingConnections/channelSlice';
-import ChannelAPI from '@/api/channelService';
-import { encryptData } from '@/utils/cryptoHelper';
-import { retrieveImage } from '@/utils/filesystem';
+} from 'src/components/PendingConnections/channelSlice';
+import ChannelAPI from 'src/api/channelService';
+import { encryptData } from 'src/utils/cryptoHelper';
+import { retrieveImage } from 'src/utils/filesystem';
 
 export const generateChannelData = async (
   channelType: ChannelType,

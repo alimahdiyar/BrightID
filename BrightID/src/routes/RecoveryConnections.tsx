@@ -3,7 +3,7 @@ import {
   createStackNavigator,
   StackNavigationOptions,
 } from '@react-navigation/stack';
-import NewRecoveryConnectionsListScreen from '@/components/RecoveryConnections/NewRecoveryConnectionScreen';
+import NewRecoveryConnectionsListScreen from 'src/components/RecoveryConnections/NewRecoveryConnectionScreen';
 import i18next from 'i18next';
 import { headerOptions, AnimatedHeaderTitle, NavHome } from './helpers';
 

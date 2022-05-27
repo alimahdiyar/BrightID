@@ -1,0 +1,744 @@
+{
+  "achievements": {
+    "getSponsored": {
+      "description": "प्रायोजन प्रदान करने वाले ऐप एप्प द्वारा लिंक करके प्रायोजित करें",
+      "title": "प्रायोजित हो जाएँ"
+    },
+    "joinConnectionParty": {
+      "description": "BrightID कनेक्शन पार्टी में शामिल हों",
+      "title": "कनेक्शन पार्टी"
+    },
+    "joinConnectionPartyWithFriend": {
+      "description": "Bright कनेक्शन पार्टी में परिवार के सदस्यों या करीबी दोस्तों को लाएं",
+      "title": "दोस्तों या परिवार के साथ कनेक्शन पार्टी"
+    },
+    "linkApp": {
+      "description": "अपने BrightID को ऐप के साथ लिंक करें",
+      "title": "ऐप से लिंक करें"
+    },
+    "makeFirstConnection": {
+      "description": "किसी और ब्राइट आईडी उपयोगकर्ता के साथ कनेक्ट करें",
+      "title": "पहला कनेक्शन"
+    },
+    "makeThreeConnection": {
+      "description": "3 BrightID उपयोगकर्ता के साथ जुड़ें",
+      "title": "तीन कनेक्शन"
+    },
+    "makeTwoConnection": {
+      "description": "2 BrightID उपयोगकर्ता के साथ जुड़ें",
+      "title": "दो कनेक्शन"
+    },
+    "notification": {
+      "message": "आपने “{{title}}” कार्य पूरा किया।",
+      "title": "उपलब्धि खुली!"
+    },
+    "progress": {
+      "title": "समापन:"
+    },
+    "setupBackup": {
+      "description": "अपने डेटा का बैकअप सक्षम करने के लिए पासवर्ड सेट करें",
+      "title": "बैकअप पासवर्ड सेट करें"
+    },
+    "setupTrustedConnections": {
+      "description": "सोशल अकाउंट रिकवरी को सक्षम करने के लिए अपने रिकवरी कनेक्शन सेट करें",
+      "title": "शोशल रिकवरी सेट करें"
+    }
+  },
+  "apps": {
+    "alert": {
+      "button": {
+        "visitWebsite": "ज़रूर"
+      },
+      "text": {
+        "checkWebsite": "{{name}} के बारे में अधिक जानने के लिए, उनकी वेबसाइट देखें!",
+        "invalidContext": "{{context}} वैध संदर्भ नहीं है!",
+        "linkApp": "क्या आप अपने अकाउंट को {{context}} में लिंक करना चाहते हैं?",
+        "linkFailure": "आपके अकाउंट को BrightID में {{context}} में लिंक करने में विफल\n{{result}}",
+        "linkSuccess": "आपके अकाउंट को सफलतापूर्वक {{context}} से BrightID से जोड़ा गया"
+      },
+      "title": {
+        "invalidContext": "असफल रहा",
+        "linkApp": "ऐप लिंक?",
+        "linkFailure": "असफल रहा",
+        "linkSuccess": "सफल",
+        "linkingFailed": "एप्लिकेशन लिंकिंग विफल"
+      }
+    },
+    "tag": {
+      "hasSponsorships": "प्रायोजन है",
+      "linked": "जुड़े हुए",
+      "notVerifiedForApp": "इस ऐप के लिए सत्यापित नहीं है",
+      "tryAgain": "फिर कोशिश करें"
+    },
+    "text": {
+      "noApps": "कोई ऐप नहीं",
+      "notSponsored": "आप प्रायोजित नहीं हो।\nकृपया प्रायोजित करने के लिए नीचे ऐप खोजें।",
+      "pendingLink": "{{context}}को अपनी BrightID में जोड़ें…"
+    }
+  },
+  "backup": {
+    "alert": {
+      "text": {
+        "backupSuccess": "बैकअप सफलतापूर्वक पूरा हुआ!",
+        "completed": "आपके BrightID की सोशल रिकवरी अब सक्षम है",
+        "needThreeTrusted": "आपको बैकअप के लिए कम से कम तीन रिकवरी कनेक्शन चाहिए।"
+      }
+    },
+    "button": {
+      "next": "अगला",
+      "save": "रिकवरी कनेक्शन सेट करें",
+      "startBackup": "बैकअप शुरू करें"
+    },
+    "header": {
+      "backup": "बैकअप",
+      "trustedConnections": "रिकवरी कनेक्शन"
+    },
+    "placeholder": {
+      "confirmPassword": "पासवर्ड की पुष्टि करें"
+    },
+    "text": {
+      "chooseTrustedConnections": "अपने BrightID का बैकअप लेने के लिए तीन या अधिक रिकवरी कनेक्शन चुनें।",
+      "enterPassword": "अपना बैकअप डेटा एन्क्रिप्ट करने के लिए एक पासवर्ड दर्ज करें:",
+      "noConnections": "कोई कनेक्शन नहीं"
+    }
+  },
+  "channel": {
+    "alert": {
+      "text": {
+        "localOutdated": "ग्राहक संस्करण पुराना है - कृपया अपने ग्राहक को अपडेट करें और पुनः प्रयास करें",
+        "otherOutdated": "अन्य क्लाइंट संस्करण पुराना है - QRCode निर्माता को क्लाइंट को अपडेट करके पुनः प्रयास करने की आवश्यकता है"
+      }
+    }
+  },
+  "common": {
+    "accessibilityLabel": {
+      "addPhoto": "फोटो जोड़े",
+      "editPhoto": "फ़ोटो संपादित करें",
+      "profilePhoto": "प्रोफाइल फोटो",
+      "userPhoto": "उपयोगकर्ता फोटो"
+    },
+    "actionSheet": {
+      "cancel": "रद्द करें",
+      "title": "आप क्या करना चाहते हैं?"
+    },
+    "alert": {
+      "cancel": "रद्द करें",
+      "dismiss": "खारिज करें",
+      "error": "त्रुटि",
+      "formIncomplete": "BrightID फार्म अपूर्ण",
+      "info": "जानकारी",
+      "no": "नहीं",
+      "ok": "ठीक है",
+      "success": "सफल",
+      "sure": "ज़रूर",
+      "text": {
+        "commonError": "क्षमा करें, हम आपका अनुरोध पूरा नहीं कर सके। कृपया एक क्षण में पुन: प्रयास करें।",
+        "incorrectPassword": "गलत पासवर्ड!",
+        "lostKeys": "कृपया एक नया BrightID बनाएं या अपने पिछले BrightID को पुनर्प्राप्त करने का प्रयास करें",
+        "passwordMatch": "पासवर्ड और पुष्टि पासवर्ड मेल नहीं खाते।",
+        "passwordShort": "आपका पासवर्ड कम से कम 8 वर्ण का होना चाहिए।",
+        "trustedSigned": "आपके रिकवरी कनेक्शनों में से एक ने आपके अनुरोध को स्वीकार किया है"
+      },
+      "title": {
+        "lostKeys": "हमने डिवाइस से BrightID कीपर खो दिया है",
+        "pleaseConfirm": "कृपया कंफर्म कर लो"
+      },
+      "yes": "हाँ"
+    },
+    "button": {
+      "cancel": "रद्द करें",
+      "copy": "कॉपी",
+      "save": "सेव"
+    },
+    "camera": {
+      "cancel": "रद्द",
+      "message": "हमें आपके कैमरे का उपयोग करने के लिए आपकी अनुमति की आवश्यकता है",
+      "ok": "ठीक है",
+      "title": "कैमरे का उपयोग करने की अनुमति"
+    },
+    "language": {
+      "and": "तथा"
+    },
+    "photoActionSheet": {
+      "choosePhoto": "गैलरी से चुनें",
+      "takePhoto": "फोटो लें",
+      "title": "फोटो का चयन करें"
+    },
+    "placeholder": {
+      "password": "पासवर्ड",
+      "searchConnections": "कनेक्शन खोजें"
+    },
+    "tag": {
+      "connectionDate": "जुड़ा हुआ {{date}}",
+      "reportReason": " as{{reportReason}}",
+      "reported": "(रिपोर्ट किया गया)",
+      "reportedByUser": "आपने बताया"
+    },
+    "text": {
+      "progress": "{{completed}}{{total}} सफल हुआ",
+      "uploadingData": "एन्क्रिप्टेड डेटा को बैकअप सर्वर पर अपलोड कर रहा है…"
+    }
+  },
+  "connectionDetails": {
+    "button": {
+      "levelSave": "सेव",
+      "ok": "ठीक है",
+      "reportCancel": "रद्द करें",
+      "reportSubmit": "जमा करे",
+      "undoReport": "रिपोर्ट वापस करना"
+    },
+    "header": {
+      "connectionDetails": "कनेक्शन विवरण"
+    },
+    "label": {
+      "connectionLevel": "कनेक्शन की लेवल",
+      "mutualConnections": "आपसी कनेक्शन",
+      "mutualGroups": "आपसी ग्रुप",
+      "possibleDuplicates": "संभावित डुप्लिकेट",
+      "socialMedia": "सामाजिक मीडिया"
+    },
+    "tags": {
+      "connectedAt": "कनेक्ट {{date}}",
+      "loading": "लोड हो रहा है…"
+    },
+    "text": {
+      "copied": "क्लिपबोर्ड से कॉपी करे!",
+      "level": "आप {{name}} को कितनी अच्छी तरह से जानते हो?",
+      "levelAlreadyKnown": "मैं इस व्यक्ति को पहले से जानता हूं",
+      "levelJustMet": "यह व्यक्ति एक अजनबी है जो मुझे अभी मिला है",
+      "levelRecovery": "मुझे इस व्यक्ति पर भरोसा है कि वह मेरी BrightID पुनर्प्राप्त कर सकता है",
+      "levelSuspicious": "मैं इस व्यक्ति को बिल्कुल नहीं जानता",
+      "reportDuplicate": "इस व्यक्ति ने कई अकाउंट बनाए",
+      "reportOther": "अन्य कारण",
+      "reportSpammer": "इस व्यक्ति ने मुझे अवांछित कनेक्शन का अनुरोध भेजा",
+      "unReportImpact": "आप पहले ही रिपोर्ट कर चुके हैं {{name}} को{{reportReason}}. क्या आप इस रिपोर्ट को हटाना चाहते और आप अपना कनेक्शन बहाल करना चाहते हो?"
+    }
+  },
+  "connections": {
+    "accessibilityLabel": {
+      "connectionPhoto": "कनेक्शन फोटो",
+      "viewConnectionDetails": "कनेक्शन विवरण देखें",
+      "viewPhoto": "फुल स्क्रीन फोटो देखें"
+    },
+    "button": {
+      "reconnect": "पुनः कनेक्ट",
+      "reportConnection": "कनेक्शन की रिपोर्ट करें",
+      "updateConnection": "कनेक्शन अपडेट करें"
+    },
+    "header": {
+      "connections": "कनेक्शन"
+    },
+    "label": {
+      "currentConnectionLevel": "कनेक्शन स्तर",
+      "newProfile": "नया प्रोफाइल",
+      "oldProfile": "पुराना प्रोफ़ाइल"
+    },
+    "removeActionSheet": {
+      "info": "क्या आप {{name}} से कनेक्शन हटाना चाहते हैं? आप कभी भी पुन: कनेक्ट कर सकते हैं।",
+      "remove": "हटाएँ",
+      "title": "कनेक्शन हटाएँ"
+    },
+    "tag": {
+      "deleted": "हटाए गए",
+      "failed": "कनेक्शन विफल।\nकृपया पुन: प्रयास करें।",
+      "hidden": "छिपा हुआ",
+      "lastConnected": "अंतिम जुड़ा {{date}}",
+      "reported": "Reported",
+      "reportedAs": "{{flag}} के रूप में रिपोर्ट किया गया",
+      "waiting": "इंतजार"
+    },
+    "text": {
+      "alreadyConnectedWith": "आप पहले से ही {{name}} से जुड़े हुए हैं",
+      "noConnections": "कोई कनेक्शन नहीं"
+    }
+  },
+  "contact": {
+    "label": {
+      "email": "ईमेल",
+      "meet": "कनेक्शन बनाएं",
+      "socialMedia": "शोशल मिडिया",
+      "website": "वेबसाइट"
+    },
+    "text": {
+      "meet": "एक BrightID कनेक्शन पार्टी में जुड़ें!",
+      "openSource": "खुला स्त्रोत!",
+      "weAre": "हम हैं "
+    },
+    "title": {
+      "contactUs": "संपर्क करें"
+    }
+  },
+  "createGroup": {
+    "alert": {
+      "text": {
+        "nameMissing": "कृपया समूह के लिए एक नाम जोड़ें",
+        "nameTooShort": "समूह का नाम कम से कम 2 वर्ण होना चाहिए"
+      },
+      "title": {
+        "createFailed": "समूह निर्माण असफल",
+        "formIncomplete": "समूह फॉर्म अपूर्ण"
+      }
+    },
+    "button": {
+      "createGroup": "समूह बनाएँ",
+      "next": "अगला"
+    },
+    "label": {
+      "cofounders": "सह-संस्थापक"
+    },
+    "placeholder": {
+      "groupName": "समूह का नाम क्या है?"
+    },
+    "text": {
+      "cofounders": "समूह बनाने के लिए आपको दो सह-संस्थापकों का चयन करना होगा",
+      "noConnections": "कोई कनेक्शन नहीं"
+    }
+  },
+  "drawer": {
+    "alert": {
+      "text": {
+        "upToDate": "BrightID अप टू डेट है।"
+      },
+      "title": {
+        "upToDate": "अपडेट जांचें"
+      }
+    },
+    "label": {
+      "achievements": "उपलब्धियां",
+      "checkForUpdates": "अपडेट जांचें",
+      "contactUs": "संपर्क करें",
+      "copyExplorerCode": "एक्सप्लोरर कोड कॉपी करें",
+      "editProfile": "प्रोफ़ाइल संपादित करें",
+      "findFriends": "आमंत्रण",
+      "home": "होम"
+    }
+  },
+  "eula": {
+    "header": {
+      "title": "लाइसेंस समझौता"
+    }
+  },
+  "graphExplorer": {
+    "alert": {
+      "text": {
+        "copied": "क्लिपबोर्ड से कॉपी करे!"
+      }
+    },
+    "button": {
+      "copyCode": "क्लिपबोर्ड से कॉपी करे"
+    },
+    "text": {
+      "backupRequired": "अपने ग्राफ़ एक्सप्लोरर कोड तक पहुँचने के लिए बैकअप और रिकवरी सेट करना आवश्यक है। बैकअप और पुनर्प्राप्ति के लिए योग्य होने के लिए अपनी सूचनाएं जांचें या अधिक उपयोगकर्ताओं से कनेक्ट करें।",
+      "explorerWebsiteDescription": "एक वेबसाइट है जिसे संपूर्ण BrightID सामाजिक ग्राफ का पता लगाने के लिए डिज़ाइन किया गया है। ग्राफ़ में अपने कनेक्शन देखने के लिए ऊपर दिए गए कोड का उपयोग करें।"
+    }
+  },
+  "groups": {
+    "accessibilityLabel": {
+      "groupsLogo": "समूह चित्र"
+    },
+    "alert": {
+      "text": {
+        "addAdmin": "क्या आप {{name}} समूह के लिए एक व्यवस्थापक बनाना चाहते हैं?",
+        "dismissMember": "क्या आप वाकई {{name}} समूह से को हटना चाहते हैं?",
+        "inviteSuccess": "आपने {{name}} को सफलतापूर्वक समूह में आमंत्रित किया",
+        "leaveGroup": "क्या आप वास्तव में इस समूह को छोड़ना चाहते हैं?"
+      },
+      "title": {
+        "addAdmin": "व्यवस्थापक जोड़ें",
+        "dismissMember": "सदस्य बर्खास्त करें",
+        "errorDismissMember": "समूह से सदस्य को हटाने में त्रुटि",
+        "errorLeaveGroup": "समूह छोड़ने में त्रुटि",
+        "inviteSuccess": "निमंत्रण सफल",
+        "leaveGroup": "समूह छोडे"
+      }
+    },
+    "button": {
+      "createGroup": "समूह बनाएँ",
+      "learnMore": "अधिक जानें"
+    },
+    "groupActionSheet": {
+      "cancel": "रद्द करें",
+      "inviteUser": "उपयोगकर्ता को आमंत्रित करें",
+      "leaveGroup": "निमंत्रण सफल"
+    },
+    "header": {
+      "groups": "समूहों",
+      "inviteList": "आमंत्रित सूची",
+      "newGroup": "नया समूह"
+    },
+    "label": {
+      "knownMembers": "ज्ञात सदस्य:",
+      "unknownMembers": "अज्ञात:"
+    },
+    "memberActionSheet": {
+      "addAdmin": "व्यवस्थापक जोड़ें",
+      "cancel": "रद्द करें",
+      "dismissMember": "समूह से खारिज करें"
+    },
+    "state": {
+      "creatingGroup": "समूह बनाना",
+      "uploadingGroupPhoto": "ग्रुप फोटो अपलोड करना"
+    },
+    "tag": {
+      "primaryGroup": "प्राथमिक समूह"
+    },
+    "text": {
+      "noEligibleConnection": "कोई मौजूदा कनेक्शन इस समूह के लिए योग्य नहीं है, कृपया बाद में वापस आएं..",
+      "noGroups": "<text>तेज़ी से सत्यापित करें</text><text>बनाकर और</text><text>समूह में शामिल हों</text>",
+      "noGroupsMatchSearch": "कोई भी समूह आपकी खोज से मेल नहीं खाता है",
+      "noMembers": "कोई ज्ञात सदस्य नहीं, कुछ को आमंत्रित करें …",
+      "waitingForMembers": "शामिल होने के लिए {{list}} की प्रतीक्षा की जा रही है"
+    }
+  },
+  "home": {
+    "accessibilityLabel": {
+      "connect": "जुडिये"
+    },
+    "button": {
+      "apps": "ऐप्स",
+      "connections": "कनेक्शन",
+      "groups": "समूहों",
+      "myCode": "मेरा कोड",
+      "scanCode": "कोड स्कैन करें"
+    },
+    "chatActionSheet": {
+      "discord": "BrightID डिस्कर्ड",
+      "title": "हमारे साथ चैट करना पसंद है?"
+    },
+    "label": {
+      "createNewConnection": "नया कनेक्शन बनाएं"
+    },
+    "link": {
+      "community": "समुदाय में शामिल हों"
+    }
+  },
+  "notificationBar": {
+    "text": {
+      "backupPassword": "अपने डेटा का बैकअप सक्षम करने के लिए एक पासवर्ड सेट करें",
+      "pendingConnections": "आपके पास {{count}} लंबित कनेक्शन है",
+      "pendingConnections_plural": "आपके पास {{count}} लंबित कनेक्शन है",
+      "socialRecovery": "अपने BrightID की सोशल रिकवरी को सक्षम करने के लिए रिकवरी कनेक्शन चुनें"
+    },
+    "title": {
+      "backupPassword": "बैकअप पासवर्ड सेट करें",
+      "pendingConnection": "कनेक्शन को कंफर्म करें",
+      "socialRecovery": "सोशल रिकवरी सेट करें"
+    }
+  },
+  "notifications": {
+    "alert": {
+      "text": {
+        "failureAcceptGroupInvite": "समूह में शामिल होने में विफल रहा",
+        "rejectGroupInvite": "क्या आप वाकई इस समूह में शामिल नहीं होना चाहते हैं?",
+        "successGroupInvite": "आप {{groupName}} में शामिल हो गए"
+      },
+      "title": {
+        "failureRejectGroupInvite": "आमंत्रण को अस्वीकार करने में विफल",
+        "rejectGroupInvite": "अस्वीकार करे"
+      }
+    },
+    "item": {
+      "msg": {
+        "backupBrightId": "अपने डेटा के एन्क्रिप्टेड बैकअप को सक्षम करने के लिए एक पासवर्ड सेट करें",
+        "socialRecovery": "अपने BrightID की सोशल रिकवरी को सक्षम करने के लिए रिकवरी कनेक्शन चुनें"
+      },
+      "text": {
+        "backupBrightId": "अपने विश्वसनीय कनेक्शन चुनें",
+        "pendingConnections": "आपके पास {{count}} अपुष्ट कनेक्शन है",
+        "pendingConnections_plural": "आपके पास {{count}} अपुष्ट सम्बन्ध है",
+        "pendingGroupInvite": "{{name}} ने आपको शामिल होने के लिए आमंत्रित किया है"
+      },
+      "title": {
+        "backupBrightId": "बैकअप पासवर्ड सेट करें",
+        "socialRecovery": "सोशल रिकवरी सेट करें"
+      }
+    },
+    "tab": {
+      "connections": "कनेक्शन",
+      "groups": "ग्रुप",
+      "miscellaneous": "कई तरह का"
+    },
+    "text": {
+      "noGroupInvites": "आपके पास कोई समूह आमंत्रित नहीं है ..",
+      "noMiscellaneous": "यहाँ देखने के लिए कुछ नही है…",
+      "noPendingConnections": "आपके पास कोई लंबित कनेक्शन नहीं है .."
+    }
+  },
+  "onboarding": {
+    "button": {
+      "create": "मेरा BrightID बनाएं",
+      "getStarted": "शुरू",
+      "recover": "रिकवरी BrightID"
+    },
+    "label": {
+      "maintainPrivacy": "गोपनीयता बनाए रखें"
+    },
+    "text": {
+      "congratulations": "आपका शुक्रिया! \nआपका BrightID बन चुका है। \nअब कनेक्शन बनाने का समय है।",
+      "intro": "<text>BrightID उन लोगों का उपयोग करता है जिन्हें आप जानते हैं</text><text>एक-खाता-प्रति-व्यक्ति को लागू करने के लिए </text><text> जैसे महत्वपूर्ण अनुप्रयोगों के लिए</text><text>मतदान और सार्वभौमिक बुनियादी आय।</text>",
+      "privacy": "<text> साबित करें कि आप अपनी गोपनीयता को संरक्षित करते हुए </text><text>एक अद्वितीय व्यक्ति हैं</text>",
+      "register": "अपना खुद का बनाने के लिए रजिस्टर करें \nडिजिटल पहचान"
+    }
+  },
+  "pendingConnection": {
+    "alert": {
+      "text": {
+        "errorCreateChannel": "कनेक्शन चैनल नहीं बनाया जा सका। त्रुटि संदेश: {{message}}",
+        "errorJoinChannel": "कनेक्शन चैनल नहीं बनाया जा सका। त्रुटि संदेश: {{message}}",
+        "localOutdated": "असंगत क्लाइंट संस्करण के कारण {{name}} के साथ कनेक्ट नहीं किया जा सकता। कृपया अपडेट करें और अपने ब्राइटआईडी ऐप को रिस्टार्ट करें।",
+        "otherOutdated": "असंगत क्लाइंट संस्करण के कारण {{name}} के साथ कनेक्ट नहीं किया जा सकता। कृपया {{name}} अपडेट करें और अपने ब्राइटआईडी ऐप को रिस्टार्ट करें।"
+      },
+      "title": {
+        "connectionImpossible": "कनेक्शन संभव नहीं है"
+      }
+    },
+    "text": {
+      "alreadyRated": "आप पहले ही इस कनेक्शन की समीक्षा कर चुके है",
+      "errorExpired": "कनेक्शन समाप्त हो गया। कृपया पुन: कनेक्ट करने का प्रयास करें।",
+      "errorMyself": "आप खुद से कनेक्ट नहीं कर सकते।",
+      "errorUnhandled": "बिना कनेक्शन का"
+    }
+  },
+  "pendingConnections": {
+    "label": {
+      "alreadyKnown": "पहले से ही ज्ञात",
+      "connections": "कनेक्शन",
+      "created": "ब्राइटआईडी में शामिल हो गए {{date}}",
+      "groups": "समूह",
+      "justMet": "अभी मिला",
+      "mutualConnections": "आपसी संबंध",
+      "rating": "आप इस संबंध को कितनी अच्छी तरह जानते हैं?",
+      "recovery": "रिकवरी",
+      "reported": "रिपोर्ट किया गया",
+      "suspicious": "संदेहजनक"
+    },
+    "text": {
+      "errorGeneric": "कनेक्ट करते समय त्रुटि। कृपया पुन: कनेक्ट करने का प्रयास करें।",
+      "rating": "आपका जवाब हमें हमलों को रोकने में मदद करेगा"
+    },
+    "title": {
+      "confirmationTotal": "{{confirmed}} /{{total}}पुष्टि हो गया",
+      "connectionRequest": "कनेक्शन का अनुरोध"
+    }
+  },
+  "profile": {
+    "alert": {
+      "button": {
+        "discard": "रद्द करें",
+        "dontLeave": "मत छोड़ो"
+      },
+      "text": {
+        "discardChanges": "आपके पास सहेजे नहीं गए परिवर्तन हैं। क्या आप वाकई उन्हें छोड़ना चाहते हैं और स्क्रीन छोड़ना चाहते हैं?",
+        "passwordMatch": "वर्तमान पासवर्ड मेल नहीं खाता है।",
+        "invalidPhoneNumber": "एक मान्य फ़ोन नंबर दर्ज करें"
+      },
+      "title": {
+        "discardChanges": "परिवर्तनों को निरस्त करें?",
+        "passwordMatch": "कृपया पुन: प्रयास करें"
+      }
+    },
+    "button": {
+      "socialNext": "अगला",
+      "socialPrevious": "पिछला"
+    },
+    "label": {
+      "currentPassword": "वर्तमान पासवर्ड",
+      "name": "नाम",
+      "newPassword": "नया पासवर्ड",
+      "newPasswordAgain": "पासवर्ड दोहराएं",
+      "password": "पासवर्ड",
+      "socialMediaLink": "सोशल मीडिया लिंक",
+      "phoneNumber": "फ़ोन नंबर"
+    },
+    "placeholder": {
+      "name": "नाम दर्ज करें",
+      "newPassword": "नया पासवर्ड",
+      "newPasswordAgain": "पासवर्ड दोहराएं",
+      "password": "पासवर्ड"
+    },
+    "text": {
+      "backupPasswordTitle": "बैकअप पासवर्ड",
+      "changePassword": "पासवर्ड बदलें",
+      "changeProfilePicture": "प्रोफ़ाइल फोटो बदलें",
+      "setPassword": "पासवर्ड सेट करें",
+      "viewPassword": "पासवर्ड देखें"
+    }
+  },
+  "qrcode": {
+    "alert": {
+      "connectGroup": "{{name}}के साथ एक समूह कनेक्शन बनाएं BrightID पर: {{link}}",
+      "connectSingle": "{{name}} साथ जुडा हुआ BrightID पर: {{link}}",
+      "text": {
+        "codeGroup": "यह QR कोड कई लोगों को एक साथ कनेक्ट करने के लिए डिज़ाइन किया गया है।",
+        "codeSingle": "इस QR कोड का उपयोग किसी भी उपयोगकर्ता के समाप्त होने से पहले कनेक्ट करने के लिए किया जा सकता है।",
+        "shareLinkGroup": "इस लिंक को शेयर करें",
+        "shareLinkSingle": "इस लिंक को एक दोस्त के साथ साझा करें",
+        "universalLink": "यूनिवर्सल लिंक"
+      },
+      "title": {
+        "codeGroup": "ग्रुप कोड",
+        "codeSingle": "एकल-उपयोग कोड"
+      }
+    },
+    "button": {
+      "copyLink": "लिंक कॉपी करे",
+      "scanCode": "कोड स्कैन करें",
+      "showCode": "अपना QR कोड देखे"
+    },
+    "header": {
+      "connections": "{{count}}/ 30 कनेक्शन",
+      "connections_plural": "{{count}}/ 30 कनेक्शन"
+    },
+    "label": {
+      "connectionType": "कनेक्शन प्रकार:"
+    },
+    "text": {
+      "canAlso": "क्या आप भी कर सकते हो…",
+      "codeGroup": "ग्रुप कोड",
+      "codeSingle": "एकल-उपयोग कोड",
+      "confirmConnections": "कनेक्शन को कंफर्म करें",
+      "downloadingConnectionData": "कनेक्शन डेटा डाउनलोड कर रहा है",
+      "expiresIn": "समाप्त होने वाला है:",
+      "pendingConnections": "आपके पास {{count}} लंबित कनेक्शन है",
+      "pendingConnections_plural": "आपके पास {{count}} लंबित कनेक्शन है",
+      "scanCode": "<text> हे {{name}}, एक कोड को स्कैन करें और</text><text>आज एक नया कनेक्शन बनाएं</text>"
+    }
+  },
+  "recovery": {
+    "alert": {
+      "clipboardmessage": "मेरा ब्राइटआईडी पुनर्प्राप्त करने में मेरी सहायता करें: {{link}}",
+      "text": "इस लिंक को अपने पुनर्प्राप्ति कनेक्शन के साथ साझा करें।",
+      "title": "रिकवरी लिंक"
+    },
+    "error": {
+      "mismatchId": "आपके पुनर्प्राप्ति कनेक्शन ने विभिन्न खातों का चयन किया",
+      "title": "अकाउंट पुनर्प्राप्ति विफल",
+      "unknown": "एक अज्ञात त्रुटि हुई"
+    },
+    "header": {
+      "text": "भाग 1: खाता पुनर्प्राप्त करें"
+    },
+    "info": "यह चरण इस डिवाइस पर आपके ब्राइटआईडी को पुनर्प्राप्त करेगा। आपके पुनर्प्राप्ति कनेक्शन के साथ समान रूप से कनेक्शन के नाम और फ़ोटो पुनर्स्थापित किए जाएंगे।",
+    "state": "पुनर्प्राप्त {{recoveredConnections}} कनेक्शन, {{recoveredGroups}} समूह",
+    "steps": {
+      "complete": "अकाउंट पुनर्प्राप्ति हो गया",
+      "downloading": "पुनर्प्राप्ति कनेक्शन से डेटा डाउनलोड किया जा रहा है...",
+      "error": "अकाउंट पुनर्प्राप्ति विफल",
+      "recovering": "अकाउंट पुनर्प्राप्त किया जा रहा है..."
+    },
+    "text": {
+      "additionalInfo": "आपके रिकवरी कनेक्शन को आपके BrightID को पुनर्प्राप्त करने में मदद करने के लिए इसे स्कैन करने की आवश्यकता होगी",
+      "askTrustedConnections": "कृपया इस क्यूआर कोड को अपने रिकवरी कनेक्शनों को दिखाएं",
+      "signatures": "{{count}} / 2 हस्ताक्षर",
+      "signatures_plural": "{{count}} / 2 हस्ताक्षर"
+    }
+  },
+  "recoveryConnections": {
+    "text": {
+      "add": "जोड़ें",
+      "addMoreRecovery": "अधिक पुनर्प्राप्ति कनेक्शन जोड़ें +",
+      "addRecoveryConnections": "पुनर्प्राप्ति कनेक्शन जोड़ें",
+      "chooseThreeConnections": "अपने BrightID का बैकअप लेने के लिए तीन या अधिक पहले से ज्ञात कनेक्शन चुनें",
+      "completed": "पुनर्प्राप्ति कनेक्शन सफलतापूर्वक जोड़ दिए गए हैं",
+      "connectionsAlreadyKnown": "पुनर्प्राप्ति के रूप में सेटअप किए जाने से पहले कनेक्शन \"पहले से ज्ञात\" होने चाहिए।",
+      "currentRecoveryConnections": "आपके वर्तमान पुनर्प्राप्ति कनेक्शन",
+      "emptyList": "सामाजिक पुनर्प्राप्ति को सक्षम करने के लिए कृपया पुनर्प्राप्ति कनेक्शन जोड़ें",
+      "pleaseMakeSomeConnections": "कृपया कुछ कनेक्शन बनाएं :)",
+      "threeMore": "आप की जरूरत है {{amount}} सामाजिक सुधार को सक्षम करने के लिए अधिक पहले से ज्ञात कनेक्शन"
+    }
+  },
+  "recoveryCooldownModal": {
+    "dismissButtonLabel": "समझ गया",
+    "text": {
+      "connection": "आपने अभी-अभी का पुनर्प्राप्ति स्तर बदला है <bold>{{name}}</bold>."
+    }
+  },
+  "restore": {
+    "alert": {
+      "text": {
+        "notTrusted": "आपका कोई मित्र आपके रिकवरी कनेक्शन की सूची में नहीं है",
+        "requestRecovering": "आपका अनुरोध सफलतापूर्वक सबमिट किया गया इस अकाउंट को पुनर्प्राप्त करने में मदद करने में मदद करे!",
+        "restoreConfirm": "क्या {{name}} वह अकाउंट जिसे आप पुनर्प्राप्त करने में मदद कर रहे हैं?",
+        "restoreSuccess": "आपका खाता सफलतापूर्वक पुनर्प्राप्त हो गया!"
+      },
+      "title": {
+        "notTrusted": "अरे"
+      }
+    },
+    "emptyList": {
+      "text": {
+        "downloadingData": "रिकवरी कनेक्शन डेटा डाउनलोड करना",
+        "nobodyHasChosen": "कनेक्शन पुनर्प्राप्त करने में असमर्थ…\nउन्होंने आपको वसूली के रूप में सेट नहीं किया"
+      }
+    },
+    "header": {
+      "accountRecovery": "अकाउंटा पुनर्प्राप्ति",
+      "text": "भाग 2: बैकअप पुनर्स्थापित करें (वैकल्पिक)"
+    },
+    "info": "अपने बैकअप पासवर्ड से आप अपने सभी कनेक्शनों और समूहों के नाम और फ़ोटो को पुनर्स्थापित कर सकते हैं।",
+    "password": {
+      "placeholder": "अपना पासवर्ड टाइप करें",
+      "skip": "छोड़ें",
+      "submit": "पुनर्स्थापित"
+    },
+    "steps": {
+      "complete": "पुनर्स्थापित हो गया",
+      "error": "पुनर्स्थापना विफल। गलत पासवर्ड?",
+      "restoring": "डेटा बहाल किया जा रहा है...",
+      "waitingAccount": "अकाउंट पुनर्प्राप्ति की प्रतीक्षा कर रहा है",
+      "waitingPassword": "पासवर्ड डालें या छोड़ें"
+    },
+    "text": {
+      "chooseConnectionToHelp": "कृपया उस कनेक्शन का चयन करें जिसका अकाउंटा आप पुनर्प्राप्त करने में मदद कर रहे हैं।",
+      "enterPassword": "कृपया अपना पासवर्ड दर्ज करें",
+      "skipLoadingBackup": "पासवर्ड के बिना आप अभी भी अपने BrightID को पुनर्प्राप्त कर सकते हैं लेकिन आपके कनेक्शन और समूहों का नाम और फोटो उपलब्ध नहीं होगा।"
+    }
+  },
+  "signup": {
+    "alert": {
+      "nameMissing": "कृपया अपना नाम जोड़ें",
+      "nameTooShort": "आपका नाम कम से कम 2 वर्णों का होना चाहिए",
+      "photoMissing": "एक फोटो आवश्यक है। कृपया कीबोर्ड पर एंटर दबाएं।"
+    },
+    "button": {
+      "addPhoto": "फोटो जोड़ो",
+      "createAccount": "मेरी BrightID बनाये",
+      "recoverAccount": "BrightID पुनर्प्राप्त करें",
+      "skip": "इसे छोड़ें & इसे बाद में करें",
+      "submit": "प्रस्तुत"
+    },
+    "header": {
+      "title": "साइन अप करें"
+    },
+    "placeholder": {
+      "confirmPassword": "अपने पासवर्ड को कंफर्म करें",
+      "name": "अक्का नाम",
+      "password": "पासवर्ड"
+    },
+    "text": {
+      "createPassword": "अपना BrightID का पासवर्ड बनाएं",
+      "creatingAccount": "Bright ID बन रही है…",
+      "infoNotShared": "आपका नाम और फ़ोटो कभी भी ऐप्स के साथ साझा नहीं किया जाएगा या सर्वर पर संग्रहीत नहीं किया जाएगा",
+      "nameNotShared": "आपका नाम कभी भी ऐप्स के साथ साझा नहीं किया जाएगा या\nहमारे ब्लॉकचेन पर संग्रहीत कार्य।",
+      "passwordInfo": "यह पासवर्ड आपके कनेक्शन के नाम और फ़ोटो को एन्क्रिप्ट करेगा यदि आपको उन्हें पुनर्प्राप्त करने की आवश्यकता है। यह किसी को आपके BrightID पर कब्जा करने की अनुमति नहीं देता है।",
+      "photoNotShared": "आपकी फ़ोटो कभी भी ऐप्स के साथ साझा नहीं की जाएगी या\nहमारे ब्लॉकचेन पर संग्रहीत कार्य।",
+      "pleaseAddPhoto": "कृपया एक फोटो जोड़ें",
+      "whatsYouName": "आपके दोस्त आपको क्या जानते हैं?"
+    }
+  },
+  "walkthroughs": {
+    "text": {
+      "gotIt": "समझ गया!",
+      "setPassword": "आप हमेशा सेट कर सकते हैं\nयहां BrightID पासवर्ड है",
+      "viewPassword": "आप हमेशा देख सकते हैं\nयह है BrightID पासवर्ड"
+    }
+  },
+  "findFriends" : {
+    "button": {
+      "invite": "आमंत्रण"
+    },
+    "text": {
+      "invitationNotAvailable": "क्षमा करें, वर्तमान में इस ऐप के लिए आमंत्रण भेजने की सुविधा उपलब्ध नहीं है।"
+    }
+  }
+}

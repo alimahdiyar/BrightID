@@ -1,6 +1,6 @@
-import store, {RootState} from '@/store';
+import store, {RootState} from 'src/store';
 import {createSelector} from '@reduxjs/toolkit';
-import {selectAllConnections, selectConnectionById,} from '@/reducer/connectionsSlice';
+import {selectAllConnections, selectConnectionById,} from 'src/reducer/connectionsSlice';
 
 const threeKnownMembers = (group: Group): Array<Connection> => {
   const {

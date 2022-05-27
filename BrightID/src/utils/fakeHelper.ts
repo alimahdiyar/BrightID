@@ -1,4 +1,4 @@
-import { NodeApi } from '@/api/brightId';
+import { NodeApi } from 'src/api/brightId';
 
 export const connectFakeUsers = async (
   fakeUser1: FakeUser,

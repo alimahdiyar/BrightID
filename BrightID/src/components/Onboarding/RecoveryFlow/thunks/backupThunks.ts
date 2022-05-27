@@ -1,8 +1,8 @@
 import CryptoJS from 'crypto-js';
-import { retrieveImage } from '@/utils/filesystem';
-import backupApi from '@/api/backupService';
-import { hash } from '@/utils/encoding';
-import { selectAllConnections } from '@/reducer/connectionsSlice';
+import { retrieveImage } from 'src/utils/filesystem';
+import backupApi from 'src/api/backupService';
+import { hash } from 'src/utils/encoding';
+import { selectAllConnections } from 'src/reducer/connectionsSlice';
 
 const hashId = (id: string, password: string) => {
   const h = hash(id + password);

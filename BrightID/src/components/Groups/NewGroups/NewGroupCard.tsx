@@ -4,10 +4,10 @@ import moment from 'moment';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
-import { photoDirectory } from '@/utils/filesystem';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { GREY, WHITE, GREEN, BLACK, LIGHT_GREY } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
+import { photoDirectory } from 'src/utils/filesystem';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { GREY, WHITE, GREEN, BLACK, LIGHT_GREY } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
 
 type NewGroupCardProps = {
   id: string;
@@ -54,7 +54,7 @@ export const NewGroupCard = ({
       ? {
           uri: `file://${photoDirectory()}/${photo?.filename}`,
         }
-      : require('@/static/default_profile.jpg');
+      : require('src/static/default_profile.jpg');
 
   return (
     <View style={styles.container}>

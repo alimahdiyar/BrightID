@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { useTranslation } from 'react-i18next';
-import OnboardScreen from '@/components/Onboarding/OnboardScreen';
-import NameScreen from '@/components/Onboarding/SignUpFlow/NameScreen';
-import PhotoScreen from '@/components/Onboarding/SignUpFlow/PhotoScreen';
-import PasswordScreen from '@/components/Onboarding/SignUpFlow/PasswordScreen';
-import SuccessScreen from '@/components/Onboarding/SignUpFlow/SuccessScreen';
+import OnboardScreen from 'src/components/Onboarding/OnboardScreen';
+import NameScreen from 'src/components/Onboarding/SignUpFlow/NameScreen';
+import PhotoScreen from 'src/components/Onboarding/SignUpFlow/PhotoScreen';
+import PasswordScreen from 'src/components/Onboarding/SignUpFlow/PasswordScreen';
+import SuccessScreen from 'src/components/Onboarding/SignUpFlow/SuccessScreen';
 
 import Restore from './Restore';
 import Import from './Import';

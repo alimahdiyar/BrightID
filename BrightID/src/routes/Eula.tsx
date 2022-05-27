@@ -4,9 +4,9 @@ import {
   StackNavigationOptions,
 } from '@react-navigation/stack';
 import { useTranslation } from 'react-i18next';
-import Eula from '@/components/Onboarding/Eula';
-import { fontSize } from '@/theme/fonts';
-import { BLACK } from '@/theme/colors';
+import Eula from 'src/components/Onboarding/Eula';
+import { fontSize } from 'src/theme/fonts';
+import { BLACK } from 'src/theme/colors';
 
 export const headerTitleStyle = {
   fontFamily: 'Poppins-Medium',

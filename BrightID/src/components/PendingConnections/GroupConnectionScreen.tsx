@@ -19,14 +19,14 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import Svg, { Line } from 'react-native-svg';
 import { createSelector } from '@reduxjs/toolkit';
 import Material from 'react-native-vector-icons/MaterialCommunityIcons';
-import { useSelector } from '@/store';
-import { ORANGE, WHITE } from '@/theme/colors';
-import { DEVICE_LARGE, WIDTH, HEIGHT } from '@/utils/deviceConstants';
-import { fontSize } from '@/theme/fonts';
+import { useSelector } from 'src/store';
+import { ORANGE, WHITE } from 'src/theme/colors';
+import { DEVICE_LARGE, WIDTH, HEIGHT } from 'src/utils/deviceConstants';
+import { fontSize } from 'src/theme/fonts';
 import {
   selectAllUnconfirmedConnections,
   selectPendingConnectionById,
-} from '@/components/PendingConnections/pendingConnectionSlice';
+} from 'src/components/PendingConnections/pendingConnectionSlice';
 
 /** HELPERS */
 

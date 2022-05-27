@@ -7,7 +7,7 @@ import {
   StyleSheet,
 } from 'react-native';
 import Material from 'react-native-vector-icons/MaterialCommunityIcons';
-import { ORANGE, WHITE } from '@/theme/colors';
+import { ORANGE, WHITE } from 'src/theme/colors';
 
 type Props = { testID?: string; onPress: () => void };
 type State = {

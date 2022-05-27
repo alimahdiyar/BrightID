@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useLayoutEffect, useRef } from 'react';
 import { StatusBar } from 'react-native';
 import { useFocusEffect } from '@react-navigation/native';
-import { WHITE, ORANGE } from '@/theme/colors';
+import { WHITE, ORANGE } from 'src/theme/colors';
 import { DEVICE_ANDROID } from './deviceConstants';
 
 export function useInterval(callback: () => void, delay: number | null) {

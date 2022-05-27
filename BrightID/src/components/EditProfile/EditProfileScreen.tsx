@@ -24,8 +24,8 @@ import { useHeaderHeight } from '@react-navigation/stack';
 import { useIsDrawerOpen } from '@react-navigation/drawer';
 import Material from 'react-native-vector-icons/MaterialCommunityIcons';
 import i18next from 'i18next';
-import { useDispatch, useSelector } from '@/store';
-import { DEVICE_IOS, DEVICE_LARGE, WIDTH } from '@/utils/deviceConstants';
+import { useDispatch, useSelector } from 'src/store';
+import { DEVICE_IOS, DEVICE_LARGE, WIDTH } from 'src/utils/deviceConstants';
 import {
   BLACK,
   BLUE,
@@ -37,17 +37,17 @@ import {
   LIGHT_GREY,
   ORANGE,
   WHITE,
-} from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
-import { chooseImage, takePhoto } from '@/utils/images';
-import { photoDirectory, retrieveImage, saveImage } from '@/utils/filesystem';
+} from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
+import { chooseImage, takePhoto } from 'src/utils/images';
+import { photoDirectory, retrieveImage, saveImage } from 'src/utils/filesystem';
 import {
   selectSyncSocialMediaEnabled,
   setName,
   setPhoto,
   setSyncSocialMediaEnabled,
-} from '@/actions';
-import Chevron from '@/components/Icons/Chevron';
+} from 'src/actions';
+import Chevron from 'src/components/Icons/Chevron';
 import {
   selectExistingSocialMedia,
   setProfileDisplayWidth,
@@ -55,12 +55,12 @@ import {
 import {
   selectAllSocialMediaVariationsByType,
   selectSocialMediaVariationById,
-} from '@/reducer/socialMediaVariationSlice';
+} from 'src/reducer/socialMediaVariationSlice';
 import { SocialMediaType } from './socialMediaVariations';
 import {
   removeSocialMediaThunk,
   setSyncSocialMediaEnabledThunk,
-} from '@/components/EditProfile/socialMediaThunks';
+} from 'src/components/EditProfile/socialMediaThunks';
 
 const EditProfilePhoto = ({ profilePhoto, setProfilePhoto }) => {
   const { showActionSheetWithOptions } = useActionSheet();

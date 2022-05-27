@@ -1,6 +1,6 @@
 import React from 'react';
 import Svg, { Circle, EMaskUnits, G, Path, Mask } from 'react-native-svg';
-import { DARKER_GREY, LIGHT_GREY, GREY, WHITE } from '@/theme/colors';
+import { DARKER_GREY, LIGHT_GREY, GREY, WHITE } from 'src/theme/colors';
 
 type Props = {
   color?: string;

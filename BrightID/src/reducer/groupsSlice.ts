@@ -1,10 +1,10 @@
 import { createSelector, createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { RESET_STORE } from '@/actions/resetStore';
-import { INVITE_ACCEPTED, INVITE_REJECTED } from '@/utils/constants';
-import { RootState } from '@/store';
-import { toSearchString } from '@/utils/strings';
-import { getGroupName, ids2connections, knownMemberIDs } from '@/utils/groups';
-import { compareCreatedDesc } from '@/components/Groups/models/sortingUtility';
+import { RESET_STORE } from 'src/actions/resetStore';
+import { INVITE_ACCEPTED, INVITE_REJECTED } from 'src/utils/constants';
+import { RootState } from 'src/store';
+import { toSearchString } from 'src/utils/strings';
+import { getGroupName, ids2connections, knownMemberIDs } from 'src/utils/groups';
+import { compareCreatedDesc } from 'src/components/Groups/models/sortingUtility';
 
 /* ******** INITIAL STATE ************** */
 

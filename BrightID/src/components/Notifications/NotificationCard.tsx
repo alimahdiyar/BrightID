@@ -2,9 +2,9 @@ import React from 'react';
 import { Image, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { useNavigation } from '@react-navigation/native';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { DARK_ORANGE, WHITE, LIGHT_GREY } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { DARK_ORANGE, WHITE, LIGHT_GREY } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
 
 /**
  * Notification Card in the Notifications Screen

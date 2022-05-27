@@ -1,6 +1,6 @@
 import nacl from 'tweetnacl';
-import { createImageDirectory, saveImage } from '@/utils/filesystem';
-import { hash, urlSafeRandomKey } from '@/utils/encoding';
+import { createImageDirectory, saveImage } from 'src/utils/filesystem';
+import { hash, urlSafeRandomKey } from 'src/utils/encoding';
 import {
   setUserData,
   setConnections,
@@ -8,10 +8,10 @@ import {
   setKeypair,
   addOperation,
   upsertSig,
-} from '@/actions';
-import BrightidError, { OPERATION_APPLIED_BEFORE } from '@/api/brightidError';
-import { NodeApi } from '@/api/brightId';
-import fetchUserInfo from '@/actions/fetchUserInfo';
+} from 'src/actions';
+import BrightidError, { OPERATION_APPLIED_BEFORE } from 'src/api/brightidError';
+import { NodeApi } from 'src/api/brightId';
+import fetchUserInfo from 'src/actions/fetchUserInfo';
 import { fetchBackupData } from './backupThunks';
 import {
   init,

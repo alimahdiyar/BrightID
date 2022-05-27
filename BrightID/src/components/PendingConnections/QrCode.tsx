@@ -3,22 +3,22 @@ import { StyleSheet, Text, View, TouchableOpacity, Alert } from 'react-native';
 import Clipboard from '@react-native-community/clipboard';
 import { useNavigation } from '@react-navigation/native';
 import Svg, { Path } from 'react-native-svg';
-import { useDispatch, useSelector } from '@/store';
+import { useDispatch, useSelector } from 'src/store';
 import { path } from 'ramda';
 import Spinner from 'react-native-spinkit';
 import Material from 'react-native-vector-icons/MaterialCommunityIcons';
 import { useTranslation } from 'react-i18next';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { LIGHT_BLACK } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
-import { qrCodeToSvg } from '@/utils/qrCodes';
-import { useInterval } from '@/utils/hooks';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { LIGHT_BLACK } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
+import { qrCodeToSvg } from 'src/utils/qrCodes';
+import { useInterval } from 'src/utils/hooks';
 import {
   channel_states,
   channel_types,
   closeChannel,
-} from '@/components/PendingConnections/channelSlice';
-import { buildChannelQrUrl } from '@/utils/channels';
+} from 'src/components/PendingConnections/channelSlice';
+import { buildChannelQrUrl } from 'src/utils/channels';
 
 /**
  * My Code screen of BrightID

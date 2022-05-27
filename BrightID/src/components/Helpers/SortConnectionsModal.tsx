@@ -6,14 +6,14 @@ import {
   TouchableOpacity,
   TouchableWithoutFeedback,
 } from 'react-native';
-import { BlurView } from '@react-native-community/blur';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { useDispatch, useSelector } from '@/store';
-import { connection_levels } from '@/utils/constants';
-import { ORANGE, BLACK, WHITE, GREEN, DARKER_GREY } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
-import { types } from '@/utils/sorting';
-import { setFilters, setConnectionsSort } from '@/actions';
+import BlurWidget from 'src/components/BlurWidget/BlurWidget.web';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { useDispatch, useSelector } from 'src/store';
+import { connection_levels } from 'src/utils/constants';
+import { ORANGE, BLACK, WHITE, GREEN, DARKER_GREY } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
+import { types } from 'src/utils/sorting';
+import { setFilters, setConnectionsSort } from 'src/actions';
 import { StackScreenProps } from '@react-navigation/stack';
 import Chevron from '../Icons/Chevron';
 
@@ -96,7 +96,7 @@ const SortConnectionsModal = ({ navigation }: props) => {
 
   return (
     <View style={styles.container} testID="SortConnectionsModal">
-      <BlurView
+      <BlurWidget
         style={styles.blurView}
         blurType="dark"
         blurAmount={5}

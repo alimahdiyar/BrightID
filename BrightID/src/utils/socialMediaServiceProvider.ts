@@ -1,4 +1,4 @@
-import { SocialMediaService } from '@/api/socialMediaService';
+import { SocialMediaService } from 'src/api/socialMediaService';
 
 const socialMediaService = new SocialMediaService();
 

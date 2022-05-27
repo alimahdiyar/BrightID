@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity } from 'react-native';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { fontSize } from '@/theme/fonts';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { fontSize } from 'src/theme/fonts';
 
 type RatingButtonProps = {
   color: string;

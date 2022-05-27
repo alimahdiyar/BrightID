@@ -2,19 +2,19 @@ import React, { useEffect, useRef } from 'react';
 import { StyleSheet, View } from 'react-native';
 import DropdownAlert from 'react-native-dropdownalert';
 import { useTranslation } from 'react-i18next';
-import { useDispatch, useSelector } from '@/store';
-import { navigate, getRoute } from '@/NavigationService';
-import AddGroup from '@/components/Icons/AddGroup';
-import AddPerson from '@/components/Icons/AddPerson';
-import Certificate from '@/components/Icons/Certificate';
-import PhoneLock from '@/components/Icons/PhoneLock';
-import { setActiveNotification } from '@/actions';
-import { CONNECTIONS_TYPE } from '@/utils/constants';
-import { DEVICE_LARGE, HEIGHT } from '@/utils/deviceConstants';
-import { LIGHT_GREEN, BLACK } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
-import { selectAllUnconfirmedConnections } from '@/components/PendingConnections/pendingConnectionSlice';
-import { DetoxEnabled } from '@/utils/Detox';
+import { useDispatch, useSelector } from 'src/store';
+import { navigate, getRoute } from 'src/NavigationService';
+import AddGroup from 'src/components/Icons/AddGroup';
+import AddPerson from 'src/components/Icons/AddPerson';
+import Certificate from 'src/components/Icons/Certificate';
+import PhoneLock from 'src/components/Icons/PhoneLock';
+import { setActiveNotification } from 'src/actions';
+import { CONNECTIONS_TYPE } from 'src/utils/constants';
+import { DEVICE_LARGE, HEIGHT } from 'src/utils/deviceConstants';
+import { LIGHT_GREEN, BLACK } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
+import { selectAllUnconfirmedConnections } from 'src/components/PendingConnections/pendingConnectionSlice';
+import { DetoxEnabled } from 'src/utils/Detox';
 
 /* notification types:
 @type groups

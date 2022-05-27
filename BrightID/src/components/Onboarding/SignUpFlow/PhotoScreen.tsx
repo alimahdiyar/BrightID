@@ -10,13 +10,13 @@ import {
 } from 'react-native';
 import { useActionSheet } from '@expo/react-native-action-sheet';
 import { useTranslation } from 'react-i18next';
-import { useDispatch, useSelector } from '@/store';
+import { useDispatch, useSelector } from 'src/store';
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
-import { fontSize } from '@/theme/fonts';
-import { WHITE, BLACK, DARKER_GREY, ORANGE, BLUE } from '@/theme/colors';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { takePhoto, chooseImage } from '@/utils/images';
-import { retrieveImage } from '@/utils/filesystem';
+import { fontSize } from 'src/theme/fonts';
+import { WHITE, BLACK, DARKER_GREY, ORANGE, BLUE } from 'src/theme/colors';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { takePhoto, chooseImage } from 'src/utils/images';
+import { retrieveImage } from 'src/utils/filesystem';
 import { savePhoto } from './thunks';
 import Avatar from '../../Icons/Avatar';
 

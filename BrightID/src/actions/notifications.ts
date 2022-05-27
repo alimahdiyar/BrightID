@@ -1,5 +1,5 @@
 import i18next from 'i18next';
-import { NodeApi } from '@/api/brightId';
+import { NodeApi } from 'src/api/brightId';
 import {
   GROUPS_TYPE,
   INVITE_ACTIVE,
@@ -7,14 +7,14 @@ import {
   MIN_RECOVERY_CONNECTIONS,
   MISC_TYPE,
   connection_levels,
-} from '@/utils/constants';
-import { getInvites } from '@/utils/invites';
-import { getGroupName } from '@/utils/groups';
+} from 'src/utils/constants';
+import { getInvites } from 'src/utils/invites';
+import { getGroupName } from 'src/utils/groups';
 import { setInvites } from './index';
 import {
   recoveryConnectionsSelector,
   verifiedConnectionsSelector,
-} from '@/reducer/connectionsSlice';
+} from 'src/reducer/connectionsSlice';
 
 export const SET_BACKUP_PENDING = 'SET_BACKUP_PENDING';
 export const SET_DEVICE_TOKEN = 'SET_DEVICE_TOKEN';

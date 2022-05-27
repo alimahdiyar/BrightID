@@ -1,25 +1,25 @@
 import {
   channel_types,
   selectChannelById,
-} from '@/components/PendingConnections/channelSlice';
-import { addConnection, addOperation } from '@/actions';
-import { saveImage } from '@/utils/filesystem';
+} from 'src/components/PendingConnections/channelSlice';
+import { addConnection, addOperation } from 'src/actions';
+import { saveImage } from 'src/utils/filesystem';
 import {
   backupPhoto,
   backupUser,
-} from '@/components/Onboarding/RecoveryFlow/thunks/backupThunks';
+} from 'src/components/Onboarding/RecoveryFlow/thunks/backupThunks';
 import {
   confirmPendingConnection,
   pendingConnection_states,
   selectPendingConnectionById,
   updatePendingConnection,
-} from '@/components/PendingConnections/pendingConnectionSlice';
+} from 'src/components/PendingConnections/pendingConnectionSlice';
 import {
   leaveChannel,
   encryptAndUploadProfileToChannel,
-} from '@/components/PendingConnections/actions/channelThunks';
-import { NodeApi } from '@/api/brightId';
-import { connection_levels } from '@/utils/constants';
+} from 'src/components/PendingConnections/actions/channelThunks';
+import { NodeApi } from 'src/api/brightId';
+import { connection_levels } from 'src/utils/constants';
 
 export const confirmPendingConnectionThunk =
   (

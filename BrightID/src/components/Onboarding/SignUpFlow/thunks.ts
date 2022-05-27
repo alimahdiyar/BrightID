@@ -1,7 +1,7 @@
 import nacl from 'tweetnacl';
-import { setKeypair, setPhoto, setUserId } from '@/actions';
-import { createImageDirectory, saveImage } from '@/utils/filesystem';
-import { b64ToUrlSafeB64, uInt8ArrayToB64 } from '@/utils/encoding';
+import { setKeypair, setPhoto, setUserId } from 'src/actions';
+import { createImageDirectory, saveImage } from 'src/utils/filesystem';
+import { b64ToUrlSafeB64, uInt8ArrayToB64 } from 'src/utils/encoding';
 
 export const createKeypair = () => async (
   dispatch: dispatch,

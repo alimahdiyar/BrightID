@@ -3,19 +3,19 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import moment from 'moment';
 import { useNavigation } from '@react-navigation/native';
 import { useTranslation } from 'react-i18next';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { BLACK, DARKER_GREY, ORANGE, RED, WHITE } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
-import TrustlevelSlider from '@/components/Connections/TrustlevelSlider';
-import { retrieveImage } from '@/utils/filesystem';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { BLACK, DARKER_GREY, ORANGE, RED, WHITE } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
+import TrustlevelSlider from 'src/components/Connections/TrustlevelSlider';
+import { retrieveImage } from 'src/utils/filesystem';
 import {
   connection_levels,
   RECOVERY_COOLDOWN_EXEMPTION,
-} from '@/utils/constants';
-import { useSelector } from '@/store';
+} from 'src/utils/constants';
+import { useSelector } from 'src/store';
 import { ConnectionStats } from './ConnectionStats';
 import { ProfileCard } from './ProfileCard';
-import { firstRecoveryTimeSelector } from '@/reducer/connectionsSlice';
+import { firstRecoveryTimeSelector } from 'src/reducer/connectionsSlice';
 
 // percentage determines reported warning
 const REPORTED_PERCENTAGE = 0.1;

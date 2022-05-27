@@ -7,7 +7,7 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
-import { useDispatch, useSelector } from '@/store';
+import { useDispatch, useSelector } from 'src/store';
 import {
   useFocusEffect,
   useNavigation,
@@ -21,16 +21,16 @@ import {
   CONNECTIONS_TYPE,
   GROUPS_TYPE,
   MISC_TYPE,
-} from '@/utils/constants';
-import { ORANGE, WHITE, GREY, BLACK } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
+} from 'src/utils/constants';
+import { ORANGE, WHITE, GREY, BLACK } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
 import { createSelector } from '@reduxjs/toolkit';
-import { selectAllUnconfirmedConnections } from '@/components/PendingConnections/pendingConnectionSlice';
-import EmptyList from '@/components/Helpers/EmptyList';
-import { photoDirectory } from '@/utils/filesystem';
-import { updateNotifications } from '@/actions/index';
-import { NodeApiContext } from '@/components/NodeApiGate';
+import { selectAllUnconfirmedConnections } from 'src/components/PendingConnections/pendingConnectionSlice';
+import EmptyList from 'src/components/Helpers/EmptyList';
+import { photoDirectory } from 'src/utils/filesystem';
+import { updateNotifications } from 'src/actions/index';
+import { NodeApiContext } from 'src/components/NodeApiGate';
 import NotificationCard from './NotificationCard';
 import InviteCard from './InviteCard';
 import PendingConnectionCard from './PendingConnectionCard';
@@ -142,7 +142,7 @@ const MiscList = ({ route }: { route: Route }) => {
     // TODO: Set better image
     const imageSource = photoFilename
       ? { uri: `file://${photoDirectory()}/${photoFilename}` }
-      : require('@/static/default_profile.jpg');
+      : require('src/static/default_profile.jpg');
     data.push({
       title: t('notifications.item.title.socialRecovery'),
       msg: t('notifications.item.msg.socialRecovery'),
@@ -156,7 +156,7 @@ const MiscList = ({ route }: { route: Route }) => {
     // TODO: Set appropriate image
     const imageSource = photoFilename
       ? { uri: `file://${photoDirectory()}/${photoFilename}` }
-      : require('@/static/default_profile.jpg');
+      : require('src/static/default_profile.jpg');
     data.push({
       title: t('notifications.item.title.backupBrightId'),
       msg: t('notifications.item.msg.backupBrightId'),

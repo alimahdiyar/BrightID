@@ -3,7 +3,7 @@ import {
   createStackNavigator,
   StackNavigationOptions,
 } from '@react-navigation/stack';
-import NotificationsScreen from '@/components/Notifications/NotificationsScreen';
+import NotificationsScreen from 'src/components/Notifications/NotificationsScreen';
 import { headerOptions, NavHome } from './helpers';
 
 const Stack = createStackNavigator();

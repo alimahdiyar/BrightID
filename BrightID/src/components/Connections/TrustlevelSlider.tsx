@@ -2,14 +2,14 @@ import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import i18next from 'i18next';
 import Slider from '@react-native-community/slider';
-import { connection_levels } from '@/utils/constants';
-import { WIDTH, DEVICE_LARGE } from '@/utils/deviceConstants';
-import { ORANGE, BLACK } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
+import { connection_levels } from 'src/utils/constants';
+import { WIDTH, DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { ORANGE, BLACK } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
 import {
   connectionLevelColors,
   connectionLevelStrings,
-} from '@/utils/connectionLevelStrings';
+} from 'src/utils/connectionLevelStrings';
 
 const levelsWithoutRecovery = {
   [connection_levels.SUSPICIOUS]: {

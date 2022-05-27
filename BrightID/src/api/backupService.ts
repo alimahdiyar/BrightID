@@ -1,5 +1,5 @@
 import { create, ApisauceInstance, ApiResponse } from 'apisauce';
-import { b64ToUrlSafeB64 } from '@/utils/encoding';
+import { b64ToUrlSafeB64 } from 'src/utils/encoding';
 
 const recoveryUrl = 'https://recovery.brightid.org';
 

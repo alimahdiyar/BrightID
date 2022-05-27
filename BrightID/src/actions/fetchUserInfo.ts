@@ -1,6 +1,6 @@
 import { InteractionManager } from 'react-native';
 import _ from 'lodash';
-import { NodeApi } from '@/api/brightId';
+import { NodeApi } from 'src/api/brightId';
 import {
   setVerifications,
   updateMemberships,

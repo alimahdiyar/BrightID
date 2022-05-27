@@ -11,15 +11,15 @@ import {
 } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { useNavigation } from '@react-navigation/native';
-import { useDispatch, useSelector } from '@/store';
-import { fontSize } from '@/theme/fonts';
-import { WHITE, BLACK, GREEN, ORANGE } from '@/theme/colors';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { selectBaseUrl } from '@/reducer/settingsSlice';
+import { useDispatch, useSelector } from 'src/store';
+import { fontSize } from 'src/theme/fonts';
+import { WHITE, BLACK, GREEN, ORANGE } from 'src/theme/colors';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { selectBaseUrl } from 'src/reducer/settingsSlice';
+import { qrCodeURL_types } from 'src/utils/constants';
 import { createKeypair } from './SignUpFlow/thunks';
 import VerifiedBadge from '../Icons/VerifiedBadge';
-import { qrCodeURL_types } from '@/utils/constants';
-import { version as app_version } from '../../../package.json';
+import PackageJson from '../../../package.json';
 
 /* Description */
 
@@ -60,7 +60,7 @@ export const Onboard = () => {
 
         <View style={styles.header}>
           <Image
-            source={require('@/static/brightid-final.png')}
+            source={require('src/static/brightid-final.png')}
             accessible={true}
             accessibilityLabel="Home Header Logo"
             resizeMode="contain"
@@ -70,7 +70,7 @@ export const Onboard = () => {
 
         <View style={styles.center}>
           <Image
-            source={require('@/static/brightid-phone.png')}
+            source={require('src/static/brightid-phone.png')}
             accessible={true}
             accessibilityLabel="Home Header Logo"
             resizeMode="contain"
@@ -136,7 +136,7 @@ export const Onboard = () => {
         </View>
         <View style={styles.versionInfoContainer}>
           <Text style={styles.versionInfo}>
-            {baseUrl ? baseUrl.split('://')[1] : 'unknown'} - v{app_version}
+            {baseUrl ? baseUrl.split('://')[1] : 'unknown'} - v{PackageJson.version}
           </Text>
         </View>
       </SafeAreaView>

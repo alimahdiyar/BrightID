@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { StyleSheet, Text, View } from 'react-native';
-import { fontSize } from '@/theme/fonts';
+import { fontSize } from 'src/theme/fonts';
 
 interface ConnectionStatsProps {
   connectionsNum: number;

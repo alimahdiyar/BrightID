@@ -1,16 +1,16 @@
 import { Alert } from 'react-native';
 import i18next from 'i18next';
-import store from '@/store';
+import store from 'src/store';
 import {
   updateLinkedContext,
   addConnection,
   updateMemberships,
   updateOperation,
   selectPendingOperations,
-} from '@/actions';
-import { checkTasks } from '@/components/Tasks/TasksSlice';
-import { operation_states, OPERATION_TRACE_TIME } from '@/utils/constants';
-import { NodeApi } from '@/api/brightId';
+} from 'src/actions';
+import { checkTasks } from 'src/components/Tasks/TasksSlice';
+import { operation_states, OPERATION_TRACE_TIME } from 'src/utils/constants';
+import { NodeApi } from 'src/api/brightId';
 
 const handleOpUpdate = (store, op, state, result, api) => {
   let showDefaultError = false;

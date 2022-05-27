@@ -1,6 +1,6 @@
-import ChannelAPI from '@/api/channelService';
-import { hash } from '@/utils/encoding';
-import { RECOVERY_CHANNEL_TTL } from '@/utils/constants';
+import ChannelAPI from 'src/api/channelService';
+import { hash } from 'src/utils/encoding';
+import { RECOVERY_CHANNEL_TTL } from 'src/utils/constants';
 
 export const buildRecoveryChannelQrUrl = ({
   aesKey,

@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, FlatList } from 'react-native';
 import Spinner from 'react-native-spinkit';
-import { useSelector } from '@/store';
+import { useSelector } from 'src/store';
 import { useTranslation } from 'react-i18next';
-import EmptyList from '@/components/Helpers/EmptyList';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { connectionsSelector } from '@/utils/connectionsSelector';
-import { ORANGE, WHITE } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
+import EmptyList from 'src/components/Helpers/EmptyList';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { connectionsSelector } from 'src/utils/connectionsSelector';
+import { ORANGE, WHITE } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
 import RecoveringConnectionCard from './RecoveringConnectionCard';
 
 const ITEM_HEIGHT = DEVICE_LARGE ? 102 : 92;

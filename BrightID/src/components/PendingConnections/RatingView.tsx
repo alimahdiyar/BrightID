@@ -1,14 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
-import { connection_levels } from '@/utils/constants';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { DARKER_GREY } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
+import { connection_levels } from 'src/utils/constants';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { DARKER_GREY } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
 import {
   connectionLevelColors,
   connectionLevelStrings,
-} from '@/utils/connectionLevelStrings';
+} from 'src/utils/connectionLevelStrings';
 import { RatingButton } from './RatingButton';
 
 type RatingViewProps = {

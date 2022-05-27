@@ -6,8 +6,8 @@ import {
   uInt8ArrayToB64,
   hash,
   b64ToUint8Array,
-} from '@/utils/encoding';
-import BrightidError from '@/api/brightidError';
+} from 'src/utils/encoding';
+import BrightidError from 'src/api/brightidError';
 
 const v = 6;
 

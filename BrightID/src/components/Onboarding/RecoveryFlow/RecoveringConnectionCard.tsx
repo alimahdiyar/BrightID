@@ -9,14 +9,14 @@ import {
 } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { useNavigation } from '@react-navigation/native';
-import { useDispatch, useSelector } from '@/store';
-import { DEVICE_LARGE, WIDTH } from '@/utils/deviceConstants';
-import { photoDirectory } from '@/utils/filesystem';
-import { GREY, WHITE } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
-import { ConnectionStatus } from '@/components/Helpers/ConnectionStatus';
-import ChannelAPI from '@/api/channelService';
-import { NodeApiContext } from '@/components/NodeApiGate';
+import { useDispatch, useSelector } from 'src/store';
+import { DEVICE_LARGE, WIDTH } from 'src/utils/deviceConstants';
+import { photoDirectory } from 'src/utils/filesystem';
+import { GREY, WHITE } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
+import { ConnectionStatus } from 'src/components/Helpers/ConnectionStatus';
+import ChannelAPI from 'src/api/channelService';
+import { NodeApiContext } from 'src/components/NodeApiGate';
 import { uploadSig, uploadMutualInfo } from './thunks/channelUploadThunks';
 import { resetRecoveryData } from './recoveryDataSlice';
 
@@ -100,7 +100,7 @@ const RecoveringConnectionCard = (props) => {
       ? {
           uri: `file://${photoDirectory()}/${photo?.filename}`,
         }
-      : require('@/static/default_profile.jpg');
+      : require('src/static/default_profile.jpg');
 
   return (
     <View style={styles.container}>

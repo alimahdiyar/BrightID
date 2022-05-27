@@ -1,5 +1,5 @@
 import { create, ApisauceInstance, ApiResponse } from 'apisauce';
-import { DEVICE_OS } from '@/utils/deviceConstants';
+import { DEVICE_OS } from 'src/utils/deviceConstants';
 
 let notificationUrl = 'https://notify.brightid.org';
 if (__DEV__) {

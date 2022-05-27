@@ -9,10 +9,10 @@ import {
 import { useTranslation } from 'react-i18next';
 import Spinner from 'react-native-spinkit';
 import IonIcons from 'react-native-vector-icons/Ionicons';
-import { BackupSteps } from '@/components/Onboarding/RecoveryFlow/RestoreScreen';
-import { BLACK, DARKER_GREY, GREEN, ORANGE, RED, WHITE } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
+import { BackupSteps } from 'src/components/Onboarding/RecoveryFlow/RestoreScreen';
+import { BLACK, DARKER_GREY, GREEN, ORANGE, RED, WHITE } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
 
 /* Component to track backup restore */
 type RestoreBackupParams = {

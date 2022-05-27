@@ -1,7 +1,7 @@
-import { hash, urlSafeRandomKey } from '@/utils/encoding';
-import { store } from '@/store';
-import ChannelAPI from '@/api/channelService';
-import { selectBaseUrl } from '@/reducer/settingsSlice';
+import { hash, urlSafeRandomKey } from 'src/utils/encoding';
+import { store } from 'src/store';
+import ChannelAPI from 'src/api/channelService';
+import { selectBaseUrl } from 'src/reducer/settingsSlice';
 import { CHANNEL_POLL_INTERVAL } from '../../RecoveryFlow/thunks/channelThunks';
 import { init, setRecoveryChannel } from '../../RecoveryFlow/recoveryDataSlice';
 import {
@@ -15,7 +15,7 @@ import {
   downloadUserInfo,
 } from './channelDownloadThunks';
 import { uploadAllInfoAfter, uploadDeviceInfo } from './channelUploadThunks';
-import { IMPORT_PREFIX } from '@/utils/constants';
+import { IMPORT_PREFIX } from 'src/utils/constants';
 
 export const setupSync =
   () => async (dispatch: dispatch, getState: getState) => {

@@ -5,15 +5,15 @@ import {
 } from '@react-navigation/stack';
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
-import { getGroupName } from '@/utils/groups';
-import { fontSize } from '@/theme/fonts';
-import { GroupsScreen } from '@/components/Groups/GroupsScreen';
-import SearchGroups from '@/components/Helpers/SearchGroups';
-import SearchConnections from '@/components/Helpers/SearchConnections';
-import { NewGroupScreen } from '@/components/Groups/NewGroups/NewGroupScreen';
-import { GroupInfoScreen } from '@/components/Groups/NewGroups/GroupInfoScreen';
-import { MembersScreen } from '@/components/Groups/Members/MembersScreen';
-import ConnectionsScreen from '@/components/Connections/ConnectionsScreen';
+import { getGroupName } from 'src/utils/groups';
+import { fontSize } from 'src/theme/fonts';
+import { GroupsScreen } from 'src/components/Groups/GroupsScreen';
+import SearchGroups from 'src/components/Helpers/SearchGroups';
+import SearchConnections from 'src/components/Helpers/SearchConnections';
+import { NewGroupScreen } from 'src/components/Groups/NewGroups/NewGroupScreen';
+import { GroupInfoScreen } from 'src/components/Groups/NewGroups/GroupInfoScreen';
+import { MembersScreen } from 'src/components/Groups/Members/MembersScreen';
+import ConnectionsScreen from 'src/components/Connections/ConnectionsScreen';
 import { headerOptions, NavHome, AnimatedHeaderTitle } from './helpers';
 
 const Stack = createStackNavigator();

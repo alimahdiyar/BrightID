@@ -1,6 +1,6 @@
-import { hash } from '@/utils/encoding';
-import ChannelAPI from '@/api/channelService';
-import { selectBaseUrl } from '@/reducer/settingsSlice';
+import { hash } from 'src/utils/encoding';
+import ChannelAPI from 'src/api/channelService';
+import { selectBaseUrl } from 'src/reducer/settingsSlice';
 import {
   downloadConnections,
   downloadGroups,
@@ -8,7 +8,7 @@ import {
   downloadNamePhoto,
 } from './channelDownloadThunks';
 import { setRecoveryChannel } from '../recoveryDataSlice';
-import { uploadRecoveryData } from '@/utils/recovery';
+import { uploadRecoveryData } from 'src/utils/recovery';
 
 // CONSTANTS
 

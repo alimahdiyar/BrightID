@@ -17,7 +17,7 @@ import { create, ApisauceInstance, ApiResponse } from 'apisauce';
 import {
   CHANNEL_UPLOAD_RETRY_COUNT,
   CHANNEL_UPLOAD_RETRY_INTERVAL,
-} from '@/utils/constants';
+} from 'src/utils/constants';
 
 type UploadParams = {
   channelId: string;

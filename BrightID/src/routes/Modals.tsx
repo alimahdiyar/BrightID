@@ -4,15 +4,15 @@ import {
   StackNavigationOptions,
   TransitionPresets,
 } from '@react-navigation/stack';
-import FullScreenPhoto from '@/components/Helpers/FullScreenPhoto';
-import ChangePasswordModal from '@/components/EditProfile/ChangePasswordModal';
-import TrustlevelModal from '@/components/Connections/TrustlevelModal';
-import SelectSocialMediaModal from '@/components/EditProfile/SelectSocialMediaModal';
-import ReportReasonModal from '@/components/Connections/ReportReasonModal';
-import SortConnectionsModal from '@/components/Helpers/SortConnectionsModal';
-import ViewPassword from '@/components/Onboarding/Walkthroughs/ViewPassword';
-import RecoveryCooldownInfoModal from '@/components/Recovery/RecoveryCooldownInfoModal';
-import NodeModal from '@/components/Helpers/NodeModal';
+import FullScreenPhoto from 'src/components/Helpers/FullScreenPhoto';
+import ChangePasswordModal from 'src/components/EditProfile/ChangePasswordModal';
+import TrustlevelModal from 'src/components/Connections/TrustlevelModal';
+import SelectSocialMediaModal from 'src/components/EditProfile/SelectSocialMediaModal';
+import ReportReasonModal from 'src/components/Connections/ReportReasonModal';
+import SortConnectionsModal from 'src/components/Helpers/SortConnectionsModal';
+import ViewPassword from 'src/components/Onboarding/Walkthroughs/ViewPassword';
+import RecoveryCooldownInfoModal from 'src/components/Recovery/RecoveryCooldownInfoModal';
+import NodeModal from 'src/components/Helpers/NodeModal';
 
 const Stack = createStackNavigator<ModalStackParamList>();
 

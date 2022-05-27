@@ -1,5 +1,5 @@
-import { SocialMediaVariationIds } from '@/components/EditProfile/socialMediaVariations';
-import { BrightIdNetwork } from '@/components/Apps/types.d';
+import { SocialMediaVariationIds } from 'src/components/EditProfile/socialMediaVariations';
+import { BrightIdNetwork } from 'src/components/Apps/types.d';
 
 type CreateSocialMediaRequest = {
   variation: string | SocialMediaVariationIds;

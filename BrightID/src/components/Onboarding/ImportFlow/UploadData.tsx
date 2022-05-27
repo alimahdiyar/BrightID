@@ -3,10 +3,10 @@ import { StyleSheet, Text, View } from 'react-native';
 import Spinner from 'react-native-spinkit';
 import IonIcons from 'react-native-vector-icons/Ionicons';
 import { useTranslation } from 'react-i18next';
-import { fontSize } from '@/theme/fonts';
-import { BLACK, DARKER_GREY, GREEN, ORANGE, RED } from '@/theme/colors';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { UploadDataSteps } from '@/components/Onboarding/ImportFlow/AddDeviceScreen';
+import { fontSize } from 'src/theme/fonts';
+import { BLACK, DARKER_GREY, GREEN, ORANGE, RED } from 'src/theme/colors';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { UploadDataSteps } from 'src/components/Onboarding/ImportFlow/AddDeviceScreen';
 
 /* Component to track adding of signing key */
 type UploadDataParams = {

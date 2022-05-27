@@ -4,8 +4,8 @@ import {
   resetGenericPassword,
 } from 'react-native-keychain';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { DEVICE_ANDROID } from '@/utils/deviceConstants';
-import { b64ToUint8Array, uInt8ArrayToB64 } from '@/utils/encoding';
+import { DEVICE_ANDROID } from 'src/utils/deviceConstants';
+import { b64ToUint8Array, uInt8ArrayToB64 } from 'src/utils/encoding';
 
 /**
  *

@@ -16,14 +16,14 @@ import {
   View,
 } from 'react-native';
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
-import { useDispatch, useSelector } from '@/store';
+import { useDispatch, useSelector } from 'src/store';
 import { useTranslation } from 'react-i18next';
 import Material from 'react-native-vector-icons/MaterialCommunityIcons';
-import ChannelSwitch from '@/components/Helpers/ChannelSwitch';
-import { DARK_GREY, LIGHT_BLACK, ORANGE, WHITE } from '@/theme/colors';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { fontSize } from '@/theme/fonts';
-import Camera from '@/components/Icons/Camera';
+import ChannelSwitch from 'src/components/Helpers/ChannelSwitch';
+import { DARK_GREY, LIGHT_BLACK, ORANGE, WHITE } from 'src/theme/colors';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { fontSize } from 'src/theme/fonts';
+import Camera from 'src/components/Icons/Camera';
 import {
   channel_states,
   channel_types,
@@ -31,15 +31,15 @@ import {
   selectAllActiveChannelIdsByType,
   selectChannelById,
   setDisplayChannelType,
-} from '@/components/PendingConnections/channelSlice';
+} from 'src/components/PendingConnections/channelSlice';
 import {
   selectAllPendingConnectionsByChannelIds,
   selectAllUnconfirmedConnectionsByChannelIds,
-} from '@/components/PendingConnections/pendingConnectionSlice';
+} from 'src/components/PendingConnections/pendingConnectionSlice';
 
-import { createChannel } from '@/components/PendingConnections/actions/channelThunks';
-import { setActiveNotification } from '@/actions';
-import { NodeApiContext } from '@/components/NodeApiGate';
+import { createChannel } from 'src/components/PendingConnections/actions/channelThunks';
+import { setActiveNotification } from 'src/actions';
+import { NodeApiContext } from 'src/components/NodeApiGate';
 import { QrCode } from './QrCode';
 
 /**
@@ -53,7 +53,7 @@ import { QrCode } from './QrCode';
 let FakeConnectionBtn = () => null;
 let addFakeConnection = () => null;
 if (__DEV__) {
-  addFakeConnection = require('@/actions/fakeContact').addFakeConnection;
+  addFakeConnection = require('src/actions/fakeContact').addFakeConnection;
 
   FakeConnectionBtn = () => {
     const dispatch = useDispatch();

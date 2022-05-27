@@ -1,18 +1,18 @@
 import { Alert } from 'react-native';
 import CryptoJS from 'crypto-js';
 import i18next from 'i18next';
-import { saveImage } from '@/utils/filesystem';
-import { encryptAesKey } from '@/utils/invites';
-import { createGroup } from '@/actions/index';
-import backupApi from '@/api/backupService';
-import { hash, randomKey } from '@/utils/encoding';
-import { selectConnectionById } from '@/reducer/connectionsSlice';
-import { addOperation } from '@/reducer/operationsSlice';
+import { saveImage } from 'src/utils/filesystem';
+import { encryptAesKey } from 'src/utils/invites';
+import { createGroup } from 'src/actions/index';
+import backupApi from 'src/api/backupService';
+import { hash, randomKey } from 'src/utils/encoding';
+import { selectConnectionById } from 'src/reducer/connectionsSlice';
+import { addOperation } from 'src/reducer/operationsSlice';
 import {
   backupPhoto,
   backupUser,
 } from '../Onboarding/RecoveryFlow/thunks/backupThunks';
-import { NodeApi } from '@/api/brightId';
+import { NodeApi } from 'src/api/brightId';
 
 export const createNewGroup =
   (

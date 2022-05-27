@@ -1,6 +1,6 @@
 import React from 'react';
 import Svg, { Path } from 'react-native-svg';
-import { BLACK } from '@/theme/colors';
+import { BLACK } from 'src/theme/colors';
 
 type Props = {
   direction?: 'up' | 'down';

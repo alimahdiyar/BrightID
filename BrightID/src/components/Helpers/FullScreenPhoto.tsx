@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
 import { Animated, StyleSheet, PanResponder } from 'react-native';
-import { photoDirectory } from '@/utils/filesystem';
-import { BlurView } from '@react-native-community/blur';
-import { BLACK } from '@/theme/colors';
+import { photoDirectory } from 'src/utils/filesystem';
+import BlurWidget from 'src/components/BlurWidget/BlurWidget.web';
+import { BLACK } from 'src/theme/colors';
 import { StackScreenProps } from '@react-navigation/stack';
 
 type props = StackScreenProps<ModalStackParamList, 'FullScreenPhoto'>;
@@ -17,7 +17,7 @@ const FullScreenPhoto = ({ route, navigation }: props) => {
       ? {
           uri,
         }
-      : require('@/static/default_profile.jpg');
+      : require('src/static/default_profile.jpg');
 
   const pan = useRef(new Animated.ValueXY()).current;
 
@@ -46,12 +46,13 @@ const FullScreenPhoto = ({ route, navigation }: props) => {
   ).current;
 
   return (
-    <BlurView
+    <>
+    <BlurWidget
       style={[styles.container]}
       blurType="dark"
       blurAmount={10}
       reducedTransparencyFallbackColor={BLACK}
-    >
+    />
       <Animated.Image
         source={imageSource}
         style={[
@@ -64,7 +65,7 @@ const FullScreenPhoto = ({ route, navigation }: props) => {
         resizeMode="contain"
         {...panResponder.panHandlers}
       />
-    </BlurView>
+    </>
   );
 };
 

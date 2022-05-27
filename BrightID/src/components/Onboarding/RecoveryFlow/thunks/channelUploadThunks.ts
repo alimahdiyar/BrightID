@@ -6,13 +6,13 @@ import {
   strToUint8Array,
   uInt8ArrayToB64,
   hash,
-} from '@/utils/encoding';
-import { selectAllConnections } from '@/reducer/connectionsSlice';
-import ChannelAPI from '@/api/channelService';
-import { NodeApi } from '@/api/brightId';
-import { store } from '@/store';
-import { loadRecoveryData } from '@/utils/recovery';
-import { uploadConnection, uploadGroup } from '@/utils/channels';
+} from 'src/utils/encoding';
+import { selectAllConnections } from 'src/reducer/connectionsSlice';
+import ChannelAPI from 'src/api/channelService';
+import { NodeApi } from 'src/api/brightId';
+import { store } from 'src/store';
+import { loadRecoveryData } from 'src/utils/recovery';
+import { uploadConnection, uploadGroup } from 'src/utils/channels';
 
 export const uploadSig =
   ({

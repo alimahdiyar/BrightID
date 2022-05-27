@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { RESET_STORE } from '@/actions/resetStore';
+import { RESET_STORE } from 'src/actions/resetStore';
 
 const initialState: Keypair = {
   publicKey: '',

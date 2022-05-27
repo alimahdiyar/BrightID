@@ -7,14 +7,14 @@ import {
   TextInput,
   TouchableOpacity,
 } from 'react-native';
-import { BlurView } from '@react-native-community/blur';
+import BlurWidget from 'src/components/BlurWidget/BlurWidget.web';
 import Spinner from 'react-native-spinkit';
 import { setInternetCredentials } from 'react-native-keychain';
 import { useTranslation } from 'react-i18next';
 import { StackScreenProps } from '@react-navigation/stack';
-import { NodeApiContext } from '@/components/NodeApiGate';
-import { BACKUP_URL, ORANGE } from '@/utils/constants';
-import { DEVICE_LARGE, DEVICE_IOS } from '@/utils/deviceConstants';
+import { NodeApiContext } from 'src/components/NodeApiGate';
+import { BACKUP_URL, ORANGE } from 'src/utils/constants';
+import { DEVICE_LARGE, DEVICE_IOS } from 'src/utils/deviceConstants';
 import {
   DARK_ORANGE,
   LIGHT_GREY,
@@ -24,16 +24,16 @@ import {
   LIGHT_BLACK,
   GREEN,
   GREY,
-} from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
-import { useDispatch, useSelector } from '@/store';
-import { validatePass } from '@/utils/password';
+} from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
+import { useDispatch, useSelector } from 'src/store';
+import { validatePass } from 'src/utils/password';
 import {
   setBackupCompleted,
   setPassword,
   updateNotifications,
-} from '@/actions';
-import { backupAppData } from '@/components/Onboarding/RecoveryFlow/thunks/backupThunks';
+} from 'src/actions';
+import { backupAppData } from 'src/components/Onboarding/RecoveryFlow/thunks/backupThunks';
 
 const UploadAnimation = () => {
   const { t } = useTranslation();
@@ -105,7 +105,7 @@ const ChangePasswordModal = ({ navigation }: props) => {
 
   return (
     <View style={styles.container}>
-      <BlurView
+      <BlurWidget
         style={styles.blurView}
         blurType="dark"
         blurAmount={5}

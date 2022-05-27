@@ -6,7 +6,7 @@ import {
 } from 'react-redux';
 import { persistStore, persistReducer } from 'redux-persist';
 import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
-import reducers from '@/reducer';
+import reducers from 'src/reducer';
 import FsStorage from './storage/fsStorageAdapter';
 import KeychainStorage from './storage/keychainAdapter';
 import getStoredState from './getStoredState';

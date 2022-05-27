@@ -2,16 +2,16 @@ import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { useTranslation } from 'react-i18next';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
 import {
   DARKER_GREY,
   DARK_ORANGE,
   GREEN,
   LIGHT_GREY,
   WHITE,
-} from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
-import CirclePhoto from '@/components/Helpers/CirclePhoto';
+} from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
+import CirclePhoto from 'src/components/Helpers/CirclePhoto';
 
 type PendingConnectionCardProps = {
   pendingConnections: Array<PendingConnection>;

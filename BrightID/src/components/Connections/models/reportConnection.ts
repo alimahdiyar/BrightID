@@ -1,7 +1,7 @@
-import { addOperation, reportAndHideConnection } from '@/actions';
-import { backupUser } from '@/components/Onboarding/RecoveryFlow/thunks/backupThunks';
-import { connection_levels } from '@/utils/constants';
-import { NodeApi } from '@/api/brightId';
+import { addOperation, reportAndHideConnection } from 'src/actions';
+import { backupUser } from 'src/components/Onboarding/RecoveryFlow/thunks/backupThunks';
+import { connection_levels } from 'src/utils/constants';
+import { NodeApi } from 'src/api/brightId';
 
 export const reportConnection =
   ({ id, reason, api }: { id: string; reason: ReportReason; api: NodeApi }) =>

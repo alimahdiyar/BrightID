@@ -1,8 +1,8 @@
 import React from 'react';
 import { View, StyleSheet, Text } from 'react-native';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { GREEN, WHITE } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { GREEN, WHITE } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
 
 type TasksProgressProps = {
   totalSteps: number;

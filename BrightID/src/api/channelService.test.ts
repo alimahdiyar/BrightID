@@ -1,4 +1,4 @@
-import ChannelAPI from '@/api/channelService';
+import ChannelAPI from 'src/api/channelService';
 
 const generateRandomString = function (length = 6) {
   return Math.random().toString(20).substr(2, length);

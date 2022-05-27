@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { Alert, InteractionManager } from 'react-native';
 import { ApiResponse } from 'apisauce';
-import { RootState, useDispatch, useSelector } from '@/store';
+import { RootState, useDispatch, useSelector } from 'src/store';
 import {
   addNodeUrl,
   removeCurrentNodeUrl,
   selectAllNodeUrls,
   selectBaseUrl,
   setBaseUrl,
-} from '@/reducer/settingsSlice';
-import { NodeApi } from '@/api/brightId';
-import { pollOperations } from '@/utils/operations';
-import chooseNode from '@/utils/nodeChooser';
-import { NodeApiGateScreen } from '@/components/NodeApiGateScreen';
+} from 'src/reducer/settingsSlice';
+import { NodeApi } from 'src/api/brightId';
+import { pollOperations } from 'src/utils/operations';
+import chooseNode from 'src/utils/nodeChooser';
+import { NodeApiGateScreen } from 'src/components/NodeApiGateScreen';
 import { leaveAllChannels } from './PendingConnections/actions/channelThunks';
 
 type ApiContext = NodeApi | null;

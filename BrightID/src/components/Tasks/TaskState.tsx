@@ -1,8 +1,8 @@
 import React from 'react';
 import { TouchableOpacity } from 'react-native';
 import IonIcons from 'react-native-vector-icons/Ionicons';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { GREY, GREEN } from '@/theme/colors';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { GREY, GREEN } from 'src/theme/colors';
 
 type TaskStateProps = {
   complete: boolean;

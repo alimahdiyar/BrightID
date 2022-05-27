@@ -1,14 +1,14 @@
 import React from 'react';
 import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
-import { BlurView } from '@react-native-community/blur';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
+import BlurWidget from 'src/components/BlurWidget/BlurWidget.web';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
 import { Trans, useTranslation } from 'react-i18next';
-import { WHITE, BLUE, BLACK, DARKER_GREY, GREEN } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
-import Info from '@/components/Icons/Info';
+import { WHITE, BLUE, BLACK, DARKER_GREY, GREEN } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
+import Info from 'src/components/Icons/Info';
 import moment from 'moment';
 import { useSelector } from 'react-redux';
-import { RECOVERY_COOLDOWN_DURATION } from '@/utils/constants';
+import { RECOVERY_COOLDOWN_DURATION } from 'src/utils/constants';
 import { StackScreenProps } from '@react-navigation/stack';
 
 type props = StackScreenProps<ModalStackParamList, 'RecoveryCooldownInfo'>;
@@ -45,7 +45,7 @@ const RecoveryCooldownInfoModal = ({ route, navigation }: props) => {
   );
   return (
     <View style={styles.container} testID="RecoveryCooldownInfo">
-      <BlurView
+      <BlurWidget
         style={styles.blurView}
         blurType="dark"
         blurAmount={5}

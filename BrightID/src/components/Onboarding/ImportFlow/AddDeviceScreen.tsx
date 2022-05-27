@@ -10,18 +10,18 @@ import {
 } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { useNavigation } from '@react-navigation/native';
-import store, { useDispatch, useSelector } from '@/store';
-import { fontSize } from '@/theme/fonts';
-import { WHITE, BLACK, DARKER_GREY, ORANGE } from '@/theme/colors';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { addDevice, addOperation, selectOperationByHash } from '@/actions';
-import ChannelAPI from '@/api/channelService';
+import store, { useDispatch, useSelector } from 'src/store';
+import { fontSize } from 'src/theme/fonts';
+import { WHITE, BLACK, DARKER_GREY, ORANGE } from 'src/theme/colors';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { addDevice, addOperation, selectOperationByHash } from 'src/actions';
+import ChannelAPI from 'src/api/channelService';
 import { uploadAllInfoAfter } from './thunks/channelUploadThunks';
-import { NodeApiContext } from '@/components/NodeApiGate';
-import { operation_states } from '@/utils/constants';
-import { AddSigningKey } from '@/components/Onboarding/ImportFlow/AddSigningKey';
-import { UploadData } from '@/components/Onboarding/ImportFlow/UploadData';
-import { loadRecoveryData } from '@/utils/recovery';
+import { NodeApiContext } from 'src/components/NodeApiGate';
+import { operation_states } from 'src/utils/constants';
+import { AddSigningKey } from 'src/components/Onboarding/ImportFlow/AddSigningKey';
+import { UploadData } from 'src/components/Onboarding/ImportFlow/UploadData';
+import { loadRecoveryData } from 'src/utils/recovery';
 
 /**
  * Screen for adding a new device

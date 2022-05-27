@@ -3,8 +3,8 @@ import {
   createStackNavigator,
   StackNavigationOptions,
 } from '@react-navigation/stack';
-import RecoveringConnectionScreen from '@/components/Onboarding/RecoveryFlow/RecoveringConnectionScreen';
-import SearchConnections from '@/components/Helpers/SearchConnections';
+import RecoveringConnectionScreen from 'src/components/Onboarding/RecoveryFlow/RecoveringConnectionScreen';
+import SearchConnections from 'src/components/Helpers/SearchConnections';
 import i18next from 'i18next';
 import { headerOptions, AnimatedHeaderTitle } from './helpers';
 

@@ -9,14 +9,14 @@ import {
   View,
 } from 'react-native';
 import { useTranslation } from 'react-i18next';
-import { useDispatch, useSelector } from '@/store';
+import { useDispatch, useSelector } from 'src/store';
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
-import { fontSize } from '@/theme/fonts';
-import { WHITE, ORANGE } from '@/theme/colors';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { backupAppData } from '@/components/Onboarding/RecoveryFlow/thunks/backupThunks';
-import { setBackupCompleted } from '@/reducer/userSlice';
-import DetoxEnabled from '@/utils/Detox';
+import { fontSize } from 'src/theme/fonts';
+import { WHITE, ORANGE } from 'src/theme/colors';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { backupAppData } from 'src/components/Onboarding/RecoveryFlow/thunks/backupThunks';
+import { setBackupCompleted } from 'src/reducer/userSlice';
+import DetoxEnabled from 'src/utils/Detox';
 import { saveId } from './thunks';
 import Congratulations from '../../Icons/Congratulations';
 /* Onboarding Success Screen */
@@ -87,7 +87,7 @@ export const SuccessScreen = () => {
 
         <View style={styles.header}>
           <Image
-            source={require('@/static/brightid-final.png')}
+            source={require('src/static/brightid-final.png')}
             accessible={true}
             accessibilityLabel="Home Header Logo"
             resizeMode="contain"
@@ -98,7 +98,7 @@ export const SuccessScreen = () => {
           <View style={styles.imageContainer}>
             <View style={styles.phoneContainer}>
               <Image
-                source={require('@/static/brightid-phone.png')}
+                source={require('src/static/brightid-phone.png')}
                 accessible={true}
                 accessibilityLabel="Home Header Logo"
                 resizeMode="contain"

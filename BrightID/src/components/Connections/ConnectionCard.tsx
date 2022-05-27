@@ -22,23 +22,23 @@ import { useTranslation } from 'react-i18next';
 import Material from 'react-native-vector-icons/MaterialCommunityIcons';
 import { useActionSheet } from '@expo/react-native-action-sheet';
 import i18next from 'i18next';
-import { useDispatch, useSelector } from '@/store';
-import { connection_levels, CONNECTION_STALE_AGE } from '@/utils/constants';
-import { photoDirectory } from '@/utils/filesystem';
-import { staleConnection, deleteConnection, addOperation } from '@/actions';
-import { DEVICE_LARGE, WIDTH } from '@/utils/deviceConstants';
+import { useDispatch, useSelector } from 'src/store';
+import { connection_levels, CONNECTION_STALE_AGE } from 'src/utils/constants';
+import { photoDirectory } from 'src/utils/filesystem';
+import { staleConnection, deleteConnection, addOperation } from 'src/actions';
+import { DEVICE_LARGE, WIDTH } from 'src/utils/deviceConstants';
 import {
   WHITE,
   LIGHT_ORANGE,
   LIGHT_BLACK,
   DARK_ORANGE,
   RED,
-} from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
-import { ConnectionStatus } from '@/components/Helpers/ConnectionStatus';
-import { backupUser } from '@/components/Onboarding/RecoveryFlow/thunks/backupThunks';
-import { encryptAesKey } from '@/utils/invites';
-import { NodeApiContext } from '@/components/NodeApiGate';
+} from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
+import { ConnectionStatus } from 'src/components/Helpers/ConnectionStatus';
+import { backupUser } from 'src/components/Onboarding/RecoveryFlow/thunks/backupThunks';
+import { encryptAesKey } from 'src/utils/invites';
+import { NodeApiContext } from 'src/components/NodeApiGate';
 
 /**
  * Connection Card in the Connections Screen
@@ -185,7 +185,7 @@ const ConnectionCard = (props: Props) => {
       ? {
           uri: `file://${photoDirectory()}/${photo?.filename}`,
         }
-      : require('@/static/default_profile.jpg');
+      : require('src/static/default_profile.jpg');
 
   const handlePress = async (id: string) => {
     if (group) {

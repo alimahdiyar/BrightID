@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 // import { useTranslation } from 'react-i18next';
-import RecoveryCodeScreen from '@/components/Onboarding/RecoveryFlow/RecoveryCodeScreen';
-import RestoreScreen from '@/components/Onboarding/RecoveryFlow/RestoreScreen';
+import RecoveryCodeScreen from 'src/components/Onboarding/RecoveryFlow/RecoveryCodeScreen';
+import RestoreScreen from 'src/components/Onboarding/RecoveryFlow/RestoreScreen';
 
 const Stack = createStackNavigator();
 

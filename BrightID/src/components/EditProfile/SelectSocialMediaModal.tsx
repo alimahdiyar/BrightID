@@ -10,7 +10,7 @@ import {
   TextInputProps,
 } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
-import { BlurView } from '@react-native-community/blur';
+import BlurWidget from 'src/components/BlurWidget/BlurWidget.web';
 import { useTranslation } from 'react-i18next';
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
 import { StackScreenProps } from '@react-navigation/stack';
@@ -20,21 +20,21 @@ import {
   DEVICE_IOS,
   DEVICE_ANDROID,
   WIDTH,
-} from '@/utils/deviceConstants';
-import { DARK_ORANGE, DARKER_GREY, WHITE, BLACK, GREEN } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
-import { useDispatch, useSelector } from '@/store';
+} from 'src/utils/deviceConstants';
+import { DARK_ORANGE, DARKER_GREY, WHITE, BLACK, GREEN } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
+import { useDispatch, useSelector } from 'src/store';
 import {
   selectExistingSocialMediaIds,
   selectSocialMediaById,
 } from '../../reducer/socialMediaSlice';
-import { selectAllSocialMediaVariations } from '@/reducer/socialMediaVariationSlice';
+import { selectAllSocialMediaVariations } from 'src/reducer/socialMediaVariationSlice';
 import {
   SocialMediaShareType,
   SocialMediaVariationIds,
 } from './socialMediaVariations';
-import { isPhoneNumberValid, parsePhoneNumber } from '@/utils/phoneUtils';
-import { saveAndLinkSocialMedia } from '@/components/EditProfile/socialMediaThunks';
+import { isPhoneNumberValid, parsePhoneNumber } from 'src/utils/phoneUtils';
+import { saveAndLinkSocialMedia } from 'src/components/EditProfile/socialMediaThunks';
 
 /** Helper functions */
 
@@ -165,7 +165,7 @@ const SelectMediaModal = ({ route }: props) => {
 
   return (
     <View style={styles.container}>
-      <BlurView
+      <BlurWidget
         style={styles.blurView}
         blurType="dark"
         blurAmount={5}

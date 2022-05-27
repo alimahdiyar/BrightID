@@ -2,12 +2,12 @@ import CryptoJS from 'crypto-js';
 import { eqProps } from 'ramda';
 import nacl from 'tweetnacl';
 import { convertPublicKey, convertSecretKey } from 'ed2curve';
-import store from '@/store';
-import { b64ToUint8Array, randomKey, uInt8ArrayToB64 } from '@/utils/encoding';
-import { selectConnectionById } from '@/reducer/connectionsSlice';
+import store from 'src/store';
+import { b64ToUint8Array, randomKey, uInt8ArrayToB64 } from 'src/utils/encoding';
+import { selectConnectionById } from 'src/reducer/connectionsSlice';
 import { saveImage } from './filesystem';
 import { INVITE_ACTIVE } from './constants';
-import { NodeApi } from '@/api/brightId';
+import { NodeApi } from 'src/api/brightId';
 
 export const getInviteGroup = async (inviteInfo: InviteInfo, api: NodeApi) => {
   try {

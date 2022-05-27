@@ -4,15 +4,15 @@ import IonIcons from 'react-native-vector-icons/Ionicons';
 import moment from 'moment';
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
 import { useTranslation } from 'react-i18next';
-import { useDispatch } from '@/store';
-import { CONNECTION_STALE_AGE, ORANGE } from '@/utils/constants';
-import { photoDirectory } from '@/utils/filesystem';
-import { staleConnection } from '@/actions';
-import { DEVICE_LARGE, WIDTH } from '@/utils/deviceConstants';
-import { WHITE, LIGHT_ORANGE, DARK_ORANGE, RED, BLUE } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
-import Pencil from '@/components/Icons/Pencil';
-import { ConnectionStatus } from '@/components/Helpers/ConnectionStatus';
+import { useDispatch } from 'src/store';
+import { CONNECTION_STALE_AGE, ORANGE } from 'src/utils/constants';
+import { photoDirectory } from 'src/utils/filesystem';
+import { staleConnection } from 'src/actions';
+import { DEVICE_LARGE, WIDTH } from 'src/utils/deviceConstants';
+import { WHITE, LIGHT_ORANGE, DARK_ORANGE, RED, BLUE } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
+import Pencil from 'src/components/Icons/Pencil';
+import { ConnectionStatus } from 'src/components/Helpers/ConnectionStatus';
 
 /**
  * Connection Card in the Connections Screen
@@ -151,7 +151,7 @@ const RecoveryConnectionCard = (props: Props) => {
       ? {
           uri: `file://${photoDirectory()}/${photo?.filename}`,
         }
-      : require('@/static/default_profile.jpg');
+      : require('src/static/default_profile.jpg');
 
   const s1 = activeAfter
     ? `activates in ${moment.duration(activeAfter, 'milliseconds').humanize()}`

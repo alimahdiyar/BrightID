@@ -3,17 +3,17 @@ import { StyleSheet, View, StatusBar, FlatList } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import _ from 'lodash';
-import { useDispatch, useSelector, store } from '@/store';
-import FloatingActionButton from '@/components/Helpers/FloatingActionButton';
-import EmptyList from '@/components/Helpers/EmptyList';
-import { connectionsSelector } from '@/utils/connectionsSelector';
-import { ORANGE, WHITE } from '@/theme/colors';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { fontSize } from '@/theme/fonts';
-import { NodeApiContext } from '@/components/NodeApiGate';
-import { updateConnections } from '@/actions';
+import { useDispatch, useSelector, store } from 'src/store';
+import FloatingActionButton from 'src/components/Helpers/FloatingActionButton';
+import EmptyList from 'src/components/Helpers/EmptyList';
+import { connectionsSelector } from 'src/utils/connectionsSelector';
+import { ORANGE, WHITE } from 'src/theme/colors';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { fontSize } from 'src/theme/fonts';
+import { NodeApiContext } from 'src/components/NodeApiGate';
+import { updateConnections } from 'src/actions';
 import ConnectionCard from './ConnectionCard';
-import { MAX_DISPLAY_CONNECTIONS } from '@/utils/constants';
+import { MAX_DISPLAY_CONNECTIONS } from 'src/utils/constants';
 
 /**
  * Connection screen of BrightID

@@ -3,7 +3,7 @@ import { asyncCreateMigrate, MigrationManifest } from './asyncCreateMigrate';
 import {
   connection_levels,
   RECOVERY_COOLDOWN_EXEMPTION,
-} from '@/utils/constants';
+} from 'src/utils/constants';
 
 const findId = (conn: Connection) => conn.id;
 

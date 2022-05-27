@@ -1,5 +1,5 @@
 import CryptoJS from 'crypto-js';
-import store from '@/store';
+import store from 'src/store';
 
 export const getExplorerCode = () => {
   const {

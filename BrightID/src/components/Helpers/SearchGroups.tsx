@@ -1,5 +1,5 @@
 import React from 'react';
-import { setGroupSearch, setGroupSearchOpen } from '@/actions';
+import { setGroupSearch, setGroupSearchOpen } from 'src/actions';
 import AnimatedTopSearchBar from './AnimatedTopSearchBar';
 
 /**

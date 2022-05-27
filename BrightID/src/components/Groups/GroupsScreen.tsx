@@ -11,18 +11,18 @@ import {
 import { useTranslation } from 'react-i18next';
 import { useContext, useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
-import FloatingActionButton from '@/components/Helpers/FloatingActionButton';
-import { WHITE, ORANGE, BLACK } from '@/theme/colors';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { fontSize } from '@/theme/fonts';
-import { NodeApiContext } from '@/components/NodeApiGate';
+import FloatingActionButton from 'src/components/Helpers/FloatingActionButton';
+import { WHITE, ORANGE, BLACK } from 'src/theme/colors';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { fontSize } from 'src/theme/fonts';
+import { NodeApiContext } from 'src/components/NodeApiGate';
 import {
   allGroupsSelector,
   filteredGroupsSelector,
   updateGroup,
   updateMemberships,
-} from '@/actions';
-import { useDispatch, useSelector } from '@/store';
+} from 'src/actions';
+import { useDispatch, useSelector } from 'src/store';
 import { GroupCard } from './GroupCard';
 import { NoGroups } from './NoGroups';
 

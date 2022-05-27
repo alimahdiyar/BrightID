@@ -9,9 +9,9 @@ import {
 } from 'react-native';
 import { useTranslation, Trans } from 'react-i18next';
 import { useNavigation } from '@react-navigation/native';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { WHITE, BLUE, DARKER_GREY } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { WHITE, BLUE, DARKER_GREY } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
 
 const learnMoreUrl =
   'https://docs.google.com/document/d/1CEBWv4ImXsZYQ2Qll7BXojeKI9CGtzRXjB9aFIj00c4/edit#heading=h.nr1odgliy5nk';

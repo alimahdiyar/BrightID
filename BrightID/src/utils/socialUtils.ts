@@ -1,6 +1,6 @@
-import { SocialMediaVariationIds } from '@/components/EditProfile/socialMediaVariations';
-import { extractDigits, parsePhoneNumber } from '@/utils/phoneUtils';
-import { hashSocialProfile } from '@/utils/cryptoHelper';
+import { SocialMediaVariationIds } from 'src/components/EditProfile/socialMediaVariations';
+import { extractDigits, parsePhoneNumber } from 'src/utils/phoneUtils';
+import { hashSocialProfile } from 'src/utils/cryptoHelper';
 
 export function generateSocialProfileHashes(
   profile: string,

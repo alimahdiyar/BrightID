@@ -1,6 +1,6 @@
 import { Parser, Value } from 'expr-eval';
 import { Dictionary } from 'ramda';
-import { UserTasks } from '@/components/Tasks/UserTasks';
+import { UserTasks } from 'src/components/Tasks/UserTasks';
 
 export const isVerified = (
   verifications: Value | Dictionary<any>,

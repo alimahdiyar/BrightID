@@ -8,12 +8,12 @@ import {
   View,
 } from 'react-native';
 import { useTranslation } from 'react-i18next';
-import { useDispatch, useSelector } from '@/store';
+import { useDispatch, useSelector } from 'src/store';
 import { useNavigation } from '@react-navigation/native';
-import { fontSize } from '@/theme/fonts';
-import { WHITE, BLACK, DARKER_GREY, ORANGE } from '@/theme/colors';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { setName } from '@/actions';
+import { fontSize } from 'src/theme/fonts';
+import { WHITE, BLACK, DARKER_GREY, ORANGE } from 'src/theme/colors';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { setName } from 'src/actions';
 
 /* Description */
 

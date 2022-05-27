@@ -1,8 +1,8 @@
 import nacl from 'tweetnacl';
 import configureStore from 'redux-mock-store';
 import { getDefaultMiddleware } from '@reduxjs/toolkit';
-import ChannelAPI from '@/api/channelService';
-import { hash, uInt8ArrayToB64, b64ToUrlSafeB64 } from '@/utils/encoding';
+import ChannelAPI from 'src/api/channelService';
+import { hash, uInt8ArrayToB64, b64ToUrlSafeB64 } from 'src/utils/encoding';
 import { setupRecovery } from './recoveryThunks';
 import { createChannel, checkChannel } from './channelThunks';
 import { uploadSig } from './channelUploadThunks';

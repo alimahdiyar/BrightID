@@ -3,9 +3,9 @@ import {
   createStackNavigator,
   StackNavigationOptions,
 } from '@react-navigation/stack';
-import ConnectionsScreen from '@/components/Connections/ConnectionsScreen';
-import ConnectionScreenController from '@/components/Connections/ConnectionScreenController';
-import SearchConnections from '@/components/Helpers/SearchConnections';
+import ConnectionsScreen from 'src/components/Connections/ConnectionsScreen';
+import ConnectionScreenController from 'src/components/Connections/ConnectionScreenController';
+import SearchConnections from 'src/components/Helpers/SearchConnections';
 import i18next from 'i18next';
 import { headerOptions, AnimatedHeaderTitle, NavHome } from './helpers';
 

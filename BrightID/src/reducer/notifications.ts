@@ -6,8 +6,8 @@ import {
   SET_NOTIFICATION_TOKEN,
   REMOVE_ACTIVE_NOTIFICATION,
   RESET_STORE,
-} from '@/actions';
-import { CONNECTIONS_TYPE, GROUPS_TYPE, MISC_TYPE } from '@/utils/constants';
+} from 'src/actions';
+import { CONNECTIONS_TYPE, GROUPS_TYPE, MISC_TYPE } from 'src/utils/constants';
 
 const initialState = {
   activeNotification: null,

@@ -1,7 +1,7 @@
-import { b64ToUrlSafeB64 } from '@/utils/encoding';
-import { saveImage } from '@/utils/filesystem';
-import { addLinkedContext, upsertSig } from '@/reducer/appsSlice';
-import { decryptData } from '@/utils/cryptoHelper';
+import { b64ToUrlSafeB64 } from 'src/utils/encoding';
+import { saveImage } from 'src/utils/filesystem';
+import { addLinkedContext, upsertSig } from 'src/reducer/appsSlice';
+import { decryptData } from 'src/utils/cryptoHelper';
 import {
   setUploadCompletedBy,
   setRecoveryId,
@@ -13,9 +13,9 @@ import {
   setBackupCompleted,
   setPassword,
   setIsSponsoredv6,
-} from '@/reducer/userSlice';
-import ChannelAPI from '@/api/channelService';
-import { IMPORT_PREFIX } from '@/utils/constants';
+} from 'src/reducer/userSlice';
+import ChannelAPI from 'src/api/channelService';
+import { IMPORT_PREFIX } from 'src/utils/constants';
 
 export const downloadContextInfo =
   ({

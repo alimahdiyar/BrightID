@@ -8,25 +8,25 @@ import {
   selectAllChannelIds,
   channel_types,
   selectAllChannels,
-} from '@/components/PendingConnections/channelSlice';
-import { selectAllSocialMediaToShare } from '@/reducer/socialMediaSlice';
-import { retrieveImage } from '@/utils/filesystem';
-import { encryptData } from '@/utils/cryptoHelper';
-import { generateChannelData, createChannelInfo } from '@/utils/channels';
+} from 'src/components/PendingConnections/channelSlice';
+import { selectAllSocialMediaToShare } from 'src/reducer/socialMediaSlice';
+import { retrieveImage } from 'src/utils/filesystem';
+import { encryptData } from 'src/utils/cryptoHelper';
+import { generateChannelData, createChannelInfo } from 'src/utils/channels';
 import {
   CHANNEL_CONNECTION_LIMIT,
   MIN_CHANNEL_JOIN_TTL,
   PROFILE_POLL_INTERVAL,
   PROFILE_VERSION,
   CHANNEL_INFO_NAME,
-} from '@/utils/constants';
+} from 'src/utils/constants';
 import {
   newPendingConnection,
   selectAllPendingConnectionIds,
-} from '@/components/PendingConnections/pendingConnectionSlice';
-import { selectBaseUrl } from '@/reducer/settingsSlice';
-import { NodeApi } from '@/api/brightId';
-import { strToUint8Array, uInt8ArrayToB64 } from '@/utils/encoding';
+} from 'src/components/PendingConnections/pendingConnectionSlice';
+import { selectBaseUrl } from 'src/reducer/settingsSlice';
+import { NodeApi } from 'src/api/brightId';
+import { strToUint8Array, uInt8ArrayToB64 } from 'src/utils/encoding';
 
 export const createChannel =
   (channelType: ChannelType, api: NodeApi) =>

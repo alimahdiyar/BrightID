@@ -2,19 +2,19 @@ import {
   linkSocialMediaApp,
   saveAndLinkSocialMedia,
   syncSocialMedia,
-} from '@/components/EditProfile/socialMediaThunks';
-import { SOCIAL_API_AUTHENTICATION_ERROR } from '@/api/socialMediaService';
-import * as AppModule from '@/components/Apps/model';
-import * as SocialMediaSlice from '@/reducer/socialMediaSlice';
-import * as SocialMediaVariationSlice from '@/reducer/socialMediaVariationSlice';
-import * as SettingsSlice from '@/reducer/settingsSlice';
+} from 'src/components/EditProfile/socialMediaThunks';
+import { SOCIAL_API_AUTHENTICATION_ERROR } from 'src/api/socialMediaService';
+import * as AppModule from 'src/components/Apps/model';
+import * as SocialMediaSlice from 'src/reducer/socialMediaSlice';
+import * as SocialMediaVariationSlice from 'src/reducer/socialMediaVariationSlice';
+import * as SettingsSlice from 'src/reducer/settingsSlice';
 import {
   SocialMediaVariationIds,
   socialMediaVariations,
-} from '@/components/EditProfile/socialMediaVariations';
-import { CreateSocialMediaResponse } from '@/api/socialMediaService_types.d';
-import { BrightIdNetwork } from '@/components/Apps/types.d';
-import { saveSocialMedia } from '@/reducer/socialMediaSlice';
+} from 'src/components/EditProfile/socialMediaVariations';
+import { CreateSocialMediaResponse } from 'src/api/socialMediaService_types.d';
+import { BrightIdNetwork } from 'src/components/Apps/types.d';
+import { saveSocialMedia } from 'src/reducer/socialMediaSlice';
 import socialMediaService from '../../utils/socialMediaServiceProvider';
 
 const mockApp: AppInfo = {

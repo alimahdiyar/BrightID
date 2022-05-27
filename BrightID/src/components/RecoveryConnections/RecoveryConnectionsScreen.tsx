@@ -12,17 +12,17 @@ import { useTranslation } from 'react-i18next';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { useHeaderHeight } from '@react-navigation/stack';
 import { useFocusEffect } from '@react-navigation/native';
-import { selectPendingOperations } from '@/reducer/operationsSlice';
-import { selectAllConnections } from '@/reducer/connectionsSlice';
-import { useSelector } from '@/store';
+import { selectPendingOperations } from 'src/reducer/operationsSlice';
+import { selectAllConnections } from 'src/reducer/connectionsSlice';
+import { useSelector } from 'src/store';
 import {
   DEVICE_LARGE,
   DEVICE_IOS,
   DEVICE_ANDROID,
-} from '@/utils/deviceConstants';
-import { NodeApiContext } from '@/components/NodeApiGate';
-import { ORANGE, WHITE, BLUE, GREY } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
+} from 'src/utils/deviceConstants';
+import { NodeApiContext } from 'src/components/NodeApiGate';
+import { ORANGE, WHITE, BLUE, GREY } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
 
 // Import Components Local
 import RecoveryConnectionCard from './RecoverConnectionsCard';

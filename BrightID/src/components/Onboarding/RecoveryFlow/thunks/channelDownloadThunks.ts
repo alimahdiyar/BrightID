@@ -1,12 +1,12 @@
-import ChannelAPI from '@/api/channelService';
-import { saveImage } from '@/utils/filesystem';
-import { decryptData } from '@/utils/cryptoHelper';
-import { hash, b64ToUrlSafeB64 } from '@/utils/encoding';
-import { addConnection, upsertGroup, selectAllConnections } from '@/actions';
+import ChannelAPI from 'src/api/channelService';
+import { saveImage } from 'src/utils/filesystem';
+import { decryptData } from 'src/utils/cryptoHelper';
+import { hash, b64ToUrlSafeB64 } from 'src/utils/encoding';
+import { addConnection, upsertGroup, selectAllConnections } from 'src/actions';
 import {
   RecoveryError,
   RecoveryErrorType,
-} from '@/components/Onboarding/RecoveryFlow/RecoveryError';
+} from 'src/components/Onboarding/RecoveryFlow/RecoveryError';
 import {
   setSig,
   updateNamePhoto,

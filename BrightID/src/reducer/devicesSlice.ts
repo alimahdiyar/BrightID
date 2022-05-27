@@ -4,7 +4,7 @@ import {
   createEntityAdapter,
   createSelector,
 } from '@reduxjs/toolkit';
-import { RESET_STORE } from '@/actions/resetStore';
+import { RESET_STORE } from 'src/actions/resetStore';
 
 const devicesAdapter = createEntityAdapter<Device>({
   selectId: (device) => device.signingKey,

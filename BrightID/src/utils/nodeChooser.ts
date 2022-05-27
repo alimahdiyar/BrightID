@@ -1,7 +1,7 @@
 // Shim Promise.any() which is not yet available in react native
 import any from 'promise.any';
 import { satisfies } from 'compare-versions';
-import { NODE_CHOOSER_TIMEOUT_MS, requiredSemVer } from '@/utils/constants';
+import { NODE_CHOOSER_TIMEOUT_MS, requiredSemVer } from 'src/utils/constants';
 
 any.shim();
 

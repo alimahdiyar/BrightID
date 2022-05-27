@@ -1,8 +1,8 @@
-import { SocialMediaService } from '@/api/socialMediaService';
+import { SocialMediaService } from 'src/api/socialMediaService';
 import {
   SocialMediaQueryRequest,
   SocialMediaQueryResponse,
-} from '@/api/socialMediaService_types';
+} from 'src/api/socialMediaService_types';
 
 const socialMediaService = new SocialMediaService();
 

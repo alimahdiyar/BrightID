@@ -6,11 +6,11 @@ import { useNavigation } from '@react-navigation/native';
 import {
   connectionLevelColors,
   connectionLevelStrings,
-} from '@/utils/connectionLevelStrings';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { BLUE, BLACK } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
-import { connection_levels } from '@/utils/constants';
+} from 'src/utils/connectionLevelStrings';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { BLUE, BLACK } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
+import { connection_levels } from 'src/utils/constants';
 
 type Props = {
   level: ConnectionLevel;

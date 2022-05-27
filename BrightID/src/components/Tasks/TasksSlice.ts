@@ -1,5 +1,5 @@
-import { setActiveNotification } from '@/actions';
-import { MISC_TYPE } from '@/utils/constants';
+import { setActiveNotification } from 'src/actions';
+import { MISC_TYPE } from 'src/utils/constants';
 import { createSlice, createSelector } from '@reduxjs/toolkit';
 import i18next from 'i18next';
 import { UserTasks } from './UserTasks';

@@ -1,23 +1,23 @@
 import React, { useContext, useState } from 'react';
 import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
 import i18next from 'i18next';
-import { BlurView } from '@react-native-community/blur';
 import Material from 'react-native-vector-icons/MaterialCommunityIcons';
 import { useTranslation } from 'react-i18next';
 import { StackScreenProps } from '@react-navigation/stack';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { useDispatch } from '@/store';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { useDispatch } from 'src/store';
 import {
   connection_levels,
   report_reasons,
   report_sources,
-} from '@/utils/constants';
-import { ORANGE, WHITE, BLUE, BLACK, DARKER_GREY, GREEN } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
-import { setReportReason } from '@/reducer/connectionsSlice';
-import { NodeApiContext } from '@/components/NodeApiGate';
-import { setConnectionLevel } from '@/actions';
+} from 'src/utils/constants';
+import { ORANGE, WHITE, BLUE, BLACK, DARKER_GREY, GREEN } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
+import { setReportReason } from 'src/reducer/connectionsSlice';
+import { NodeApiContext } from 'src/components/NodeApiGate';
+import { setConnectionLevel } from 'src/actions';
 import { reportConnection } from './models/reportConnection';
+import BlurWidget from 'src/components/BlurWidget/BlurWidget.web';
 
 const reasons = {
   [report_sources.RECONNECT]: [
@@ -172,13 +172,14 @@ const ReportReasonModal = ({ route, navigation }: props) => {
   const submitDisabled = reporting && !reason;
   return (
     <View style={styles.container} testID="ReportReasonModal">
-      <BlurView
-        style={styles.blurView}
+
+      <BlurWidget
+        style={[styles.container]}
         blurType="dark"
         blurAmount={5}
         reducedTransparencyFallbackColor={BLACK}
       />
-      <View style={styles.modalContainer}>
+        <View style={styles.modalContainer}>
         <View style={styles.header}>
           <Text style={styles.headerText}>
             {reporting ? reportConnectionText : unReportConnectionText}

@@ -11,9 +11,9 @@ import {
 } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import _ from 'lodash';
-import { useDispatch, useSelector } from '@/store';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { fontSize } from '@/theme/fonts';
+import { useDispatch, useSelector } from 'src/store';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { fontSize } from 'src/theme/fonts';
 import {
   WHITE,
   DARKER_GREY,
@@ -21,14 +21,14 @@ import {
   BLUE,
   ORANGE,
   YELLOW,
-} from '@/theme/colors';
+} from 'src/theme/colors';
 import {
   updateLinkedContext,
   selectLinkedContext,
   createSelectLinkedSigsForApp,
-} from '@/actions';
+} from 'src/actions';
 
-import { isVerified } from '@/utils/verifications';
+import { isVerified } from 'src/utils/verifications';
 import Check from '../Icons/Check';
 
 /**

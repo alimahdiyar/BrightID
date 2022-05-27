@@ -19,26 +19,26 @@ import Spinner from 'react-native-spinkit';
 import Material from 'react-native-vector-icons/MaterialCommunityIcons';
 import i18next from 'i18next';
 import { BarCodeReadEvent } from 'react-native-camera';
-import { useDispatch, useSelector } from '@/store';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { ORANGE, WHITE, LIGHT_BLACK, GREY } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
+import { useDispatch, useSelector } from 'src/store';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { ORANGE, WHITE, LIGHT_BLACK, GREY } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
 import {
   channel_types,
   closeChannel,
-} from '@/components/PendingConnections/channelSlice';
-import { selectAllUnconfirmedConnectionsByChannelIds } from '@/components/PendingConnections/pendingConnectionSlice';
-import { parseChannelQrURL } from '@/utils/channels';
-import { joinChannel } from '@/components/PendingConnections/actions/channelThunks';
-import { setActiveNotification } from '@/actions';
-import { hash } from '@/utils/encoding';
-import { qrCodeURL_types } from '@/utils/constants';
-import { NodeApiContext } from '@/components/NodeApiGate';
+} from 'src/components/PendingConnections/channelSlice';
+import { selectAllUnconfirmedConnectionsByChannelIds } from 'src/components/PendingConnections/pendingConnectionSlice';
+import { parseChannelQrURL } from 'src/utils/channels';
+import { joinChannel } from 'src/components/PendingConnections/actions/channelThunks';
+import { setActiveNotification } from 'src/actions';
+import { hash } from 'src/utils/encoding';
+import { qrCodeURL_types } from 'src/utils/constants';
+import { NodeApiContext } from 'src/components/NodeApiGate';
 import { RNCamera } from './RNCameraProvider';
 import {
   setRecoveryAesKey,
   setRecoveryChannel,
-} from '@/components/Onboarding/RecoveryFlow/recoveryDataSlice';
+} from 'src/components/Onboarding/RecoveryFlow/recoveryDataSlice';
 
 /**
  * Returns whether the string is a valid QR identifier

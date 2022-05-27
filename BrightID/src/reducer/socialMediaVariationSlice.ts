@@ -7,7 +7,7 @@ import {
 import {
   SocialMediaType,
   socialMediaVariations,
-} from '@/components/EditProfile/socialMediaVariations';
+} from 'src/components/EditProfile/socialMediaVariations';
 
 const socialMediaVariationAdapter = createEntityAdapter<SocialMediaVariation>();
 const emptyInitialState = socialMediaVariationAdapter.getInitialState();

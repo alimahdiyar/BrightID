@@ -5,7 +5,7 @@ import {
   SocialMediaQueryRequest,
   SocialMediaQueryResponse,
   UpdateSocialMediaRequest,
-} from '@/api/socialMediaService_types.d';
+} from 'src/api/socialMediaService_types.d';
 
 export const socialMediaUrl = 'https://finder.brightid.org/api';
 

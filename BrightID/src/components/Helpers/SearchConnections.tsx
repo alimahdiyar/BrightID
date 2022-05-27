@@ -1,5 +1,5 @@
 import React from 'react';
-import { setConnectionsSearch, setConnectionsSearchOpen } from '@/actions';
+import { setConnectionsSearch, setConnectionsSearchOpen } from 'src/actions';
 import { useNavigation } from '@react-navigation/native';
 import AnimatedTopSearchBar from './AnimatedTopSearchBar';
 

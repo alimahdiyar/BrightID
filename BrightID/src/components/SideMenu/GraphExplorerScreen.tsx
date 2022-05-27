@@ -9,12 +9,12 @@ import {
 } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import Clipboard from '@react-native-community/clipboard';
-import { DEVICE_LARGE, DEVICE_IOS } from '@/utils/deviceConstants';
-import { BLUE, BLACK, WHITE } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
+import { DEVICE_LARGE, DEVICE_IOS } from 'src/utils/deviceConstants';
+import { BLUE, BLACK, WHITE } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
 import { useHeaderHeight } from '@react-navigation/stack';
 import { useIsDrawerOpen } from '@react-navigation/drawer';
-import { getExplorerCode } from '@/utils/explorer';
+import { getExplorerCode } from 'src/utils/explorer';
 import Material from 'react-native-vector-icons/MaterialCommunityIcons';
 
 export const GraphExplorerScreen = function () {

@@ -17,42 +17,42 @@ import { useHeaderHeight } from '@react-navigation/stack';
 import { useActionSheet } from '@expo/react-native-action-sheet';
 import { useTranslation } from 'react-i18next';
 import Material from 'react-native-vector-icons/MaterialCommunityIcons';
-import { useDispatch, useSelector } from '@/store';
+import { useDispatch, useSelector } from 'src/store';
 import {
   fetchApps,
   setActiveNotification,
   updateBlindSigs,
   selectActiveDevices,
-} from '@/actions';
-import { linkedContextTotal } from '@/reducer/appsSlice';
-import { verifiedConnectionsSelector } from '@/reducer/connectionsSlice';
-import { retrieveImage } from '@/utils/filesystem';
-import { WHITE, ORANGE, BLACK, BLUE, DARKER_GREY } from '@/theme/colors';
-import fetchUserInfo from '@/actions/fetchUserInfo';
-import ChatBox from '@/components/Icons/ChatBox';
-import UnverifiedSticker from '@/components/Icons/UnverifiedSticker';
-import Camera from '@/components/Icons/Camera';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { fontSize } from '@/theme/fonts';
-import { setHeaderHeight } from '@/reducer/walkthroughSlice';
+} from 'src/actions';
+import { linkedContextTotal } from 'src/reducer/appsSlice';
+import { verifiedConnectionsSelector } from 'src/reducer/connectionsSlice';
+import { retrieveImage } from 'src/utils/filesystem';
+import { WHITE, ORANGE, BLACK, BLUE, DARKER_GREY } from 'src/theme/colors';
+import fetchUserInfo from 'src/actions/fetchUserInfo';
+import ChatBox from 'src/components/Icons/ChatBox';
+import UnverifiedSticker from 'src/components/Icons/UnverifiedSticker';
+import Camera from 'src/components/Icons/Camera';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { fontSize } from 'src/theme/fonts';
+import { setHeaderHeight } from 'src/reducer/walkthroughSlice';
 import {
   selectBaseUrl,
   selectIsPrimaryDevice,
   removeCurrentNodeUrl,
-} from '@/reducer/settingsSlice';
-import { NodeApiContext } from '@/components/NodeApiGate';
-import { getVerificationPatches } from '@/utils/verifications';
+} from 'src/reducer/settingsSlice';
+import { NodeApiContext } from 'src/components/NodeApiGate';
+import { getVerificationPatches } from 'src/utils/verifications';
 import {
   selectTaskIds,
   selectCompletedTaskIds,
-} from '@/components/Tasks/TasksSlice';
+} from 'src/components/Tasks/TasksSlice';
 
-import { version as app_version } from '../../package.json';
-import { uInt8ArrayToB64 } from '@/utils/encoding';
+import { uInt8ArrayToB64 } from 'src/utils/encoding';
 import {
   syncAndLinkSocialMedias,
   updateSocialMediaVariations,
-} from '@/components/EditProfile/socialMediaThunks';
+} from 'src/components/EditProfile/socialMediaThunks';
+import PackageJson from '../../package.json';
 
 /**
  * Home screen of BrightID
@@ -152,7 +152,7 @@ export const HomeScreen = (props) => {
 
   const handleChat = () => {
     if (__DEV__) {
-      const { delStorage } = require('@/utils/dev');
+      const { delStorage } = require('src/utils/dev');
       delStorage();
     } else {
       showActionSheetWithOptions(
@@ -430,7 +430,7 @@ export const HomeScreen = (props) => {
           >
             <Text style={styles.nodeLink}>
               {baseUrl ? baseUrl.split('://')[1] : 'disconnected'} - v{' '}
-              {app_version}
+              {PackageJson.version}
             </Text>
           </TouchableOpacity>
         </View>

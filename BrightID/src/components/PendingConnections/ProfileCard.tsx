@@ -7,10 +7,10 @@ import {
   View,
 } from 'react-native';
 import { useTranslation } from 'react-i18next';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { BLACK, RED } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
-import { photoDirectory } from '@/utils/filesystem';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { BLACK, RED } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
+import { photoDirectory } from 'src/utils/filesystem';
 
 /*
 Displays profile photo and name

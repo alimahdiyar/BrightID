@@ -12,17 +12,17 @@ import { useTranslation } from 'react-i18next';
 import Spinner from 'react-native-spinkit';
 import IonIcons from 'react-native-vector-icons/Ionicons';
 import { isEqual } from 'lodash';
-import { ApiGateState } from '@/components/NodeApiGate';
-import { BLACK, LIGHT_BLACK, ORANGE, RED, WHITE } from '@/theme/colors';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { fontSize } from '@/theme/fonts';
-import { NODE_CHOOSER_TIMEOUT_MS } from '@/utils/constants';
+import { ApiGateState } from 'src/components/NodeApiGate';
+import { BLACK, LIGHT_BLACK, ORANGE, RED, WHITE } from 'src/theme/colors';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { fontSize } from 'src/theme/fonts';
+import { NODE_CHOOSER_TIMEOUT_MS } from 'src/utils/constants';
 import {
   resetNodeUrls,
   selectAllNodeUrls,
   selectDefaultNodeUrls,
-} from '@/reducer/settingsSlice';
-import { useDispatch, useSelector } from '@/store';
+} from 'src/reducer/settingsSlice';
+import { useDispatch, useSelector } from 'src/store';
 
 const calculateSecondsLeft = (startTimestamp: number) => {
   const endTime = startTimestamp + NODE_CHOOSER_TIMEOUT_MS;
@@ -131,7 +131,7 @@ export const NodeApiGateScreen = ({
 
         <View style={styles.header}>
           <Image
-            source={require('@/static/brightid-final.png')}
+            source={require('src/static/brightid-final.png')}
             accessible={true}
             accessibilityLabel="Home Header Logo"
             resizeMode="contain"

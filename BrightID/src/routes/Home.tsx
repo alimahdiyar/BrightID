@@ -5,26 +5,26 @@ import {
   Image,
   TouchableOpacity,
 } from 'react-native';
-import { useSelector } from '@/store';
-import { INVITE_ACTIVE } from '@/utils/constants';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { BLACK } from '@/theme/colors';
+import { useSelector } from 'src/store';
+import { INVITE_ACTIVE } from 'src/utils/constants';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { BLACK } from 'src/theme/colors';
 import { createSelector } from '@reduxjs/toolkit';
 import {
   createStackNavigator,
   StackNavigationOptions,
 } from '@react-navigation/stack';
-import Bell from '@/components/Icons/NotificationBell';
-import Menu from '@/components/Icons/Menu';
+import Bell from 'src/components/Icons/NotificationBell';
+import Menu from 'src/components/Icons/Menu';
 import {
   pendingConnection_states,
   selectAllPendingConnections,
-} from '@/components/PendingConnections/pendingConnectionSlice';
+} from 'src/components/PendingConnections/pendingConnectionSlice';
 import {
   toggleDrawer,
   resetHome,
   resetNotifications,
-} from '@/NavigationService';
+} from 'src/NavigationService';
 import { HomeDrawer } from './HomeDrawer';
 
 /** SELECTORS */
@@ -84,7 +84,7 @@ const BrightIdLogo = () => {
       testID="BrightIdLogo"
     >
       <Image
-        source={require('@/static/brightid-final.png')}
+        source={require('src/static/brightid-final.png')}
         accessible={true}
         accessibilityLabel="Home Header Logo"
         resizeMode="contain"

@@ -1,6 +1,6 @@
 import React from 'react';
 import Svg, { Path, Rect } from 'react-native-svg';
-import { DARKER_GREY } from '@/theme/colors';
+import { DARKER_GREY } from 'src/theme/colors';
 
 type Props = {
   color?: string;

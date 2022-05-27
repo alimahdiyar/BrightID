@@ -1,5 +1,5 @@
 import i18next from 'i18next';
-import { YELLOW, RED, DARK_GREEN } from '@/theme/colors';
+import { YELLOW, RED, DARK_GREEN } from 'src/theme/colors';
 import { connection_levels } from './constants';
 
 export const connectionLevelStrings = {

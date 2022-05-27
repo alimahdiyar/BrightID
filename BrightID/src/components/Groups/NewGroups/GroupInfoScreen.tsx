@@ -13,7 +13,7 @@ import { useTranslation } from 'react-i18next';
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 import { useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
-import { chooseImage } from '@/utils/images';
+import { chooseImage } from 'src/utils/images';
 import {
   ORANGE,
   GREY,
@@ -22,9 +22,9 @@ import {
   DARK_GREY,
   BLACK,
   BLUE,
-} from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
-import { DEVICE_TYPE, DEVICE_OS, DEVICE_LARGE } from '@/utils/deviceConstants';
+} from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
+import { DEVICE_TYPE, DEVICE_OS, DEVICE_LARGE } from 'src/utils/deviceConstants';
 
 const Container = DEVICE_OS === 'ios' ? KeyboardAvoidingView : View;
 

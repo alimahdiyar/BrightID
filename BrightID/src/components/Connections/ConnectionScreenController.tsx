@@ -11,21 +11,21 @@ import {
   useRoute,
   RouteProp,
 } from '@react-navigation/native';
-import { useDispatch, useSelector } from '@/store';
-import ConnectionTestButton from '@/utils/connectionTestButton';
-import { getVerificationPatches } from '@/utils/verifications';
+import { useDispatch, useSelector } from 'src/store';
+import ConnectionTestButton from 'src/utils/connectionTestButton';
+import { getVerificationPatches } from 'src/utils/verifications';
 import {
   selectConnectionById,
   selectAllConnections,
   setConnectionVerifications,
-} from '@/reducer/connectionsSlice';
-import { NodeApiContext } from '@/components/NodeApiGate';
+} from 'src/reducer/connectionsSlice';
+import { NodeApiContext } from 'src/components/NodeApiGate';
 import ConnectionScreen from './ConnectionScreen';
-import stringSimilarity from '@/utils/stringSimilarity';
+import stringSimilarity from 'src/utils/stringSimilarity';
 import {
   MAX_CONNECTIONS_DUPLICATE_SEARCH,
   POSSIBLE_DUPLICATE_STRING_SIMILARITY_RATE,
-} from '@/utils/constants';
+} from 'src/utils/constants';
 
 type ConnectionRoute = RouteProp<
   { Connection: { connectionId: string } },

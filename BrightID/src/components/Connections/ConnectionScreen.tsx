@@ -19,10 +19,10 @@ import { useTranslation } from 'react-i18next';
 import moment from 'moment';
 import { SvgXml } from 'react-native-svg';
 import Clipboard from '@react-native-community/clipboard';
-import UnverifiedSticker from '@/components/Icons/UnverifiedSticker';
-import GroupAvatar from '@/components/Icons/GroupAvatar';
-import { photoDirectory } from '@/utils/filesystem';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
+import UnverifiedSticker from 'src/components/Icons/UnverifiedSticker';
+import GroupAvatar from 'src/components/Icons/GroupAvatar';
+import { photoDirectory } from 'src/utils/filesystem';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
 import {
   ORANGE,
   BLUE,
@@ -32,17 +32,17 @@ import {
   DARK_BLUE,
   LIGHT_GREY,
   DARK_GREEN,
-} from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
-import { connection_levels, report_sources } from '@/utils/constants';
+} from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
+import { connection_levels, report_sources } from 'src/utils/constants';
 import Chevron from '../Icons/Chevron';
 import TrustLevelView from './TrustLevelView';
-import { useSelector } from '@/store';
+import { useSelector } from 'src/store';
 import {
   SocialMediaShareActionType,
   SocialMediaType,
-} from '@/components/EditProfile/socialMediaVariations';
-import { selectAllSocialMediaVariationsByType } from '@/reducer/socialMediaVariationSlice';
+} from 'src/components/EditProfile/socialMediaVariations';
+import { selectAllSocialMediaVariationsByType } from 'src/reducer/socialMediaVariationSlice';
 
 /**
  Connection details screen
@@ -452,7 +452,7 @@ function ConnectionScreen(props: Props) {
   const renderRecoveryPhoto = (item) => {
     const source = item?.photo?.filename
       ? { uri: `file://${photoDirectory()}/${item.photo.filename}` }
-      : require('@/static/default_profile.jpg');
+      : require('src/static/default_profile.jpg');
     return (
       <Image
         source={source}

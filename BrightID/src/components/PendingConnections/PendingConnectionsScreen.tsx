@@ -19,12 +19,12 @@ import Spinner from 'react-native-spinkit';
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
 import ViewPager from '@react-native-community/viewpager';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { useDispatch, useSelector } from '@/store';
-import { selectAllUnconfirmedConnections } from '@/components/PendingConnections/pendingConnectionSlice';
-import { DEVICE_LARGE, DEVICE_ANDROID } from '@/utils/deviceConstants';
-import { WHITE, GREY, DARK_GREY, BLACK, ORANGE } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
-import { setActiveNotification } from '@/actions';
+import { useDispatch, useSelector } from 'src/store';
+import { selectAllUnconfirmedConnections } from 'src/components/PendingConnections/pendingConnectionSlice';
+import { DEVICE_LARGE, DEVICE_ANDROID } from 'src/utils/deviceConstants';
+import { WHITE, GREY, DARK_GREY, BLACK, ORANGE } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
+import { setActiveNotification } from 'src/actions';
 import { PreviewConnectionController } from './PreviewConnectionController';
 import BackArrow from '../Icons/BackArrow';
 

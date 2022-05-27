@@ -1,17 +1,17 @@
-import { store } from '@/store';
-import { b64ToUrlSafeB64 } from '@/utils/encoding';
-import { encryptData } from '@/utils/cryptoHelper';
-import { retrieveImage } from '@/utils/filesystem';
-import { selectAllConnections } from '@/reducer/connectionsSlice';
-import { selectAllLinkedContexts, selectAllSigs } from '@/reducer/appsSlice';
-import ChannelAPI from '@/api/channelService';
+import { store } from 'src/store';
+import { b64ToUrlSafeB64 } from 'src/utils/encoding';
+import { encryptData } from 'src/utils/cryptoHelper';
+import { retrieveImage } from 'src/utils/filesystem';
+import { selectAllConnections } from 'src/reducer/connectionsSlice';
+import { selectAllLinkedContexts, selectAllSigs } from 'src/reducer/appsSlice';
+import ChannelAPI from 'src/api/channelService';
 import {
   uploadBlindSig,
   uploadConnection,
   uploadContextInfo,
   uploadGroup,
-} from '@/utils/channels';
-import { IMPORT_PREFIX, RECOVERY_CHANNEL_TTL } from '@/utils/constants';
+} from 'src/utils/channels';
+import { IMPORT_PREFIX, RECOVERY_CHANNEL_TTL } from 'src/utils/constants';
 
 export const uploadAllInfoAfter = async (after) => {
   const {

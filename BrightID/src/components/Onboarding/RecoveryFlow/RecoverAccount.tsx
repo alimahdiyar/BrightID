@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { AccountSteps } from '@/components/Onboarding/RecoveryFlow/RestoreScreen';
-import { fontSize } from '@/theme/fonts';
-import { BLACK, DARKER_GREY, GREEN, ORANGE, RED } from '@/theme/colors';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
+import { AccountSteps } from 'src/components/Onboarding/RecoveryFlow/RestoreScreen';
+import { fontSize } from 'src/theme/fonts';
+import { BLACK, DARKER_GREY, GREEN, ORANGE, RED } from 'src/theme/colors';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
 import Spinner from 'react-native-spinkit';
 import IonIcons from 'react-native-vector-icons/Ionicons';
 import { useTranslation } from 'react-i18next';

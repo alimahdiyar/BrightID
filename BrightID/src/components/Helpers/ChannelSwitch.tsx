@@ -6,8 +6,8 @@ import {
   Easing,
 } from 'react-native';
 import Material from 'react-native-vector-icons/MaterialCommunityIcons';
-import { DARK_GREY, ORANGE, WHITE } from '@/theme/colors';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
+import { DARK_GREY, ORANGE, WHITE } from 'src/theme/colors';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
 
 const X_TRANSFORM = DEVICE_LARGE ? 45 : 40;
 const ANIMATION_DURATION = 150;

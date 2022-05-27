@@ -2,9 +2,9 @@ import i18next from 'i18next';
 import {
   connectionTotal,
   recoveryConnectionsSelector,
-} from '@/reducer/connectionsSlice';
-import { MIN_RECOVERY_CONNECTIONS } from '@/utils/constants';
-import { linkedContextTotal } from '@/reducer/appsSlice';
+} from 'src/reducer/connectionsSlice';
+import { MIN_RECOVERY_CONNECTIONS } from 'src/utils/constants';
+import { linkedContextTotal } from 'src/reducer/appsSlice';
 
 export const UserTasks = {
   make_first_connection: {

@@ -1,7 +1,7 @@
 import { createSelector } from '@reduxjs/toolkit';
-import { selectAllConnections } from '@/reducer/connectionsSlice';
-import { toSearchString } from '@/utils/strings';
-import { sortConnectionsBy } from '@/utils/sorting';
+import { selectAllConnections } from 'src/reducer/connectionsSlice';
+import { toSearchString } from 'src/utils/strings';
+import { sortConnectionsBy } from 'src/utils/sorting';
 
 const searchParamSelector = (state: State) => state.connections.searchParam;
 const connSortSelector = (state: State) => state.connections.connectionsSort;

@@ -13,28 +13,28 @@ import {
 // Redux
 import { createSelector } from '@reduxjs/toolkit';
 import { useTranslation } from 'react-i18next';
-import { useDispatch, useSelector } from '@/store';
+import { useDispatch, useSelector } from 'src/store';
 import {
   selectAllConnections,
   recoveryConnectionsSelector,
   firstRecoveryTimeSelector,
-} from '@/reducer/connectionsSlice';
+} from 'src/reducer/connectionsSlice';
 import {
   addOperation,
   setConnectionLevel,
   setConnectionsSearch,
   setConnectionsSearchOpen,
   setFirstRecoveryTime,
-} from '@/actions';
+} from 'src/actions';
 
-import { toSearchString } from '@/utils/strings';
-import { ORANGE, WHITE, GREY } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
+import { toSearchString } from 'src/utils/strings';
+import { ORANGE, WHITE, GREY } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
 import {
   connection_levels,
   RECOVERY_COOLDOWN_EXEMPTION,
-} from '@/utils/constants';
-import { DEVICE_LARGE, DEVICE_ANDROID } from '@/utils/deviceConstants';
+} from 'src/utils/constants';
+import { DEVICE_LARGE, DEVICE_ANDROID } from 'src/utils/deviceConstants';
 import { NodeApiContext } from '../NodeApiGate';
 // Import Components Local
 import RecoveryConnectionCard from './RecoverConnectionsCard';

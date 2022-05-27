@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Image, StyleSheet, View } from 'react-native';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { LIGHT_GREY } from '@/theme/colors';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { LIGHT_GREY } from 'src/theme/colors';
 
 const CirclePhoto = ({ circlePhotos }) => {
   console.log(circlePhotos);

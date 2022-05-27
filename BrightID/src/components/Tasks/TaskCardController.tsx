@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDispatch, useSelector } from '@/store';
+import { useDispatch, useSelector } from 'src/store';
 import TaskCard from './TaskCard';
 import { UserTasks } from './UserTasks';
 import { resetTask } from './TasksSlice';

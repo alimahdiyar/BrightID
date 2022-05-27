@@ -15,33 +15,33 @@ import { useHeaderHeight } from '@react-navigation/stack';
 import { useTranslation } from 'react-i18next';
 import codePush from 'react-native-code-push';
 import { SvgXml } from 'react-native-svg';
-import { useDispatch, useSelector } from '@/store';
+import { useDispatch, useSelector } from 'src/store';
 import {
   setEditProfileMenuLayout,
   setEditProfileTextLayout,
-} from '@/reducer/walkthroughSlice';
-import HomeScreen from '@/components/HomeScreen';
-import { BLACK, ORANGE, WHITE, GREY } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
-import { DEVICE_LARGE, DEVICE_IOS } from '@/utils/deviceConstants';
-import { retrieveImage, photoDirectory } from '@/utils/filesystem';
-import Home from '@/components/Icons/Home';
-import Pencil from '@/components/Icons/Pencil';
-import RecoveryAccount from '@/components/Icons/RecoveryAccount';
-import List from '@/components/Icons/List';
-import GraphQl from '@/components/Icons/GraphQl';
-import Faq from '@/components/Icons/Faq';
-import Mail from '@/components/Icons/Mail';
-import FindFriendsScreen from '@/components/FindFriends/FindFriendsScreen';
-import Devices from '@/components/Icons/Devices';
-import TasksScreen from '@/components/Tasks/TasksScreen';
-import BituVerificationScreen from '@/components/Tasks/BituVerificationScreen';
-import GraphExplorerScreen from '@/components/SideMenu/GraphExplorerScreen';
-import ContactUsScreen from '@/components/SideMenu/ContactUsScreen';
-import EditProfileScreen from '@/components/EditProfile/EditProfileScreen';
-import RecoveryConnectionsScreen from '@/components/RecoveryConnections/RecoveryConnectionsScreen';
-import GroupsDrawerIcon from '@/static/groups_drawer.svg';
-import FindFriendsIcon from '@/static/findfriends_drawer.svg';
+} from 'src/reducer/walkthroughSlice';
+import HomeScreen from 'src/components/HomeScreen';
+import { BLACK, ORANGE, WHITE, GREY } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
+import { DEVICE_LARGE, DEVICE_IOS } from 'src/utils/deviceConstants';
+import { retrieveImage, photoDirectory } from 'src/utils/filesystem';
+import Home from 'src/components/Icons/Home';
+import Pencil from 'src/components/Icons/Pencil';
+import RecoveryAccount from 'src/components/Icons/RecoveryAccount';
+import List from 'src/components/Icons/List';
+import GraphQl from 'src/components/Icons/GraphQl';
+import Faq from 'src/components/Icons/Faq';
+import Mail from 'src/components/Icons/Mail';
+import FindFriendsScreen from 'src/components/FindFriends/FindFriendsScreen';
+import Devices from 'src/components/Icons/Devices';
+import TasksScreen from 'src/components/Tasks/TasksScreen';
+import BituVerificationScreen from 'src/components/Tasks/BituVerificationScreen';
+import GraphExplorerScreen from 'src/components/SideMenu/GraphExplorerScreen';
+import ContactUsScreen from 'src/components/SideMenu/ContactUsScreen';
+import EditProfileScreen from 'src/components/EditProfile/EditProfileScreen';
+import RecoveryConnectionsScreen from 'src/components/RecoveryConnections/RecoveryConnectionsScreen';
+import GroupsDrawerIcon from 'src/static/groups_drawer.svg';
+import FindFriendsIcon from 'src/static/findfriends_drawer.svg';
 
 const CustomItem = ({
   onPress,
@@ -465,7 +465,7 @@ export const HomeDrawer = () => {
       {__DEV__ && (
         <Drawer.Screen
           name="SampleIconPage"
-          component={require('@/components/Icons/SamplePage').default}
+          component={require('src/components/Icons/SamplePage').default}
         />
       )}
     </Drawer.Navigator>

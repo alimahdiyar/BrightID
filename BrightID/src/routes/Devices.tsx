@@ -3,9 +3,9 @@ import {
   createStackNavigator,
   StackNavigationOptions,
 } from '@react-navigation/stack';
-import AddDeviceScreen from '@/components/Onboarding/ImportFlow/AddDeviceScreen';
-import DevicesScreen from '@/components/Onboarding/ImportFlow/DevicesScreen';
-import RecoveryCodeScreen from '@/components/Onboarding/RecoveryFlow/RecoveryCodeScreen';
+import AddDeviceScreen from 'src/components/Onboarding/ImportFlow/AddDeviceScreen';
+import DevicesScreen from 'src/components/Onboarding/ImportFlow/DevicesScreen';
+import RecoveryCodeScreen from 'src/components/Onboarding/RecoveryFlow/RecoveryCodeScreen';
 import { headerOptions, NavHome } from './helpers';
 
 const Stack = createStackNavigator();

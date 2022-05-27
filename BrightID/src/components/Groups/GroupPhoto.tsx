@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { Image, StyleSheet, View } from 'react-native';
-import { photoDirectory } from '@/utils/filesystem';
-import { groupCirclePhotos } from '@/utils/groups';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { LIGHT_GREY } from '@/theme/colors';
+import { photoDirectory } from 'src/utils/filesystem';
+import { groupCirclePhotos } from 'src/utils/groups';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { LIGHT_GREY } from 'src/theme/colors';
 
 type GroupPhotoProps = {
   group: Group;
@@ -29,7 +29,7 @@ export const GroupPhoto = ({ group }: GroupPhotoProps) => {
             uri: `file://${photoDirectory()}/${item.photo?.filename}`,
           };
         } else {
-          item.source = require('@/static/default_profile.jpg');
+          item.source = require('src/static/default_profile.jpg');
         }
         return item;
       },

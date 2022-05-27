@@ -9,13 +9,13 @@ import Spinner from 'react-native-spinkit';
 import Material from 'react-native-vector-icons/MaterialCommunityIcons';
 import { useTranslation } from 'react-i18next';
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
-import { useDispatch, useSelector } from '@/store';
-import { BLACK, DARKER_GREY, LIGHT_BLACK, ORANGE, WHITE } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
+import { useDispatch, useSelector } from 'src/store';
+import { BLACK, DARKER_GREY, LIGHT_BLACK, ORANGE, WHITE } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
 import { RecoveryErrorType } from './RecoveryError';
 import { setupRecovery } from './thunks/recoveryThunks';
-import { buildRecoveryChannelQrUrl } from '@/utils/recovery';
+import { buildRecoveryChannelQrUrl } from 'src/utils/recovery';
 import {
   clearChannel,
   createChannel,

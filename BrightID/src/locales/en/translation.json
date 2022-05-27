@@ -1,0 +1,803 @@
+{
+  "achievements": {
+    "bituVerification": {
+      "description": "More details",
+      "title": "Bitu verification"
+    },
+    "getSponsored": {
+      "description": "Get sponsored by linking with an app that offers sponsorship",
+      "title": "Get sponsored"
+    },
+    "joinMeet": {
+      "description": "Join a BrightID meet",
+      "title": "BrightID meet"
+    },
+    "linkApp": {
+      "description": "Link your BrightID with an app",
+      "title": "Link with an app"
+    },
+    "makeFirstConnection": {
+      "description": "Connect with another BrightID user",
+      "title": "First connection"
+    },
+    "makeThreeConnection": {
+      "description": "Connect with 3 BrightID user",
+      "title": "Three connections"
+    },
+    "makeTwoConnection": {
+      "description": "Connect with 2 BrightID user",
+      "title": "Two connections"
+    },
+    "notification": {
+      "message": "You completed the task \"{{title}}\".",
+      "title": "Achievement unlocked!"
+    },
+    "progress": {
+      "title": "Completion:"
+    },
+    "setupBackup": {
+      "description": "Set password to enable encrypted backup of your data",
+      "title": "Set backup password"
+    },
+    "setupRecoveryConnections": {
+      "description": "Setup your recovery connections to enable social account recovery",
+      "title": "Setup social recovery"
+    }
+  },
+  "addSigningKey": {
+    "header": {
+      "text": "Add device info"
+    },
+    "info": "Allowing the new device to use your BrightID",
+    "steps": {
+      "adding": "Adding signing key...",
+      "complete": "Signing key added",
+      "downloading": "Downloading new device data...",
+      "error": "Adding signing key failed"
+    }
+  },
+  "apps": {
+    "alert": {
+      "button": {
+        "visitWebsite": "Sure"
+      },
+      "text": {
+        "blindSigAlreadyLinked": "You are already linked with {{app}} with id {{appUserId}}",
+        "blindSigAlreadyLinkedDifferent": "You are trying to link with {{app}} using {{appUserId}}. You are already linked with {{app}} with different id {{previousAppUserIds}}. This may lead to problems using the app.",
+        "duplicateAppUserId": "The id {{appUserId}} is used by another user to get sponsored before.",
+        "checkWebsite": "To find out more about {{name}}, check out their website!",
+        "invalidApp": "{{app}} is not a valid app!",
+        "invalidContext": "{{context}} is not a valid context!",
+        "linkApp": "Do you want to link your account in {{context}} to your BrightID?",
+        "linkFailure": "Failed to link your account in {{context}} to your BrightID\n{{result}}",
+        "linkSigFailed": "Error linking verification {{verification}} to app {{appId}}. Error message: {{msg}}",
+        "linkSuccess": "Succesfully linked your account in {{context}} to your BrightID",
+        "missingBlindSig": "No blind sig found for app {{appId}}. Verifications missing: {{missingVerifications}}. Verifications already linked: {{linkedVerifications}}",
+        "notPrimary": "You are currently using a secondary device. Linking app \"{{app}}\" requires interaction with your primary device. Please sync with your primary device or perform the linking with your primary device."
+      },
+      "title": {
+        "invalidApp": "Failed",
+        "invalidContext": "Failed",
+        "linkApp": "Link App?",
+        "linkFailure": "Failed",
+        "linkingFailed": "App linking failed",
+        "linkSuccess": "Success",
+        "notPrimary": "Linking not possible"
+      }
+    },
+    "text": {
+      "noApps": "No Apps",
+      "notSponsored": "You're not sponsored.\nPlease find an app below to sponsor you.",
+      "pendingLink": "Linking your account in {{context}} to your BrightID…",
+      "sponsoring": "{{app}} is sponsoring you…"
+    }
+  },
+  "channel": {
+    "alert": {
+      "text": {
+        "localOutdated": "client version outdated - please update your client and retry",
+        "otherOutdated": "other client version outdated - QRCode creator needs to update client and retry"
+      }
+    }
+  },
+  "common": {
+    "accessibilityLabel": {
+      "addPhoto": "add photo",
+      "editPhoto": "edit photo",
+      "profilePhoto": "profile photo",
+      "userPhoto": "user photo"
+    },
+    "actionSheet": {
+      "cancel": "cancel",
+      "title": "What do you want to do?"
+    },
+    "alert": {
+      "cancel": "Cancel",
+      "dismiss": "Dismiss",
+      "error": "Error",
+      "info": "Info",
+      "no": "No",
+      "ok": "OK",
+      "success": "Success",
+      "sure": "Sure",
+      "text": {
+        "commonError": "Sorry, We Couldn't Complete Your Request. Please Try Again in a Moment.",
+        "failedOp": "{{name}} failed!\n{{message}}",
+        "invalidSigningKey": "Your signing key is not valid. This might be because:\n- You recovered your BrightID on another device.\n- You removed this device from your active devices list.\n- You had a failed recovery.\n- The node that you are connected to has a problem.",
+        "lostKeys": "Please create a new BrightID or try recovering your previous BrightID",
+        "passwordMatch": "Password and confirm password does not match.",
+        "passwordShort": "Your password must be at least 8 characters long.",
+        "recoverySigned": "One of your recovery connections signed your request"
+      },
+      "title": {
+        "invalidSigningKey": "Invalid Signing Key",
+        "lostKeys": "We've lost the BrightID keypair from the device",
+        "pleaseConfirm": "Please Confirm"
+      },
+      "yes": "Yes"
+    },
+    "button": {
+      "cancel": "Cancel",
+      "copy": "Copy",
+      "retry": "Retry",
+      "save": "Save"
+    },
+    "camera": {
+      "cancel": "Cancel",
+      "message": "We need your permission to use your camera",
+      "ok": "Ok",
+      "title": "Permission to use camera"
+    },
+    "photoActionSheet": {
+      "choosePhoto": "Choose From Library",
+      "takePhoto": "Take Photo",
+      "title": "Select photo"
+    },
+    "placeholder": {
+      "searchConnections": "Search Connections"
+    },
+    "tag": {
+      "connectionDate": "Connected {{date}}",
+      "reported": "(reported)",
+      "reportedByUser": "reported by you",
+      "reportReason": " as {{reportReason}}"
+    },
+    "text": {
+      "noConnection": "Couldn't connect to server",
+      "uploadingData": "Uploading encrypted data to backup server…"
+    }
+  },
+  "connectionDetails": {
+    "button": {
+      "levelSave": "Save",
+      "ok": "OK",
+      "report": "Remove this connection",
+      "reportCancel": "Cancel",
+      "reportSubmit": "Submit",
+      "undoReport": "Undo Report"
+    },
+    "header": {
+      "connectionDetails": "Connection details"
+    },
+    "label": {
+      "connectionLevel": "Connection Level",
+      "mutualConnections": "Mutual Connections",
+      "mutualGroups": "Mutual Groups",
+      "possibleDuplicates": "Possible Duplicates",
+      "recoveryConnections": "Recovery Connections",
+      "socialMedia": "Social Media"
+    },
+    "tags": {
+      "connectedAt": "Connected {{date}}",
+      "loading": "Loading…"
+    },
+    "text": {
+      "copied": "Copied to clipboard!",
+      "level": "How well do you know {{name}}?",
+      "levelAlreadyKnown": "I already know this person",
+      "levelJustMet": "This person is a stranger I just met",
+      "levelRecovery": "I trust this person to recover my BrightID for me",
+      "levelSuspicious": "I don't know this person at all",
+      "removeConnection": "Disconnect from {{name}}",
+      "reportConnection": "Report {{name}}",
+      "reportDuplicate": "This connection is a duplicate",
+      "reportReplaced": "This connection is old and replaced by another account",
+      "reportSuspicious": "This account belonged to a different person before",
+      "reportOther": "Other reason",
+      "reportSpammer": "This person spammed me with an unwanted connection request",
+      "unkownRecoveryConnection": "Unknown",
+      "unReportConnection": "Restore connection",
+      "unReportImpact": "You have already reported {{name}} as a {{reportReason}}. Would you like to remove this flag and restore your connection?",
+      "whyreport": "Please tell us why you are suspicious of this connection",
+      "whyremove": "Please tell us why you want to remove this connection"
+    }
+  },
+  "connections": {
+    "accessibilityLabel": {
+      "connectionPhoto": "Connection Photo",
+      "viewConnectionDetails": "View Connection details",
+      "viewPhoto": "View Photo Full Screen"
+    },
+    "button": {
+      "reconnect": "Reconnect",
+      "reportConnection": "Report connection",
+      "updateConnection": "Update connection"
+    },
+    "header": {
+      "connections": "Connections"
+    },
+    "label": {
+      "currentConnectionLevel": "Connection level",
+      "newProfile": "New Profile",
+      "oldProfile": "Old Profile"
+    },
+    "removeActionSheet": {
+      "info": "Are you sure you want to remove connection with {{name}}? You can reconnect anytime.",
+      "remove": "Remove",
+      "title": "Remove connection"
+    },
+    "tag": {
+      "deleted": "Deleted",
+      "failed": "Connection failed.\nPlease try again.",
+      "lastConnected": "Last connected {{date}}",
+      "reported": "Reported",
+      "reportedAs": "Reported as {{flag}}",
+      "waiting": "Waiting"
+    },
+    "text": {
+      "alreadyConnectedWith": "You already connected with {{name}}",
+      "noConnections": "No connections"
+    }
+  },
+  "contact": {
+    "label": {
+      "email": "Email",
+      "meet": "Make Connections",
+      "socialMedia": "Social Media",
+      "website": "Website"
+    },
+    "text": {
+      "meet": "Join a BrightID meet!",
+      "openSource": "open source!",
+      "weAre": "We are "
+    },
+    "title": {
+      "contactUs": "Contact Us"
+    }
+  },
+  "createGroup": {
+    "alert": {
+      "text": {
+        "nameMissing": "Please add a name for group",
+        "nameTooShort": "The group name must be at least 2 characters"
+      },
+      "title": {
+        "createFailed": "Group creation unsuccessful",
+        "formIncomplete": "Group Form Incomplete"
+      }
+    },
+    "button": {
+      "createGroup": "Create Group",
+      "next": "Next",
+      "skip": "Skip & do it later"
+    },
+    "label": {
+      "invitees": "INVITEES"
+    },
+    "placeholder": {
+      "groupName": "What is the group name?"
+    },
+    "text": {
+      "invitees": "Invite group members",
+      "noConnections": "No connections"
+    }
+  },
+  "devices": {
+    "alert": {
+      "bothPrimary": "Both devices configured as primary devices. You can only have a single primary device. Configure one of the devices as secondary to be able to sync them.",
+      "confirmAdd": "Are you sure that you want to export your BrightID into another device?",
+      "confirmRemove": "Are you sure that you want to remove your BrightID from \"{{name}}\"?",
+      "confirmSync": "Are you sure that you want to share and sync your BrightID data with this device?",
+      "noPrimary": "Your devices can only be synced by the primary device."
+    },
+    "button": {
+      "submit": "Submit"
+    },
+    "placeholder": {
+      "deviceName": "Device Name"
+    },
+    "text": {
+      "listDescription": "Your BrightID is available on following devices:",
+      "syncCompleted": "Your device synced successfully.",
+      "waitSyncing": "Syncing devices, please wait ...",
+      "whatsDeviceName": "Please choose a name for the new device"
+    }
+  },
+  "drawer": {
+    "alert": {
+      "text": {
+        "upToDate": "BrightID is up to date."
+      },
+      "title": {
+        "upToDate": "Check for Update"
+      }
+    },
+    "label": {
+      "achievements": "Achievements",
+      "checkForUpdates": "Check for Updates",
+      "contactUs": "Contact Us",
+      "copyExplorerCode": "Copy Explorer Code",
+      "devices": "Devices",
+      "editProfile": "Edit Profile",
+      "findFriends": "Find Friends",
+      "groups": "Groups",
+      "home": "Home"
+    }
+  },
+  "eula": {
+    "header": {
+      "title": "License Agreement"
+    }
+  },
+  "findFriends": {
+    "text": {
+      "invitationNotAvailable": "Sorry, sending invitation is currently unavailable for this app.",
+      "noFriends": "No friends"
+    }
+  },
+  "graphExplorer": {
+    "alert": {
+      "text": {
+        "copied": "Copied to clipboard!"
+      }
+    },
+    "button": {
+      "copyCode": "Copy Code"
+    },
+    "text": {
+      "backupRequired": "Setting up backup and recovery is required to access your graph explorer code. Check your notifications or connect to more users to be eligible for backup and recovery.",
+      "explorerWebsiteDescription": "is a website designed to explore the entire BrightID social graph. Use the code above to see your connections in the graph."
+    }
+  },
+  "groups": {
+    "accessibilityLabel": {
+      "groupsLogo": "groups logo"
+    },
+    "alert": {
+      "text": {
+        "addAdmin": "Are you sure you want to make {{name}} an admin for this group?",
+        "dismissMember": "Are you sure you want to dismiss {{name}} from this group?",
+        "groupIdCopied": "Group ID copied to clipboard",
+        "inviteSuccess": "You invited {{name}} successfully to the group",
+        "leaveGroup": "Are you sure you want to leave this group?"
+      },
+      "title": {
+        "addAdmin": "Add admin",
+        "dismissMember": "Dismiss Member",
+        "errorDismissMember": "Error dismissing member from the group",
+        "errorLeaveGroup": "Error leaving group",
+        "inviteSuccess": "Successful Invitation",
+        "leaveGroup": "Leave Group"
+      }
+    },
+    "button": {
+      "createGroup": "Create Group",
+      "learnMore": "Learn More"
+    },
+    "groupActionSheet": {
+      "cancel": "Cancel",
+      "copyGroupId": "Copy group ID to clipboard",
+      "inviteUser": "Invite user",
+      "leaveGroup": "Leave group"
+    },
+    "header": {
+      "groups": "Groups",
+      "inviteList": "Invite List",
+      "newGroup": "New Group"
+    },
+    "label": {
+      "knownMembers": "Known members:",
+      "unknownMembers": "Unknown:"
+    },
+    "memberActionSheet": {
+      "addAdmin": "Add Admin",
+      "cancel": "Cancel",
+      "dismissMember": "Dismiss from group"
+    },
+    "state": {
+      "creatingGroup": "creating the group",
+      "uploadingGroupPhoto": "uploading group photo"
+    },
+    "tag": {
+      "primaryGroup": "Primary Group"
+    },
+    "text": {
+      "noGroups": "<text>Get verified faster</text><text>by creating and</text><text>joining groups</text>",
+      "noGroupsMatchSearch": "No group matches your search",
+      "noMembers": "No known members, invite some…"
+    }
+  },
+  "home": {
+    "accessibilityLabel": {
+      "connect": "connect"
+    },
+    "button": {
+      "achievements": "Achievements",
+      "apps": "Apps",
+      "connections": "Connections",
+      "myCode": "My Code",
+      "scanCode": "Scan a Code"
+    },
+    "chatActionSheet": {
+      "discord": "BrightID Discord",
+      "title": "Like to chat with us?"
+    },
+    "label": {
+      "createNewConnection": "Create a New Connection"
+    },
+    "link": {
+      "community": "Join the Community"
+    }
+  },
+  "import": {
+    "alert": {
+      "text": "Open this link with the BrightID app that should be imported.",
+      "title": "Import BrightID link"
+    },
+    "clipboardmessage": "Export your BrightID to another device: {{link}}",
+    "header": {
+      "title": "Import Account"
+    },
+    "text": {
+      "additionalInfo": "This QR code should be scanned using your other device to import your BrightID into this one",
+      "askScanning": "Please scan this QR code using your other device",
+      "waitImporting": "Importing connections, please wait ..."
+    }
+  },
+  "nodeApiGate": {
+    "reset": {
+      "button": "Restore default nodelist",
+      "text": "You are not using the default nodelist"
+    },
+    "state": {
+      "connecting": "Connecting to BrightID node...",
+      "noConnection": "Failed to connect to a BrightID node. Please check your network connectivity.",
+      "noNode": "Nodelist is empty."
+    },
+    "timer": {
+      "text": "Time remaining: {{secondsLeft}} seconds"
+    }
+  },
+  "nodeModal": {
+    "currentNode": {
+      "header": "Current node:"
+    },
+    "switchNodeButtonLabel": "Switch to another node"
+  },
+  "notificationBar": {
+    "text": {
+      "backupPassword": "Set a password to enable encrypted backup of your data",
+      "pendingConnections": "You have {{count}} pending connection",
+      "pendingConnections_plural": "You have {{count}} pending connections",
+      "socialRecovery": "Choose recovery connections to enable social recovery of your BrightID"
+    },
+    "title": {
+      "backupPassword": "Set Backup Password",
+      "pendingConnection": "Confirm Connections",
+      "socialRecovery": "Setup Social Recovery"
+    }
+  },
+  "notifications": {
+    "alert": {
+      "text": {
+        "failureAcceptGroupInvite": "Failed to join the group",
+        "rejectGroupInvite": "Are you sure you want to reject joining this group?",
+        "successGroupInvite": "You joined {{groupName}}"
+      },
+      "title": {
+        "failureRejectGroupInvite": "Failed to reject the invite",
+        "rejectGroupInvite": "Reject"
+      }
+    },
+    "item": {
+      "msg": {
+        "backupBrightId": "Set a password to enable encrypted backup of your data",
+        "socialRecovery": "Choose recovery connections to enable social recovery of your BrightID"
+      },
+      "text": {
+        "pendingConnections": "You have {{count}} unconfirmed connection",
+        "pendingConnections_plural": "You have {{count}} unconfirmed connections",
+        "pendingGroupInvite": "{{name}} invited you to join"
+      },
+      "title": {
+        "backupBrightId": "Set Backup Password",
+        "socialRecovery": "Setup Social Recovery"
+      }
+    },
+    "tab": {
+      "connections": "connections",
+      "groups": "groups",
+      "miscellaneous": "miscellaneous"
+    },
+    "text": {
+      "noGroupInvites": "You have no group invites..",
+      "noMiscellaneous": "Nothing to see here…",
+      "noPendingConnections": "You have no pending connections.."
+    }
+  },
+  "onboarding": {
+    "button": {
+      "create": "Create My BrightID",
+      "import": "Import",
+      "recover": "Recover"
+    },
+    "text": {
+      "congratulations": "Congratulations!\nYour BrightID has been created.\nIt’s time to make connections.",
+      "register": "Register to create your very own\ndigital identity"
+    }
+  },
+  "pendingConnection": {
+    "alert": {
+      "text": {
+        "errorCreateChannel": "Could not create connection channel. Error message: {{message}}",
+        "errorJoinChannel": "Could not join connection channel. Error message: {{message}}",
+        "localOutdated": "Can't connect with {{name}} due to incompatible client version. Please update and restart your brightID app.",
+        "otherOutdated": "Can't connect with {{name}} due to incompatible client version. Please ask {{name}} to update and restart the brightID app."
+      },
+      "title": {
+        "connectionImpossible": "Connection not possible"
+      }
+    },
+    "text": {
+      "alreadyRated": "You already rated this connection",
+      "errorExpired": "The connection expired. Please try to reconnect.",
+      "errorMyself": "You can not connect to yourself.",
+      "errorUnhandled": "Unhandled connection state"
+    }
+  },
+  "pendingConnections": {
+    "label": {
+      "alreadyKnown": "Already known",
+      "connections": "Connections",
+      "created": "Joined BrightID {{date}}",
+      "groups": "Groups",
+      "justMet": "Just met",
+      "mutualConnections": "Mutual Connections",
+      "rating": "How well do you know this connection?",
+      "recovery": "Recovery",
+      "reported": "Reported",
+      "suspicious": "Suspicious"
+    },
+    "text": {
+      "errorGeneric": "Error while connecting. Please try to reconnect.",
+      "rating": "Your answer will help us prevent attacks"
+    },
+    "title": {
+      "confirmationTotal": "{{confirmed}} / {{total}} confirmed"
+    }
+  },
+  "profile": {
+    "alert": {
+      "button": {
+        "discard": "Discard",
+        "dontLeave": "Don't leave"
+      },
+      "text": {
+        "discardChanges": "You have unsaved changes. Are you sure you want to discard them and leave the screen?",
+        "invalidPhoneNumber": "Enter a valid phone number",
+        "passwordMatch": "Current password does not match."
+      },
+      "title": {
+        "discardChanges": "Discard changes?",
+        "passwordMatch": "Please try again"
+      }
+    },
+    "button": {
+      "socialNext": "Next",
+      "socialPrevious": "Prev"
+    },
+    "label": {
+      "contactInfo": "Contact Info",
+      "currentPassword": "Current password",
+      "name": "Name",
+      "newPassword": "New password",
+      "newPasswordAgain": "Repeat password",
+      "password": "Password",
+      "socialMediaLink": "Social Media Link"
+    },
+    "placeholder": {
+      "name": "Enter Name",
+      "newPassword": "New password",
+      "newPasswordAgain": "Repeat password",
+      "password": "Password"
+    },
+    "text": {
+      "backupPasswordTitle": "Backup password",
+      "changePassword": "Change Password",
+      "changeProfilePicture": "Change Profile Picture",
+      "setPassword": "Set password",
+      "viewPassword": "View Password"
+    }
+  },
+  "qrcode": {
+    "alert": {
+      "connectGroup": "Make a group connection with {{name}} on BrightID: {{link}}",
+      "connectSingle": "Connect with {{name}} on BrightID: {{link}}",
+      "text": {
+        "codeGroup": "This QR code is designed for many people to connect simultaneously.",
+        "codeSingle": "This QR code can be used to connect with a single user before it expires.",
+        "codeStar": "This QR code is designed to connect many people with one person.",
+        "shareLinkGroup": "Share this link",
+        "shareLinkSingle": "Share this link with one friend",
+        "universalLink": "Universal Link"
+      },
+      "title": {
+        "codeGroup": "Group code",
+        "codeSingle": "Single-use code",
+        "codeStar": "Star code"
+      }
+    },
+    "button": {
+      "copyLink": "Copy Link",
+      "scanCode": "Scan a Code",
+      "showCode": "Show your QR code"
+    },
+    "header": {
+      "connections": "{{count}} / 30 Connections",
+      "connections_plural": "{{count}} / 30 Connections"
+    },
+    "label": {
+      "connectionType": "Connection Type:"
+    },
+    "text": {
+      "canAlso": "Or you can also…",
+      "codeGroup": "Group code",
+      "codeSingle": "Single-use code",
+      "codeStar": "Star code",
+      "confirmConnections": "Confirm Connections",
+      "downloadingConnectionData": "Downloading Connection Data",
+      "expiresIn": "Expires in:",
+      "pendingConnections": "You have {{count}} pending connection",
+      "pendingConnections_plural": "You have {{count}} pending connections",
+      "scanCode": "<text>Hey {{name}}, scan a code and</text><text>make a new connection today</text>"
+    }
+  },
+  "recovery": {
+    "alert": {
+      "text": "Share this link with your recovery connections.",
+      "title": "Recovery link"
+    },
+    "clipboardmessage": "Help me recover my BrightID: {{link}}",
+    "error": {
+      "mismatchId": "Your recovery connections selected different accounts",
+      "title": "Account recovery failed",
+      "unknown": "An unknown error occured"
+    },
+    "header": {
+      "text": "Part 1: Recover account"
+    },
+    "info": "This step will recover your BrightID on this device. Names and photos of connections in common with your recovery connections will be restored.",
+    "state": "Recovered {{recoveredConnections}} connections, {{recoveredGroups}} groups",
+    "steps": {
+      "complete": "Account recovery complete",
+      "downloading": "Downloading data from recovery connections…",
+      "error": "Account recovery failed",
+      "recovering": "Recovering account ..."
+    },
+    "text": {
+      "additionalInfo": "Your recovery connections will need to scan this to help you recover your BrightID",
+      "askScanning": "Please show this QR code to your recovery connections",
+      "signatures": "{{count}} / 2 signatures",
+      "signatures_plural": ""
+    }
+  },
+  "recoveryConnections": {
+    "text": {
+      "add": "Add",
+      "addMoreRecovery": "Add more recovery connections +",
+      "addRecoveryConnections": "Add Recovery Connections",
+      "chooseThreeConnections": "Choose three or more already known connection to backup your BrightID",
+      "completed": "Recovery connections have been successfully added",
+      "connectionsAlreadyKnown": "Connections must be \"already known\" before they can be setup as recovery.",
+      "currentRecoveryConnections": "Your Current Recovery Connections",
+      "emptyList": "Please add recovery connections to enable social recovery",
+      "pleaseMakeSomeConnections": "Please make some connections :)",
+      "threeMore": "You need {{amount}} more already known connections to enable social recovery"
+    }
+  },
+  "recoveryCooldownModal": {
+    "dismissButtonLabel": "Got it",
+    "text": {
+      "cooldownGeneric": "Note that change of recovery connections takes effect after a cooldown period of up to <period>{{ cooldownPeriod }}</period> for security reasons."
+    },
+    "title": "Cooldown period for recovery connections"
+  },
+  "restore": {
+    "alert": {
+      "text": {
+        "requestRecovering": "Your request to help recovering this account submitted successfully!",
+        "restoreConfirm": "Is {{name}} the account you are helping to recover?",
+        "restoreSuccess": "Your account recovered successfully!"
+      }
+    },
+    "emptyList": {
+      "text": {
+        "nobodyHasChosen": "Unable to recover connection...\nThey did not set you as recovery"
+      }
+    },
+    "header": {
+      "accountRecovery": "Account Recovery",
+      "text": "Part 2: Restore backup (optional)"
+    },
+    "info": "With your backup password you can restore names and photos of all your connections and groups.",
+    "password": {
+      "placeholder": "Type your password",
+      "skip": "Skip",
+      "submit": "Restore"
+    },
+    "steps": {
+      "complete": "Restore complete",
+      "error": "Restore failed. Wrong password?",
+      "restoring": "Restoring data…",
+      "restoringProgress": "Restoring item {{currentItem}} of {{totalItems}}",
+      "skipped": "Restore skipped",
+      "waitingAccount": "Waiting for account recovery",
+      "waitingPassword": "Enter password or skip"
+    },
+    "text": {
+      "chooseConnectionToHelp": "Please select the connection whose account you are helping to recover."
+    }
+  },
+  "signup": {
+    "button": {
+      "skip": "Skip & do it later",
+      "submit": "Submit"
+    },
+    "header": {
+      "title": "Sign Up"
+    },
+    "placeholder": {
+      "confirmPassword": "confirm your password",
+      "name": "Your name",
+      "password": "password"
+    },
+    "text": {
+      "createPassword": "Create your BrightID password",
+      "nameNotShared": "Your name will never be shared with apps or\nstored on our blockchain.",
+      "passwordInfo": "This password will encrypt the names and photos of your connections should you need to recover them. It does not allow someone to take over your BrightID.",
+      "photoNotShared": "Your photo will never be shared with apps or\nstored on our blockchain.",
+      "pleaseAddPhoto": "Please add a photo",
+      "whatsYouName": "What do your friends know you by?"
+    }
+  },
+  "sync": {
+    "alert": {
+      "text": "Open this link with the BrightID app that should be synced.",
+      "title": "Sync user data"
+    },
+    "clipboardmessage": "Sync your BrightID data with another device: {{link}}",
+    "text": {
+      "additionalInfo": "This QR code should be scanned using your other device to sync data between them",
+      "askScanning": "Please scan this QR code using your other device"
+    }
+  },
+  "uploadData": {
+    "header": {
+      "text": "Upload user data"
+    },
+    "info": "Uploading user data (connections, linked apps, ...) to the new device",
+    "steps": {
+      "complete": "Upload complete.",
+      "downloading": "Uploading user data...",
+      "error": "Upload data failed",
+      "waiting": "Waiting for Signing keys..."
+    }
+  },
+  "walkthroughs": {
+    "text": {
+      "gotIt": "Got it!",
+      "setPassword": "You can always set your\nBrightID password in here",
+      "viewPassword": "You can always see your\nBrightID password in here"
+    }
+  }
+}

@@ -7,25 +7,25 @@ import {
   TouchableWithoutFeedback,
 } from 'react-native';
 import { useTranslation } from 'react-i18next';
-import { BlurView } from '@react-native-community/blur';
+import BlurWidget from 'src/components/BlurWidget/BlurWidget.web';
 import { StackScreenProps } from '@react-navigation/stack';
 import { useNavigation } from '@react-navigation/native';
 import {
   connection_levels,
   RECOVERY_COOLDOWN_EXEMPTION,
-} from '@/utils/constants';
-import { BLACK, WHITE, GREEN } from '@/theme/colors';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { fontSize } from '@/theme/fonts';
-import { useDispatch, useSelector } from '@/store';
+} from 'src/utils/constants';
+import { BLACK, WHITE, GREEN } from 'src/theme/colors';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { fontSize } from 'src/theme/fonts';
+import { useDispatch, useSelector } from 'src/store';
 import {
   addOperation,
   firstRecoveryTimeSelector,
   setConnectionLevel,
   setFirstRecoveryTime,
-} from '@/actions';
-import { selectConnectionById } from '@/reducer/connectionsSlice';
-import { NodeApiContext } from '@/components/NodeApiGate';
+} from 'src/actions';
+import { selectConnectionById } from 'src/reducer/connectionsSlice';
+import { NodeApiContext } from 'src/components/NodeApiGate';
 
 import TrustlevelSlider from './TrustlevelSlider';
 
@@ -113,7 +113,7 @@ const TrustlevelModal = ({ route }: props) => {
 
   return (
     <View style={styles.container}>
-      <BlurView
+      <BlurWidget
         style={styles.blurView}
         blurType="dark"
         blurAmount={5}

@@ -1,14 +1,14 @@
 // uuid's generated via npx uuid
-import RedditIcon from '@/static/socialmedia/icons8-reddit.svg';
-import LinkedinIcon from '@/static/socialmedia/icons8-linkedin.svg';
-import WhatsappIcon from '@/static/socialmedia/icons8-whatsapp.svg';
-import InstagramIcon from '@/static/socialmedia/icons8-instagram.svg';
-import SignalIcon from '@/static/socialmedia/icons8-signal-app.svg';
-import TelegramIcon from '@/static/socialmedia/icons8-telegram-app.svg';
-import DiscordIcon from '@/static/socialmedia/icons8-discord-bubble.svg';
-import KeybaseIcon from '@/static/socialmedia/Keybase_logo_official.svg';
-import MediumIcon from '@/static/socialmedia/icons8-medium-monogram.svg';
-import TwitterIcon from '@/static/socialmedia/icons8-twitter-circled.svg';
+import RedditIcon from 'src/static/socialmedia/icons8-reddit.svg';
+import LinkedinIcon from 'src/static/socialmedia/icons8-linkedin.svg';
+import WhatsappIcon from 'src/static/socialmedia/icons8-whatsapp.svg';
+import InstagramIcon from 'src/static/socialmedia/icons8-instagram.svg';
+import SignalIcon from 'src/static/socialmedia/icons8-signal-app.svg';
+import TelegramIcon from 'src/static/socialmedia/icons8-telegram-app.svg';
+import DiscordIcon from 'src/static/socialmedia/icons8-discord-bubble.svg';
+import KeybaseIcon from 'src/static/socialmedia/Keybase_logo_official.svg';
+import MediumIcon from 'src/static/socialmedia/icons8-medium-monogram.svg';
+import TwitterIcon from 'src/static/socialmedia/icons8-twitter-circled.svg';
 
 export enum SocialMediaType {
   SOCIAL_PROFILE = 'so',

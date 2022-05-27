@@ -7,10 +7,10 @@ import moment from 'moment';
 import { useActionSheet } from '@expo/react-native-action-sheet';
 import { useNavigation } from '@react-navigation/native';
 import Material from 'react-native-vector-icons/MaterialCommunityIcons';
-import { photoDirectory } from '@/utils/filesystem';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { WHITE, BLUE, GREY, RED, LIGHT_GREY } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
+import { photoDirectory } from 'src/utils/filesystem';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { WHITE, BLUE, GREY, RED, LIGHT_GREY } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
 
 const ICON_SIZE = DEVICE_LARGE ? 36 : 32;
 const ACTION_ADD_ADMIN = i18next.t('groups.memberActionSheet.addAdmin');
@@ -132,7 +132,7 @@ export const MemberCard = ({
       ? {
           uri: `file://${photoDirectory()}/${photo?.filename}`,
         }
-      : require('@/static/default_profile.jpg');
+      : require('src/static/default_profile.jpg');
 
   const memberTestID = memberIsAdmin ? 'admin' : 'regular';
   return (

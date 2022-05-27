@@ -3,7 +3,7 @@ import CryptoJS from 'crypto-js';
 import nacl from 'tweetnacl';
 import stringify from 'fast-json-stable-stringify';
 import { InteractionManager } from 'react-native';
-import { store } from '@/store';
+import { store } from 'src/store';
 import {
   setApps,
   upsertSig,
@@ -11,15 +11,15 @@ import {
   updateSig,
   selectAllSigs,
   selectExpireableBlindSigApps,
-} from '@/reducer/appsSlice';
-import { hash, strToUint8Array, uInt8ArrayToB64 } from '@/utils/encoding';
-import { NodeApi } from '@/api/brightId';
-import { isVerified } from '@/utils/verifications';
-import backupApi from '@/api/backupService';
-import { CACHED_PARAMS_NOT_FOUND } from '@/api/brightidError';
-import { BrightIdNetwork } from '@/components/Apps/types.d';
+} from 'src/reducer/appsSlice';
+import { hash, strToUint8Array, uInt8ArrayToB64 } from 'src/utils/encoding';
+import { NodeApi } from 'src/api/brightId';
+import { isVerified } from 'src/utils/verifications';
+import backupApi from 'src/api/backupService';
+import { CACHED_PARAMS_NOT_FOUND } from 'src/api/brightidError';
+import { BrightIdNetwork } from 'src/components/Apps/types.d';
 
-const WISchnorrClient = require('@/utils/WISchnorrClient');
+const WISchnorrClient = require('src/utils/WISchnorrClient');
 
 export const updateBlindSig =
   (app) => async (dispatch: dispatch, getState: GetState) => {

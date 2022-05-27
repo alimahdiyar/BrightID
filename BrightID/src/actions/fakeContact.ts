@@ -6,20 +6,20 @@ import {
   uInt8ArrayToB64,
   b64ToUrlSafeB64,
   urlSafeRandomKey,
-} from '@/utils/encoding';
-import { encryptData } from '@/utils/cryptoHelper';
-import { selectChannelById } from '@/components/PendingConnections/channelSlice';
+} from 'src/utils/encoding';
+import { encryptData } from 'src/utils/cryptoHelper';
+import { selectChannelById } from 'src/components/PendingConnections/channelSlice';
 import {
   selectConnectionById,
   selectAllConnections,
-} from '@/reducer/connectionsSlice';
-import { names } from '@/utils/fakeNames';
-import { connectFakeUsers } from '@/utils/fakeHelper';
-import { retrieveImage } from '@/utils/filesystem';
-import { PROFILE_VERSION } from '@/utils/constants';
-import { addOperation } from '@/reducer/operationsSlice';
-import { NodeApi } from '@/api/brightId';
-import { connectionLevelStrings } from '@/utils/connectionLevelStrings';
+} from 'src/reducer/connectionsSlice';
+import { names } from 'src/utils/fakeNames';
+import { connectFakeUsers } from 'src/utils/fakeHelper';
+import { retrieveImage } from 'src/utils/filesystem';
+import { PROFILE_VERSION } from 'src/utils/constants';
+import { addOperation } from 'src/reducer/operationsSlice';
+import { NodeApi } from 'src/api/brightId';
+import { connectionLevelStrings } from 'src/utils/connectionLevelStrings';
 
 /** SELECTORS */
 

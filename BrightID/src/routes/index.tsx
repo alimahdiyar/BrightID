@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import { useSelector } from '@/store';
-import NodeApiGate from '@/components/NodeApiGate';
+import { useSelector } from 'src/store';
+import NodeApiGate from 'src/components/NodeApiGate';
 import Apps from './Apps';
 import RecoveringConnection from './RecoveringConnection';
 import Devices from './Devices';

@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react';
 import { View, StyleSheet } from 'react-native';
 import Spinner from 'react-native-spinkit';
-import { bootstrap } from '@/bootstrap';
-import { notificationSubscription } from '@/NotificationService';
-import { ORANGE } from '@/theme/colors';
+import { bootstrap } from 'src/bootstrap';
+import { ORANGE } from 'src/theme/colors';
 
 export const InitialLoadingScreen = ({ app }: { app: boolean }) => {
   useEffect(() => {
@@ -12,8 +11,6 @@ export const InitialLoadingScreen = ({ app }: { app: boolean }) => {
         console.log('BOOSTRAPING APP');
         bootstrap();
         console.log('SUBSCRIBING TO NOTIFICATIONS');
-
-        notificationSubscription();
       }
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps

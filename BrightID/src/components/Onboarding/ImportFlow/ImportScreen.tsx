@@ -2,11 +2,11 @@ import React, { useEffect } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Spinner from 'react-native-spinkit';
 import { useTranslation } from 'react-i18next';
-import { setUserId, setPrimaryDevice } from '@/actions';
-import { useSelector, useDispatch } from '@/store';
-import { BLACK, ORANGE } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
+import { setUserId, setPrimaryDevice } from 'src/actions';
+import { useSelector, useDispatch } from 'src/store';
+import { BLACK, ORANGE } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
 import { setRecoveryKeys } from '../RecoveryFlow/thunks/recoveryThunks';
 import {
   resetRecoveryData,

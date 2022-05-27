@@ -4,9 +4,9 @@ import {
   setGenericPassword,
 } from 'react-native-keychain';
 import { compose } from 'ramda';
-import { objToUint8, uInt8ArrayToB64, b64ToUint8Array } from '@/utils/encoding';
-import { BACKUP_URL } from '@/utils/constants';
-import { DEVICE_ANDROID } from '@/utils/deviceConstants';
+import { objToUint8, uInt8ArrayToB64, b64ToUint8Array } from 'src/utils/encoding';
+import { BACKUP_URL } from 'src/utils/constants';
+import { DEVICE_ANDROID } from 'src/utils/deviceConstants';
 import { asyncCreateMigrate } from './asyncCreateMigrate';
 
 const keyToString = compose(uInt8ArrayToB64, objToUint8);

@@ -2,13 +2,13 @@ import React, { useCallback, useContext, useEffect, useState } from 'react';
 import { StyleSheet, View, KeyboardAvoidingView, Alert } from 'react-native';
 import { useFocusEffect } from '@react-navigation/native';
 import { useTranslation } from 'react-i18next';
-import { useDispatch, useSelector } from '@/store';
-import { BLACK, ORANGE, WHITE } from '@/theme/colors';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { setBackupCompleted, setPassword } from '@/reducer/userSlice';
-import { RecoverAccount } from '@/components/Onboarding/RecoveryFlow/RecoverAccount';
-import { RestoreBackup } from '@/components/Onboarding/RecoveryFlow/RestoreBackup';
-import { NodeApiContext } from '@/components/NodeApiGate';
+import { useDispatch, useSelector } from 'src/store';
+import { BLACK, ORANGE, WHITE } from 'src/theme/colors';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { setBackupCompleted, setPassword } from 'src/reducer/userSlice';
+import { RecoverAccount } from 'src/components/Onboarding/RecoveryFlow/RecoverAccount';
+import { RestoreBackup } from 'src/components/Onboarding/RecoveryFlow/RestoreBackup';
+import { NodeApiContext } from 'src/components/NodeApiGate';
 import {
   finishRecovery,
   recoverData,
@@ -16,8 +16,8 @@ import {
   socialRecovery,
 } from './thunks/recoveryThunks';
 import { CHANNEL_POLL_INTERVAL, clearChannel } from './thunks/channelThunks';
-import { selectOperationByHash } from '@/reducer/operationsSlice';
-import { operation_states } from '@/utils/constants';
+import { selectOperationByHash } from 'src/reducer/operationsSlice';
+import { operation_states } from 'src/utils/constants';
 
 // clear channel after this time
 const channelTimeout = CHANNEL_POLL_INTERVAL * 3.1;

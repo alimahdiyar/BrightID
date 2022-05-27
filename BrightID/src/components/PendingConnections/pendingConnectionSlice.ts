@@ -10,13 +10,13 @@ import { Alert } from 'react-native';
 import {
   removeChannel,
   selectChannelById,
-} from '@/components/PendingConnections/channelSlice';
-import { selectConnectionById } from '@/reducer/connectionsSlice';
-import { decryptData } from '@/utils/cryptoHelper';
-import { PROFILE_VERSION } from '@/utils/constants';
-import { createDeepEqualStringArraySelector } from '@/utils/createDeepEqualStringArraySelector';
-import BrightidError, { USER_NOT_FOUND } from '@/api/brightidError';
-import { NodeApi } from '@/api/brightId';
+} from 'src/components/PendingConnections/channelSlice';
+import { selectConnectionById } from 'src/reducer/connectionsSlice';
+import { decryptData } from 'src/utils/cryptoHelper';
+import { PROFILE_VERSION } from 'src/utils/constants';
+import { createDeepEqualStringArraySelector } from 'src/utils/createDeepEqualStringArraySelector';
+import BrightidError, { USER_NOT_FOUND } from 'src/api/brightidError';
+import { NodeApi } from 'src/api/brightId';
 
 const pendingConnectionsAdapter = createEntityAdapter<PendingConnection>({
   selectId: (pendingConnection) => pendingConnection.profileId,

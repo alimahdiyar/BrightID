@@ -2,7 +2,7 @@ import React from 'react';
 import { useWindowDimensions } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 
-import { DARKER_GREY } from '@/theme/colors';
+import { DARKER_GREY } from 'src/theme/colors';
 
 const FullScreenHighlightBox = ({
   onPress,

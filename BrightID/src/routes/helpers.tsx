@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 import { Animated, Text, TouchableOpacity, View } from 'react-native';
 import { StackNavigationOptions } from '@react-navigation/stack';
-import { navigate } from '@/NavigationService';
-import { useSelector } from '@/store';
-import { ORANGE, WHITE } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
-import { TWENTY_TWO, SIXTY } from '@/theme/sizes';
-import BackArrow from '@/components/Icons/BackArrow';
+import { navigate } from 'src/NavigationService';
+import { useSelector } from 'src/store';
+import { ORANGE, WHITE } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
+import { TWENTY_TWO, SIXTY } from 'src/theme/sizes';
+import BackArrow from 'src/components/Icons/BackArrow';
 
 export const headerTitleStyle = {
   fontFamily: 'Poppins-Bold',

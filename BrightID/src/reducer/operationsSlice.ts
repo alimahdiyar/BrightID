@@ -3,11 +3,11 @@ import {
   createEntityAdapter,
   createSelector,
 } from '@reduxjs/toolkit';
-import { RESET_STORE } from '@/actions/resetStore';
+import { RESET_STORE } from 'src/actions/resetStore';
 import {
   LOCAL_OPERATION_KEEP_THRESHOLD,
   operation_states,
-} from '@/utils/constants';
+} from 'src/utils/constants';
 
 export type Operation = SubmittedOp & {
   state: typeof operation_states[keyof typeof operation_states];

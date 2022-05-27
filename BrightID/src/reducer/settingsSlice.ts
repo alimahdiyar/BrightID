@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { RESET_STORE } from '@/actions/resetStore';
+import { RESET_STORE } from 'src/actions/resetStore';
 
 const ProdCandidates = [
   'http://node.brightid.org',

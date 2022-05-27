@@ -1,9 +1,9 @@
 import { Alert } from 'react-native';
 import i18next from 'i18next';
-import { dangerouslyDeleteStorage } from '@/utils/dev';
+import { dangerouslyDeleteStorage } from 'src/utils/dev';
 import { store } from './store';
 import { checkTasks, syncStoreTasks } from './components/Tasks/TasksSlice';
-import { scrubOps } from '@/reducer/operationsSlice';
+import { scrubOps } from 'src/reducer/operationsSlice';
 
 // happens inside of the loading screen
 

@@ -31,22 +31,22 @@ import {
   linkedContextTotal,
   selectAllLinkedContexts,
   selectAllLinkedSigs,
-} from '@/reducer/appsSlice';
-import { useDispatch, useSelector } from '@/store';
-import EmptyList from '@/components/Helpers/EmptyList';
-import { ORANGE, BLUE, WHITE } from '@/theme/colors';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
+} from 'src/reducer/appsSlice';
+import { useDispatch, useSelector } from 'src/store';
+import EmptyList from 'src/components/Helpers/EmptyList';
+import { ORANGE, BLUE, WHITE } from 'src/theme/colors';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
 import {
   fetchApps,
   selectAllApps,
   selectPendingLinkedContext,
-} from '@/actions';
-import { fontSize } from '@/theme/fonts';
-import { NodeApiContext } from '@/components/NodeApiGate';
-import { isVerified } from '@/utils/verifications';
+} from 'src/actions';
+import { fontSize } from 'src/theme/fonts';
+import { NodeApiContext } from 'src/components/NodeApiGate';
+import { isVerified } from 'src/utils/verifications';
 import AppCard from './AppCard';
 import { handleV5App, handleV6App } from './model';
-import { AppsRoute } from '@/components/Apps/types';
+import { AppsRoute } from 'src/components/Apps/types';
 import AnimatedLinearGradient from './AnimatedLinearGradient';
 
 export const AppsScreen = () => {

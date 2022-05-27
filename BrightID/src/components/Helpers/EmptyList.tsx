@@ -1,9 +1,9 @@
 import React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { GREY, WHITE } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { GREY, WHITE } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
 
 type Props = {
   title: string;

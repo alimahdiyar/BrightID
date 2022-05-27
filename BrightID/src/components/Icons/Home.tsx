@@ -1,6 +1,6 @@
 import React from 'react';
 import Svg, { ClipPath, Defs, G, Path, Rect } from 'react-native-svg';
-import { BLACK, ORANGE, WHITE } from '@/theme/colors';
+import { BLACK, ORANGE, WHITE } from 'src/theme/colors';
 
 type Props = {
   color?: string;

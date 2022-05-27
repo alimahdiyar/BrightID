@@ -9,11 +9,11 @@ import {
 } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { useNavigation } from '@react-navigation/native';
-import { useDispatch, useSelector } from '@/store';
-import { fontSize } from '@/theme/fonts';
-import { WHITE, BLACK, DARKER_GREY, ORANGE, RED } from '@/theme/colors';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { setPassword as setUserPassword } from '@/actions';
+import { useDispatch, useSelector } from 'src/store';
+import { fontSize } from 'src/theme/fonts';
+import { WHITE, BLACK, DARKER_GREY, ORANGE, RED } from 'src/theme/colors';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { setPassword as setUserPassword } from 'src/actions';
 
 /* Description */
 

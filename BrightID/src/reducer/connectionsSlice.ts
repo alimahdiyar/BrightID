@@ -7,8 +7,8 @@ import {
 } from '@reduxjs/toolkit';
 import { original } from 'immer';
 import { difference } from 'ramda';
-import { connection_levels } from '@/utils/constants';
-import { RESET_STORE } from '@/actions/resetStore';
+import { connection_levels } from 'src/utils/constants';
+import { RESET_STORE } from 'src/actions/resetStore';
 
 /* ******** INITIAL STATE ************** */
 

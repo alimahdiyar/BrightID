@@ -1,13 +1,13 @@
 import React, { useCallback } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import { useSelector } from '@/store';
+import { useSelector } from 'src/store';
 import { useFocusEffect } from '@react-navigation/native';
-import { WHITE } from '@/theme/colors';
-import { fontSize } from '@/theme/fonts';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { openDrawer } from '@/NavigationService';
+import { WHITE } from 'src/theme/colors';
+import { fontSize } from 'src/theme/fonts';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { openDrawer } from 'src/NavigationService';
 import { useTranslation } from 'react-i18next';
-import FullScreenHighlightBox from '@/components/Helpers/FullScreenHighlightBox';
+import FullScreenHighlightBox from 'src/components/Helpers/FullScreenHighlightBox';
 import { StackScreenProps } from '@react-navigation/stack';
 import Arrow from '../../Icons/Arrow';
 

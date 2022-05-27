@@ -20,7 +20,7 @@ import { useTranslation } from 'react-i18next';
 import Material from 'react-native-vector-icons/MaterialCommunityIcons';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import Clipboard from '@react-native-community/clipboard';
-import { useDispatch, useSelector } from '@/store';
+import { useDispatch, useSelector } from 'src/store';
 import {
   leaveGroup,
   updateGroup,
@@ -28,15 +28,15 @@ import {
   addAdmin,
   selectAllConnections,
   userSelector,
-} from '@/actions';
-import EmptyList from '@/components/Helpers/EmptyList';
-import { ORANGE, WHITE, BLUE, DARK_GREY } from '@/theme/colors';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { fontSize } from '@/theme/fonts';
-import { groupByIdSelector } from '@/utils/groups';
-import { addOperation } from '@/reducer/operationsSlice';
-import { NodeApiContext } from '@/components/NodeApiGate';
-import { MemberCard } from '@/components/Groups/Members/MemberCard';
+} from 'src/actions';
+import EmptyList from 'src/components/Helpers/EmptyList';
+import { ORANGE, WHITE, BLUE, DARK_GREY } from 'src/theme/colors';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { fontSize } from 'src/theme/fonts';
+import { groupByIdSelector } from 'src/utils/groups';
+import { addOperation } from 'src/reducer/operationsSlice';
+import { NodeApiContext } from 'src/components/NodeApiGate';
+import { MemberCard } from 'src/components/Groups/Members/MemberCard';
 
 export const MembersScreen = () => {
   const navigation = useNavigation();

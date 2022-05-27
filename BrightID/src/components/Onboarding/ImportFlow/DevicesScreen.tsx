@@ -12,14 +12,14 @@ import Material from 'react-native-vector-icons/MaterialIcons';
 import Spinner from 'react-native-spinkit';
 import { useTranslation } from 'react-i18next';
 import { useNavigation, useFocusEffect } from '@react-navigation/native';
-import { useSelector, useDispatch } from '@/store';
-import { selectActiveDevices } from '@/reducer/devicesSlice';
-import { fontSize } from '@/theme/fonts';
-import { WHITE, ORANGE, BLUE, BLACK } from '@/theme/colors';
-import { DEVICE_LARGE } from '@/utils/deviceConstants';
-import { NodeApiContext } from '@/components/NodeApiGate';
-import { removeDevice, setLastSyncTime } from '@/actions';
-import { qrCodeURL_types } from '@/utils/constants';
+import { useSelector, useDispatch } from 'src/store';
+import { selectActiveDevices } from 'src/reducer/devicesSlice';
+import { fontSize } from 'src/theme/fonts';
+import { WHITE, ORANGE, BLUE, BLACK } from 'src/theme/colors';
+import { DEVICE_LARGE } from 'src/utils/deviceConstants';
+import { NodeApiContext } from 'src/components/NodeApiGate';
+import { removeDevice, setLastSyncTime } from 'src/actions';
+import { qrCodeURL_types } from 'src/utils/constants';
 import {
   pollImportChannel,
   clearImportChannel,
