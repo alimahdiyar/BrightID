@@ -12,6 +12,7 @@ module.exports = {
         root: ['./src'],
         extensions: ['.js', '.ts', '.tsx', '.json'],
         alias: {
+          '^react-native$': 'react-native-web',
           '@': './src',
         },
       },
