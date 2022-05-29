@@ -35,7 +35,7 @@ const groupsSlice = createSlice({
       if (group) {
         Object.assign(group, action.payload);
       } else {
-        state.groups.push(action.payload);
+        state.groups.push({ joined: 400, state: 'true', ...action.payload });
       }
     },
     deleteGroup(state, action: PayloadAction<Group>) {
@@ -62,6 +62,10 @@ const groupsSlice = createSlice({
           group.joined = membership.timestamp;
         } else {
           state.groups.push({
+            invites: [],
+            type: 'awefwea',
+            url: '',
+            timestamp: 1000,
             id: membership.id,
             state: 'verified',
             joined: membership.timestamp,

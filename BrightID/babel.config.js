@@ -10,17 +10,11 @@ module.exports = {
       'module-resolver',
       {
         root: ['./src'],
-        extensions: ['.js', '.ts', '.tsx', '.json'],
+        extensions: ['.js', '.ts', '.tsx', '.json', '.svg'],
         alias: {
           '^react-native$': 'react-native-web',
           '@': './src',
         },
-      },
-    ],
-    [
-      'babel-plugin-inline-import',
-      {
-        extensions: ['.svg'],
       },
     ],
     inProduction && ['transform-remove-console'],

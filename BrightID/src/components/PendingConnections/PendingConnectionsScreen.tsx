@@ -76,7 +76,6 @@ export const PendingConnectionsScreen = () => {
     useCallback(() => {
       refreshDisplayConnections();
       dispatch(setActiveNotification(null));
-      // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []),
   );
 

@@ -8,12 +8,9 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Octicons from 'react-native-vector-icons/Octicons';
 import AntDesign from 'react-native-vector-icons/AntDesign';
-import codePush from 'react-native-code-push';
 import { DEVICE_ANDROID } from 'src/utils/deviceConstants.ts';
-import codePushOptions from './codepush.config';
 import App from './App.tsx';
 import AppConfig from './app.json';
-import 'react-native-url-polyfill/auto';
 
 // detox e2e tests fail when yellowboxes come up
 console.disableYellowBox = true;
@@ -58,7 +55,7 @@ FlatList.defaultProps.windowSize = DEVICE_ANDROID ? 5 : 10;
 
 FlatList.defaultProps.removeClippedSubviews = DEVICE_ANDROID;
 
-AppRegistry.registerComponent(AppConfig.name, () => codePush(codePushOptions)(App));
+AppRegistry.registerComponent(AppConfig.name, () => App);
 AppRegistry.runApplication(AppConfig.name, {
   rootTag: document.getElementById(`root`),
 });

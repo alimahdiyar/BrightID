@@ -95,7 +95,6 @@ export const ConnectionsScreen = () => {
         }
       />
     );
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [connections]);
 
   return (

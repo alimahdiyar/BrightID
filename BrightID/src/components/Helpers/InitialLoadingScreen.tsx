@@ -13,7 +13,6 @@ export const InitialLoadingScreen = ({ app }: { app: boolean }) => {
         console.log('SUBSCRIBING TO NOTIFICATIONS');
       }
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <View style={styles.container}>
