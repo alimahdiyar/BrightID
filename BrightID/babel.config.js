@@ -10,6 +10,7 @@ module.exports = {
   ],
   plugins: [
     ['react-native-web', { commonjs: true }],
+    'babel-plugin-flow-to-typescript',
     '@babel/plugin-transform-modules-commonjs',
     'add-module-exports',
     '@babel/proposal-class-properties',
