@@ -9,7 +9,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import { Picker } from '@react-native-picker/picker';
+// import { Picker } from '@react-native-picker/picker';
 import BlurWidget from 'src/components/BlurWidget/BlurWidget.web';
 import { useTranslation } from 'react-i18next';
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
@@ -44,9 +44,7 @@ import { saveAndLinkSocialMedia } from 'src/components/EditProfile/socialMediaTh
 /** Helper functions */
 
 // value is the social media id, label is the name
-const toPickerItem = ([value, { name }]) => (
-  <Picker.Item key={value} value={value} label={name} />
-);
+const toPickerItem = ([value, { name }]) => <Text>name</Text>;
 
 const keyboardTypes: { [id: string]: KeyboardTypeOptions } = {
   [SocialMediaShareType.USERNAME]: 'default',
@@ -178,17 +176,18 @@ const SelectMediaModal = ({ route }: props) => {
       />
       <KeyboardAvoidingView style={styles.modalContainer}>
         {page === 0 ? (
-          <Picker
-            selectedValue={selectedId}
-            style={styles.pickerStyle}
-            itemStyle={styles.pickerItemStyle}
-            onValueChange={(itemValue: SocialMediaId) => {
-              setSelectedId(itemValue);
-            }}
-          >
-            {PickerItems}
-          </Picker>
+          <Text>page 0 not implemented</Text>
         ) : (
+          // <Picker
+          //   selectedValue={selectedId}
+          //   style={styles.pickerStyle}
+          //   itemStyle={styles.pickerItemStyle}
+          //   onValueChange={(itemValue: SocialMediaId) => {
+          //     setSelectedId(itemValue);
+          //   }}
+          // >
+          //   {PickerItems}
+          // </Picker>
           <View style={styles.inputContainer}>
             <Text style={styles.label}>
               {socialMediaVariation.shareTypeDisplay}

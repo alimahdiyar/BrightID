@@ -1,29 +1,29 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import {
   Alert,
-  View,
   StyleSheet,
   Text,
   TextInput,
   TouchableOpacity,
+  View,
 } from 'react-native';
 import BlurWidget from 'src/components/BlurWidget/BlurWidget.web';
 import Spinner from 'react-native-spinkit';
-import { setInternetCredentials } from 'react-native-keychain';
+// import { setInternetCredentials } from 'react-native-keychain';
 import { useTranslation } from 'react-i18next';
 import { StackScreenProps } from '@react-navigation/stack';
 import { NodeApiContext } from 'src/components/NodeApiGate';
-import { BACKUP_URL, ORANGE } from 'src/utils/constants';
-import { DEVICE_LARGE, DEVICE_IOS } from 'src/utils/deviceConstants';
+import { ORANGE } from 'src/utils/constants';
+import { DEVICE_IOS, DEVICE_LARGE } from 'src/utils/deviceConstants';
 import {
-  DARK_ORANGE,
-  LIGHT_GREY,
-  DARKER_GREY,
-  WHITE,
   BLACK,
-  LIGHT_BLACK,
+  DARK_ORANGE,
+  DARKER_GREY,
   GREEN,
   GREY,
+  LIGHT_BLACK,
+  LIGHT_GREY,
+  WHITE,
 } from 'src/theme/colors';
 import { fontSize } from 'src/theme/fonts';
 import { useDispatch, useSelector } from 'src/store';
@@ -79,11 +79,11 @@ const ChangePasswordModal = ({ navigation }: props) => {
     if (!validatePass(newPassword, newPasswordAgain)) return;
 
     // save new password
-    try {
-      await setInternetCredentials(BACKUP_URL, id, newPassword);
-    } catch (err) {
-      console.log(err.message);
-    }
+    // try {
+    //   await setInternetCredentials(BACKUP_URL, id, newPassword);
+    // } catch (err) {
+    //   console.log(err.message);
+    // }
     dispatch(setPassword(newPassword));
 
     // backup data
@@ -116,6 +116,7 @@ const ChangePasswordModal = ({ navigation }: props) => {
           <UploadAnimation />
         ) : (
           <>
+            <Text>NOTE: this does not work on web. change needed</Text>
             {password ? (
               <View style={styles.inputGroup}>
                 <Text style={styles.label}>

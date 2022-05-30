@@ -1,12 +1,9 @@
-import {
-  setInternetCredentials,
-  getGenericPassword,
-  setGenericPassword,
-} from 'react-native-keychain';
 import { compose } from 'ramda';
-import { objToUint8, uInt8ArrayToB64, b64ToUint8Array } from 'src/utils/encoding';
-import { BACKUP_URL } from 'src/utils/constants';
-import { DEVICE_ANDROID } from 'src/utils/deviceConstants';
+import {
+  b64ToUint8Array,
+  objToUint8,
+  uInt8ArrayToB64,
+} from 'src/utils/encoding';
 import { asyncCreateMigrate } from './asyncCreateMigrate';
 
 const keyToString = compose(uInt8ArrayToB64, objToUint8);
@@ -17,8 +14,9 @@ const rootMigrations = {
   9: async (state) => {
     // extract secretKey if not present
     if (!state.user.secretKey || typeof state.user.secretKey !== 'string') {
-      let { password } = await getGenericPassword();
-      state.user.secretKey = password;
+      // TODO: fix for web
+      // let { password } = await getGenericPassword();
+      // state.user.secretKey = password;
     }
 
     state.keypair = {
@@ -57,19 +55,20 @@ const rootMigrations = {
       linkedContexts,
     };
 
+    // TODO: fix for web
     // transfer secret key as backup
-    try {
-      let genericPassword = await getGenericPassword();
-      let { password } = genericPassword;
-      if (password) {
-        state.user.secretKey = password;
-      }
-    } catch (err) {
-      console.log(err.message);
-      if (state.user.secretKey) {
-        state.user.secretKey = keyToString(state.user.secretKey);
-      }
-    }
+    // try {
+    //   let genericPassword = await getGenericPassword();
+    //   let { password } = genericPassword;
+    //   if (password) {
+    //     state.user.secretKey = password;
+    //   }
+    // } catch (err) {
+    //   console.log(err.message);
+    //   if (state.user.secretKey) {
+    //     state.user.secretKey = keyToString(state.user.secretKey);
+    //   }
+    // }
 
     return state;
   },
@@ -113,20 +112,20 @@ const rootMigrations = {
       let secretKey = state.user?.secretKey;
       if (secretKey && Object.keys(secretKey).length && state.user?.id) {
         // save secret key in keychain storage
-
-        if (DEVICE_ANDROID) {
-          let opts = { rules: 'none' };
-          await setGenericPassword(state.user.id, keyToString(secretKey), opts);
-        } else {
-          await setGenericPassword(state.user.id, keyToString(secretKey));
-        }
-
+        // TODO: fix for web
+        // if (DEVICE_ANDROID) {
+        //   let opts = { rules: 'none' };
+        //   await setGenericPassword(state.user.id, keyToString(secretKey), opts);
+        // } else {
+        //   await setGenericPassword(state.user.id, keyToString(secretKey));
+        // }
         // save backup password
-        await setInternetCredentials(
-          BACKUP_URL,
-          state.user.id,
-          state.user.password,
-        );
+        // TODO: fix for web
+        // await setInternetCredentials(
+        //   BACKUP_URL,
+        //   state.user.id,
+        //   state.user.password,
+        // );
       }
     } catch (err) {
       console.log(err.message);

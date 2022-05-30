@@ -3,10 +3,17 @@ const { NODE_ENV } = process.env;
 const inProduction = NODE_ENV === 'production';
 
 module.exports = {
-  presets: ['module:metro-react-native-babel-preset'],
+  presets: [
+    ['@babel/preset-typescript', { allExtensions: true, isTSX: true }],
+    ['@babel/preset-env', { modules: false }],
+    'module:metro-react-native-babel-preset',
+  ],
   plugins: [
+    ['react-native-web', { commonjs: true }],
+    '@babel/plugin-transform-modules-commonjs',
     'add-module-exports',
-    '@babel/plugin-proposal-class-properties',
+    '@babel/proposal-class-properties',
+    '@babel/proposal-object-rest-spread',
     [
       '@babel/plugin-transform-runtime',
       {

@@ -1,27 +1,26 @@
-import React, { useCallback, useState, useEffect, useContext } from 'react';
+import React, { useCallback, useContext, useEffect, useState } from 'react';
 import {
+  Alert,
   Linking,
+  StatusBar,
   StyleSheet,
   Text,
   TouchableOpacity,
   View,
-  StatusBar,
-  Alert,
 } from 'react-native';
 import {
   useFocusEffect,
-  useRoute,
   useNavigation,
+  useRoute,
 } from '@react-navigation/native';
 import { Trans, useTranslation } from 'react-i18next';
-import BarcodeMask from 'react-native-barcode-mask';
 import Spinner from 'react-native-spinkit';
 import Material from 'react-native-vector-icons/MaterialCommunityIcons';
 import i18next from 'i18next';
 import { BarCodeReadEvent } from 'react-native-camera';
 import { useDispatch, useSelector } from 'src/store';
 import { DEVICE_LARGE } from 'src/utils/deviceConstants';
-import { ORANGE, WHITE, LIGHT_BLACK, GREY } from 'src/theme/colors';
+import { GREY, LIGHT_BLACK, ORANGE, WHITE } from 'src/theme/colors';
 import { fontSize } from 'src/theme/fonts';
 import {
   channel_types,
@@ -34,7 +33,7 @@ import { setActiveNotification } from 'src/actions';
 import { hash } from 'src/utils/encoding';
 import { qrCodeURL_types } from 'src/utils/constants';
 import { NodeApiContext } from 'src/components/NodeApiGate';
-import { RNCamera } from './RNCameraProvider';
+// import { RNCamera } from './RNCameraProvider';
 import {
   setRecoveryAesKey,
   setRecoveryChannel,
@@ -227,32 +226,32 @@ export const ScanCodeScreen = () => {
               />
             </View>
             <View style={styles.cameraContainer} testID="CameraContainer">
-              <RNCamera
-                style={styles.cameraPreview}
-                captureAudio={false}
-                onBarCodeRead={handleBarCodeRead}
-                barCodeTypes={[RNCamera.Constants.BarCodeType.qr]}
-                type={RNCamera.Constants.Type.back}
-                flashMode={RNCamera.Constants.FlashMode.off}
-                androidCameraPermissionOptions={{
-                  title: t('common.camera.title'),
-                  message: t('common.camera.message'),
-                  buttonPositive: t('common.camera.ok'),
-                  buttonNegative: t('common.camera.cancel'),
-                }}
-                notAuthorizedView={<NotAuthorizedView />}
-              >
-                <BarcodeMask
-                  edgeColor={ORANGE}
-                  animatedLineColor={ORANGE}
-                  width={DEVICE_LARGE ? 230 : 190}
-                  height={DEVICE_LARGE ? 230 : 190}
-                  edgeRadius={5}
-                  edgeBorderWidth={DEVICE_LARGE ? 3 : 2}
-                  edgeHeight={DEVICE_LARGE ? 30 : 25}
-                  edgeWidth={DEVICE_LARGE ? 30 : 25}
-                />
-              </RNCamera>
+              {/*<RNCamera*/}
+              {/*  style={styles.cameraPreview}*/}
+              {/*  captureAudio={false}*/}
+              {/*  onBarCodeRead={handleBarCodeRead}*/}
+              {/*  barCodeTypes={[RNCamera.Constants.BarCodeType.qr]}*/}
+              {/*  type={RNCamera.Constants.Type.back}*/}
+              {/*  flashMode={RNCamera.Constants.FlashMode.off}*/}
+              {/*  androidCameraPermissionOptions={{*/}
+              {/*    title: t('common.camera.title'),*/}
+              {/*    message: t('common.camera.message'),*/}
+              {/*    buttonPositive: t('common.camera.ok'),*/}
+              {/*    buttonNegative: t('common.camera.cancel'),*/}
+              {/*  }}*/}
+              {/*  notAuthorizedView={<NotAuthorizedView />}*/}
+              {/*>*/}
+              {/*  <BarcodeMask*/}
+              {/*    edgeColor={ORANGE}*/}
+              {/*    animatedLineColor={ORANGE}*/}
+              {/*    width={DEVICE_LARGE ? 230 : 190}*/}
+              {/*    height={DEVICE_LARGE ? 230 : 190}*/}
+              {/*    edgeRadius={5}*/}
+              {/*    edgeBorderWidth={DEVICE_LARGE ? 3 : 2}*/}
+              {/*    edgeHeight={DEVICE_LARGE ? 30 : 25}*/}
+              {/*    edgeWidth={DEVICE_LARGE ? 30 : 25}*/}
+              {/*  />*/}
+              {/*</RNCamera>*/}
             </View>
           </>
         ) : (
