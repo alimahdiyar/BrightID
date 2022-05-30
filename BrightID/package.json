@@ -113,6 +113,7 @@
     "@babel/core": "^7.17.8",
     "@babel/plugin-syntax-export-default-from": "^7.16.7",
     "@babel/runtime": "^7.17.8",
+    "@babel/runtime-corejs2": "^7.18.3",
     "@react-native-community/eslint-config": "^2.0.0",
     "@react-native-community/eslint-plugin": "^1.0.0",
     "@types/jest": "^27.4.1",

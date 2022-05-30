@@ -5,6 +5,17 @@ const inProduction = NODE_ENV === 'production';
 module.exports = {
   presets: ['module:metro-react-native-babel-preset'],
   plugins: [
+    'add-module-exports',
+    '@babel/plugin-proposal-class-properties',
+    [
+      '@babel/plugin-transform-runtime',
+      {
+        corejs: 2,
+        helpers: true,
+        regenerator: true,
+        useESModules: true,
+      },
+    ],
     '@babel/plugin-syntax-export-default-from',
     [
       'module-resolver',

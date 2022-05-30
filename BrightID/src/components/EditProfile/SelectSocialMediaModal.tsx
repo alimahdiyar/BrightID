@@ -1,27 +1,32 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import {
-  TextInput,
-  View,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
   KeyboardAvoidingView,
   KeyboardTypeOptions,
+  StyleSheet,
+  Text,
+  TextInput,
   TextInputProps,
+  TouchableOpacity,
+  View,
 } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 import BlurWidget from 'src/components/BlurWidget/BlurWidget.web';
 import { useTranslation } from 'react-i18next';
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
 import { StackScreenProps } from '@react-navigation/stack';
-import PhoneInput from 'react-native-phone-number-input';
 import {
-  DEVICE_LARGE,
-  DEVICE_IOS,
   DEVICE_ANDROID,
+  DEVICE_IOS,
+  DEVICE_LARGE,
   WIDTH,
 } from 'src/utils/deviceConstants';
-import { DARK_ORANGE, DARKER_GREY, WHITE, BLACK, GREEN } from 'src/theme/colors';
+import {
+  BLACK,
+  DARK_ORANGE,
+  DARKER_GREY,
+  GREEN,
+  WHITE,
+} from 'src/theme/colors';
 import { fontSize } from 'src/theme/fonts';
 import { useDispatch, useSelector } from 'src/store';
 import {
@@ -188,30 +193,7 @@ const SelectMediaModal = ({ route }: props) => {
             <Text style={styles.label}>
               {socialMediaVariation.shareTypeDisplay}
             </Text>
-            {socialMediaVariation.id ===
-            SocialMediaVariationIds.PHONE_NUMBER ? (
-              <>
-                <PhoneInput
-                  defaultCode={phoneNumberObject.country}
-                  defaultValue={phoneNumberObject.number}
-                  containerStyle={styles.phoneInputContainerStyle}
-                  textContainerStyle={styles.phoneInputTextContainerStyle}
-                  textInputStyle={styles.phoneInputTextInputStyle}
-                  countryPickerButtonStyle={
-                    styles.phoneInputCountryPickerButtonStyle
-                  }
-                  layout="second"
-                  autoFocus={true}
-                  placeholder={`add ${socialMediaVariation.shareTypeDisplay}`}
-                  onChangeFormattedText={setProfile}
-                />
-                {invalidPhoneNumber ? (
-                  <Text style={styles.label}>
-                    {t('profile.alert.text.invalidPhoneNumber')}
-                  </Text>
-                ) : null}
-              </>
-            ) : (
+            {
               <TextInput
                 style={styles.socialMediaInput}
                 autoCapitalize="none"
@@ -228,7 +210,7 @@ const SelectMediaModal = ({ route }: props) => {
                 onChangeText={setProfile}
                 value={profile}
               />
-            )}
+            }
           </View>
         )}
         <View style={styles.saveContainer}>
