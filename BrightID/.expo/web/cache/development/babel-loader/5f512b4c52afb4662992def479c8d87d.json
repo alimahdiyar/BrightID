@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { RNCamera } from 'react-native-camera';","map":{"version":3,"sources":["/home/ali/Desktop/brightid/BrightID/BrightID/src/components/PendingConnections/RNCameraProvider.js"],"names":[],"mappings":"AAAA,SAAA,QAAA,QAAA,qBAAA","sourcesContent":["export { RNCamera } from 'react-native-camera';\n"]},"metadata":{},"sourceType":"module"}

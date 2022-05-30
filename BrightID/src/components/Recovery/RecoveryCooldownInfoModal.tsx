@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
-import { BlurView } from '@react-native-community/blur';
+import BlurWidget from '@/components/BlurWidget/BlurWidget.web';
 import { DEVICE_LARGE } from '@/utils/deviceConstants';
 import { Trans, useTranslation } from 'react-i18next';
 import { WHITE, BLUE, BLACK, DARKER_GREY, GREEN } from '@/theme/colors';
@@ -45,7 +45,7 @@ const RecoveryCooldownInfoModal = ({ route, navigation }: props) => {
   );
   return (
     <View style={styles.container} testID="RecoveryCooldownInfo">
-      <BlurView
+      <BlurWidget
         style={styles.blurView}
         blurType="dark"
         blurAmount={5}

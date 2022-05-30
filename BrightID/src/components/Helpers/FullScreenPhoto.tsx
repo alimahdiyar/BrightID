@@ -1,9 +1,9 @@
 import React, { useRef } from 'react';
-import { Animated, StyleSheet, PanResponder } from 'react-native';
-import { photoDirectory } from '@/utils/filesystem';
-import { BlurView } from '@react-native-community/blur';
-import { BLACK } from '@/theme/colors';
+import { Animated, PanResponder, StyleSheet } from 'react-native';
 import { StackScreenProps } from '@react-navigation/stack';
+import { photoDirectory } from '@/utils/filesystem';
+import BlurWidget from '@/components/BlurWidget/BlurWidget.web';
+import { BLACK } from '@/theme/colors';
 
 type props = StackScreenProps<ModalStackParamList, 'FullScreenPhoto'>;
 
@@ -46,12 +46,13 @@ const FullScreenPhoto = ({ route, navigation }: props) => {
   ).current;
 
   return (
-    <BlurView
-      style={[styles.container]}
-      blurType="dark"
-      blurAmount={10}
-      reducedTransparencyFallbackColor={BLACK}
-    >
+    <>
+      <BlurWidget
+        style={[styles.container]}
+        blurType="dark"
+        blurAmount={10}
+        reducedTransparencyFallbackColor={BLACK}
+      />
       <Animated.Image
         source={imageSource}
         style={[
@@ -64,7 +65,7 @@ const FullScreenPhoto = ({ route, navigation }: props) => {
         resizeMode="contain"
         {...panResponder.panHandlers}
       />
-    </BlurView>
+    </>
   );
 };
 

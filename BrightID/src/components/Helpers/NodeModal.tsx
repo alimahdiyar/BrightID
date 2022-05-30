@@ -6,7 +6,7 @@ import {
   TouchableWithoutFeedback,
   View,
 } from 'react-native';
-import { BlurView } from '@react-native-community/blur';
+import BlurWidget from '@/components/BlurWidget/BlurWidget.web';
 import { useNavigation } from '@react-navigation/native';
 import { useTranslation } from 'react-i18next';
 import { isEqual } from 'lodash';
@@ -68,7 +68,7 @@ const NodeModal = () => {
 
   return (
     <View style={styles.container}>
-      <BlurView
+      <BlurWidget
         style={styles.blurView}
         blurType="dark"
         blurAmount={5}

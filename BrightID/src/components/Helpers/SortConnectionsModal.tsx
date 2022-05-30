@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
   TouchableWithoutFeedback,
 } from 'react-native';
-import { BlurView } from '@react-native-community/blur';
+import BlurWidget from '@/components/BlurWidget/BlurWidget.web';
 import { DEVICE_LARGE } from '@/utils/deviceConstants';
 import { useDispatch, useSelector } from '@/store';
 import { connection_levels } from '@/utils/constants';
@@ -96,7 +96,7 @@ const SortConnectionsModal = ({ navigation }: props) => {
 
   return (
     <View style={styles.container} testID="SortConnectionsModal">
-      <BlurView
+      <BlurWidget
         style={styles.blurView}
         blurType="dark"
         blurAmount={5}

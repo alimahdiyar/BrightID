@@ -7,7 +7,7 @@ import {
   TextInput,
   TouchableOpacity,
 } from 'react-native';
-import { BlurView } from '@react-native-community/blur';
+import BlurWidget from '@/components/BlurWidget/BlurWidget.web';
 import Spinner from 'react-native-spinkit';
 import { setInternetCredentials } from 'react-native-keychain';
 import { useTranslation } from 'react-i18next';
@@ -105,7 +105,7 @@ const ChangePasswordModal = ({ navigation }: props) => {
 
   return (
     <View style={styles.container}>
-      <BlurView
+      <BlurWidget
         style={styles.blurView}
         blurType="dark"
         blurAmount={5}

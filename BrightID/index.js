@@ -13,7 +13,6 @@ import { DEVICE_ANDROID } from '@/utils/deviceConstants.ts';
 import codePushOptions from './codepush.config';
 import App from './src/App.tsx';
 import { name as appName } from './app.json';
-import 'react-native-url-polyfill/auto';
 
 // detox e2e tests fail when yellowboxes come up
 console.disableYellowBox = true;

@@ -10,7 +10,7 @@ import {
   TextInputProps,
 } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
-import { BlurView } from '@react-native-community/blur';
+import BlurWidget from '@/components/BlurWidget/BlurWidget.web';
 import { useTranslation } from 'react-i18next';
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
 import { StackScreenProps } from '@react-navigation/stack';
@@ -165,7 +165,7 @@ const SelectMediaModal = ({ route }: props) => {
 
   return (
     <View style={styles.container}>
-      <BlurView
+      <BlurWidget
         style={styles.blurView}
         blurType="dark"
         blurAmount={5}

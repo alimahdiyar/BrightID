@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { rootMigrate } from \"./root\";","map":{"version":3,"names":["rootMigrate"],"sources":["/home/ali/Desktop/brightid/BrightID/BrightID/src/store/migrations/index.ts"],"sourcesContent":["export { rootMigrate } from './root';\n"],"mappings":"AAAA,SAASA,WAAT"},"metadata":{},"sourceType":"module"}
