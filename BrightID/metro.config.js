@@ -1,3 +1,5 @@
+const path = require("path");
+
 // eslint-disable-next-line import/no-extraneous-dependencies
 const defaultSourceExts = require('metro-config/src/defaults/defaults')
   .sourceExts;
@@ -25,5 +27,10 @@ module.exports = {
       : defaultSourceExts,
     // Comment out for test release
     // sourceExts: ['e2e.js'].concat(defaultSourceExts),
+    unstable_enableSymlinks: true
   },
+  watchFolders: [
+    path.resolve(__dirname, '../node_modules'),
+    path.resolve(__dirname, '../node_modules/@example-app/shared'),
+  ],
 };

@@ -11,7 +11,7 @@ import com.android.build.OutputFile
  * cycle. By default, bundleDebugJsAndAssets is skipped, as in debug/dev mode we prefer to load the
  * bundle directly from the development server. Below you can see all the possible configurations
  * and their defaults. If you decide to add a configuration block, make sure to add it before the
- * `apply from: "../../node_modules/react-native/react.gradle"` line.
+ * `apply from: "../../../node_modules/react-native/react.gradle"` line.
  *
  * project.ext.react = [
  *   // the name of the generated asset file containing your JS bundle
@@ -88,8 +88,8 @@ project.ext.react = [
     // jsBundleDirStaging: "$buildDir/intermediates/assets/staging",
 ]
 
-apply from: "../../node_modules/react-native/react.gradle"
-apply from: "../../node_modules/react-native-code-push/android/codepush.gradle"
+apply from: "../../../node_modules/react-native/react.gradle"
+apply from: "../../../node_modules/react-native-code-push/android/codepush.gradle"
 
 /**
  * Set this to true to create two separate APKs instead of one:
@@ -214,7 +214,7 @@ android {
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
             // Detox-specific additions to pro-guard
-            proguardFile "${rootProject.projectDir}/../node_modules/detox/android/detox/proguard-rules-app.pro"
+            proguardFile "${rootProject.projectDir}/../../node_modules/detox/android/detox/proguard-rules-app.pro"
             signingConfig signingConfigs.release
             resValue "string", "CodePushDeploymentKey", "G8q6_0EW9AkaXAy3hO7Ye_LAhDfisOHpFPvRF"
         }
@@ -288,7 +288,7 @@ dependencies {
     }
 
     if (enableHermes) {
-        def hermesPath = "../../node_modules/hermes-engine/android/";
+        def hermesPath = "../../../node_modules/hermes-engine/android/";
         debugImplementation files(hermesPath + "hermes-debug.aar")
         stagingImplementation files(hermesPath + "hermes-release.aar")
         releaseImplementation files(hermesPath + "hermes-release.aar")
@@ -317,6 +317,6 @@ task copyDownloadableDepsToLibs(type: Copy) {
     into 'libs'
 }
 
-apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+apply from: "../../../node_modules/react-native-vector-icons/fonts.gradle"
 
-apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
+apply from: file("../../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)

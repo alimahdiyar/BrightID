@@ -1,3 +1,7 @@
+cache
+yarn-error.log
+install-state.gz
+
 # OSX
 .DS_Store
 
