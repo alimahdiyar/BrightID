@@ -1,8 +1,8 @@
+import reducers from '@brightid/brightid-sdk';
 import apps from './appsSlice';
 import channels from '../components/PendingConnections/channelSlice';
 import connections from './connectionsSlice';
 import groups from './groupsSlice';
-import keypair from './keypairSlice';
 import notifications from './notifications';
 import operations from './operationsSlice';
 import pendingConnections from '../components/PendingConnections/pendingConnectionSlice';
@@ -20,7 +20,7 @@ export default {
   channels,
   connections,
   groups,
-  keypair,
+  keypair: reducers.keypair,
   operations,
   pendingConnections,
   recoveryData,
@@ -31,5 +31,5 @@ export default {
   socialMedia,
   walkthrough,
   settings,
-  devices
+  devices,
 };
