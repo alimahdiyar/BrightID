@@ -1,0 +1,51 @@
+{
+  "name": "@brightid/redux",
+  "version": "0.0.1",
+  "description": "A Redux lib for building BrightID clients and super apps",
+  "repository": "https://github.com/BrightID/BrightID/",
+  "module": "dist/brightid-sdk.esm.js",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist/**",
+    "!dist/**/*.tsbuildinfo",
+    "src/**/*.ts",
+    "!src/**/*.test.ts",
+    "!src/**/*.test-d.ts",
+    "/reducers"
+  ],
+  "sideEffects": false,
+  "type": "module",
+  "main": "./dist/esm/exports/index.js",
+  "types": "./dist/types/exports/index.d.ts",
+  "typings": "./dist/types/exports/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/exports/index.d.ts",
+      "default": "./dist/esm/exports/index.js"
+    },
+    "./reducers": {
+      "types": "./dist/types/exports/reducers.d.ts",
+      "default": "./dist/esm/exports/reducers.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "typesVersions": {
+    "*": {
+      "reducers": [
+        "./dist/types/exports/reducers.d.ts"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@reduxjs/toolkit": "1",
+    "typescript": ">=5.0.4"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  }
+}

@@ -1,74 +1,20 @@
 {
-  "name": "@brightid/brightid-sdk",
-  "version": "0.0.2",
-  "description": "A React + Redux lib for building BrightID clients and super apps",
-  "repository": "https://github.com/BrightID/BrightID/",
-  "module": "dist/brightid-sdk.esm.js",
-  "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  },
-  "scripts": {
-    "build": "yarn run clean && yarn run build:esm+types",
-    "build:esm+types": "tsc --project tsconfig.build.json --outDir ./dist/esm --declaration --declarationMap --declarationDir ./dist/types",
-    "clean": "rm -rf dist tsconfig.tsbuildinfo reducers",
-    "test:build": "publint --strict",
-    "typecheck": "tsc --noEmit"
-  },
-  "files": [
-    "dist/**",
-    "!dist/**/*.tsbuildinfo",
-    "src/**/*.ts",
-    "!src/**/*.test.ts",
-    "!src/**/*.test-d.ts",
-    "/reducers"
-  ],
-  "sideEffects": false,
+  "private": true,
   "type": "module",
-  "main": "./dist/esm/exports/index.js",
-  "types": "./dist/types/exports/index.d.ts",
-  "typings": "./dist/types/exports/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./dist/types/exports/index.d.ts",
-      "default": "./dist/esm/exports/index.js"
-    },
-    "./reducers": {
-      "types": "./dist/types/exports/reducers.d.ts",
-      "default": "./dist/esm/exports/reducers.js"
-    },
-    "./package.json": "./package.json"
-  },
-  "typesVersions": {
-    "*": {
-      "reducers": [
-        "./dist/types/exports/reducers.d.ts"
-      ]
-    }
-  },
-  "peerDependencies": {
-    "@tanstack/react-query": ">=5.0.0",
-    "react": ">=18",
-    "typescript": ">=5.0.4",
-    "viem": "2.x"
-  },
-  "peerDependenciesMeta": {
-    "typescript": {
-      "optional": true
-    }
-  },
-  "dependencies": {
-    "@reduxjs/toolkit": "1.5.0",
-    "use-sync-external-store": "1.2.0"
+  "scripts": {
+    "build": "pnpm run --r --filter \"./packages/**\" build && bun .scripts/formatPackageJson.ts && bun .scripts/generateProxyPackages.ts",
+    "clean": "pnpm run --r --parallel clean && rm -rf packages/**/*.json.tmp",
+    "prepublish": "pnpm version:update && pnpm build",
+    "postinstall": "pnpm preconstruct",
+    "preconstruct": "bun .scripts/preconstruct.ts",
+    "preinstall": "npx only-allow pnpm",
+    "version:update": "bun .scripts/updateVersion.ts"
   },
   "devDependencies": {
-    "@tanstack/react-query": ">=5.0.0",
-    "@testing-library/react": ">=14.0.0",
-    "@types/react": ">=18",
-    "@types/react-dom": ">=18",
-    "@types/use-sync-external-store": "^0.0.3",
-    "react": ">=18",
-    "react-dom": ">=18",
+    "bun": "1.0.1",
+    "bun-types": "^1.0.3",
+    "glob": "^10.3.10",
     "typescript": "5.4.2"
-  }
+  },
+  "packageManager": "pnpm@8.10.5"
 }

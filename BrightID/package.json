@@ -29,7 +29,7 @@
     "prepare:production": "ln -sf ./google-services.json-prod android/app/google-services.json"
   },
   "dependencies": {
-    "@brightid/brightid-sdk": "file:../brightid-sdk",
+    "@brightid/redux": "file:../brightid-sdk/packages/redux",
     "@expo/react-native-action-sheet": "4.0.1",
     "@react-native-async-storage/async-storage": "1.17.11",
     "@react-native-community/blur": "4.3.0",
