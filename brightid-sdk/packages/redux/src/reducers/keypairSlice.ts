@@ -6,7 +6,7 @@ const initialState: KeypairState = {
   secretKey: new Uint8Array(),
 };
 
-const keypairSlice = createSlice({
+export const keypairSlice = createSlice({
   name: "keypair",
   initialState,
   reducers: {
@@ -22,9 +22,6 @@ const keypairSlice = createSlice({
     },
   },
 });
-
-// Export channel actions
-export const { setKeypair } = keypairSlice.actions;
 
 // Export selectors
 export const selectKeypair = (state: WithKeypairState) => ({

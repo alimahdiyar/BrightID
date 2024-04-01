@@ -1,5 +1,0 @@
-{
-  "type": "module",
-  "types": "../dist/types/exports/reducers.d.ts",
-  "main": "../dist/esm/exports/reducers.js"
-}

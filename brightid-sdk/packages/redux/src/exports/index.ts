@@ -1,1 +1,1 @@
-export * from "../reducers/index.js";
+export * from "../index.js";

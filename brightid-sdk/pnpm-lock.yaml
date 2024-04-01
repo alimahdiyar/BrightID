@@ -26,6 +26,9 @@ importers:
       '@reduxjs/toolkit':
         specifier: 1.5.0
         version: 1.5.0
+      immer:
+        specifier: ^8.0.4
+        version: 8.0.4
 
 packages:
 
