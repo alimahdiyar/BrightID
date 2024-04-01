@@ -4,7 +4,6 @@
   "scripts": {
     "build": "pnpm run --r --filter \"./packages/**\" build && bun .scripts/generateProxyPackages.ts",
     "clean": "pnpm run --r --parallel clean && rm -rf packages/**/*.json.tmp",
-    "prepublish": "pnpm build",
     "preinstall": "npx only-allow pnpm"
   },
   "devDependencies": {
