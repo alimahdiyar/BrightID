@@ -1254,8 +1254,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@brightid/redux@file:../brightid-sdk/packages/redux":
+"@brightid/redux@0.0.1":
   version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@brightid/redux/-/redux-0.0.1.tgz#c9c3af5c002328ac48d5dccc397358754d266459"
+  integrity sha512-ZGhFHM9KLpWv5UEAzaaqFe3HBh5AETL08U8+gUaU1fMUubGwFYq1ebWVlvjFYIi1hg5ze74hNPs3yuBWSVeH1w==
 
 "@callstack/react-theme-provider@3.0.3":
   version "3.0.3"
