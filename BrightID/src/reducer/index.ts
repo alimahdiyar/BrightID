@@ -1,4 +1,3 @@
-import { keypairReducer } from '@brightid/redux/reducers';
 import apps from './appsSlice';
 import channels from '../components/PendingConnections/channelSlice';
 import connections from './connectionsSlice';
@@ -20,7 +19,6 @@ export default {
   channels,
   connections,
   groups,
-  keypair: keypairReducer,
   operations,
   pendingConnections,
   recoveryData,

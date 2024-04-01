@@ -1,1 +1,1 @@
-export { keypairReducer } from "./keypairSlice.js";
+export { keypairReducer as keypair } from "./keypairSlice.js";

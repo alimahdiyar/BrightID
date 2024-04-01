@@ -23,11 +23,4 @@ export const keypairSlice = createSlice({
   },
 });
 
-// Export selectors
-export const selectKeypair = (state: WithKeypairState) => ({
-  publicKey: state.keypair.publicKey,
-  secretKey: state.keypair.secretKey,
-});
-
-// Export reducer
 export const keypairReducer = keypairSlice.reducer;
