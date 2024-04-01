@@ -1,37 +1,37 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { RESET_STORE } from './actions/resetStore'
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { RESET_STORE } from "../actions/resetStore.js";
 
 const initialState: Keypair = {
-  publicKey: '',
+  publicKey: "",
   secretKey: new Uint8Array(),
-}
+};
 
 const keypairSlice = createSlice({
-  name: 'keypair',
+  name: "keypair",
   initialState,
   reducers: {
     setKeypair(state, action: PayloadAction<Keypair>) {
-      const { publicKey, secretKey } = action.payload
-      state.publicKey = publicKey
-      state.secretKey = secretKey
+      const { publicKey, secretKey } = action.payload;
+      state.publicKey = publicKey;
+      state.secretKey = secretKey;
     },
   },
   extraReducers: {
     [RESET_STORE]: () => {
-      return initialState
+      return initialState;
     },
   },
-})
+});
 
 // Export channel actions
-export const { setKeypair } = keypairSlice.actions
+export const { setKeypair } = keypairSlice.actions;
 
 // Export selectors
 //TODO: add state type
 export const selectKeypair = (state: any) => ({
   publicKey: state.keypair.publicKey,
   secretKey: state.keypair.secretKey,
-})
+});
 
 // Export reducer
-export default keypairSlice.reducer
+export const keypairReducer = keypairSlice.reducer;
