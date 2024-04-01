@@ -3,10 +3,16 @@
   "version": "0.0.1",
   "description": "A Redux lib for building BrightID clients and super apps",
   "repository": "https://github.com/BrightID/BrightID/",
-  "module": "dist/brightid-sdk.esm.js",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
+  },
+  "scripts": {
+    "build": "pnpm run clean && pnpm run build:esm+types",
+    "build:esm+types": "tsc --project tsconfig.build.json --outDir ./dist/esm --declaration --declarationMap --declarationDir ./dist/types",
+    "clean": "rm -rf dist tsconfig.tsbuildinfo actions chains codegen internal query",
+    "test:build": "publint --strict",
+    "typecheck": "tsc --noEmit"
   },
   "files": [
     "dist/**",
