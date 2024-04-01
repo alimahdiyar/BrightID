@@ -7,7 +7,6 @@
     "incremental": true,
     // Type checking
     "strict": true,
-    // "exactOptionalPropertyTypes": true, // Enabled once supported in viem
     "noFallthroughCasesInSwitch": true,
     // Not enabled by default in `strict` mode.
     "noImplicitOverride": true,
